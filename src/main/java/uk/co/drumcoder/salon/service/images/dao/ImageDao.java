@@ -13,5 +13,6 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 public class ImageDao extends AbstractDao {
-    private String name;
+    private String title;
+    private String award;
 }

@@ -29,4 +29,10 @@ public class CountryServiceImpl implements CountryService {
 
         return countryListDao;
     }
+
+    @Override
+    public CountryDao findCountry(String countryName) {
+        CountryListDao allCountries = this.fetchAllCountries();
+        return allCountries.findCountry(countryName);
+    }
 }

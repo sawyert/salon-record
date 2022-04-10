@@ -26,6 +26,6 @@ class CountryServiceTests {
         assertTrue(countryList.contains("France"));
         assertTrue(countryList.contains("Germany"));
         assertTrue(countryList.contains("Italy"));
-        assertFalse(countryList.contains("England"));
+        assertFalse(countryList.contains("Not A Country"));
     }
 }

@@ -24,4 +24,14 @@ public class CountryListDao {
         }
         return false;
     }
+
+    public CountryDao findCountry(String countryName) {
+        for (CountryDao eachCountry : this.countries) {
+            if (eachCountry.getName().equalsIgnoreCase(countryName)) {
+                return eachCountry;
+            }
+        }
+
+        throw new UnsupportedOperationException("Country " + countryName + " not found");
+    }
 }

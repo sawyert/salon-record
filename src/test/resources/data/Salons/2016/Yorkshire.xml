@@ -5,8 +5,10 @@
     <Year>2016</Year>
     <JudgeDate>11-12-2016</JudgeDate>
     <NotificationDate>19-12-2016</NotificationDate>
-    <Accreditation type="FIAP">2016/309</Accreditation>
-    <Accreditation type="PSA">2016-245</Accreditation>
+    <Accreditations>
+      <Accreditation type="FIAP">2016/309</Accreditation>
+      <Accreditation type="PSA">2016-245</Accreditation>
+    </Accreditations>
     <Cost>9</Cost>
     <AcceptedImages>
         <Image>Daisy</Image>

@@ -3,6 +3,7 @@ package uk.co.drumcoder.salon.service.images;
 import lombok.RequiredArgsConstructor;
 import org.jdom2.Document;
 import org.jdom2.Element;
+import org.springframework.boot.context.properties.bind.UnboundConfigurationPropertiesException;
 import org.springframework.stereotype.Service;
 import uk.co.drumcoder.salon.framework.XmlHelper;
 import uk.co.drumcoder.salon.service.country.dao.CountryDao;
@@ -24,10 +25,34 @@ public class ImageServiceImpl implements ImageService {
         List<Element> children = document.getRootElement().getChildren();
         for (Element eachImage: children) {
             ImageDao image = new ImageDao();
-            image.setName(eachImage.getText());
+            image.setTitle(eachImage.getText());
+            image.setAward(null);
             imageListDao.add(image);
         }
 
         return imageListDao;
+    }
+
+    @Override
+    public ImageListDao processImagesForSalon(Element acceptedImagesElement) {
+        ImageListDao allValidImages = this.fetchAllImages();
+        ImageListDao salonImages = new ImageListDao();
+
+        for (Element imageElement : acceptedImagesElement.getChildren()) {
+            ImageDao imageDao = new ImageDao();
+            imageDao.setTitle(imageElement.getText());
+
+            if (!allValidImages.contains(imageDao.getTitle())) {
+                throw new UnsupportedOperationException("Image " + imageDao.getTitle() + " not found in Images.xml");
+            }
+
+            if (imageElement.getAttribute("award") != null) {
+                imageDao.setAward(imageElement.getAttribute("award").getValue());
+            }
+
+            salonImages.add(imageDao);
+        }
+
+        return salonImages;
     }
 }
