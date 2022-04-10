@@ -1,0 +1,83 @@
+<Organisations>
+    <Organisation>
+        <Name>FIAP</Name>
+        <Awards>
+            <Award>
+                <Name>AFIAP</Name>
+                <Acceptances>40</Acceptances>
+                <Countries>8</Countries>
+                <Awards>0</Awards>
+                <Images>15</Images>
+                <Salons>15</Salons>
+            </Award>
+            <Award>
+                <Name>EFIAP</Name>
+                <Acceptances>250</Acceptances>
+                <Countries>20</Countries>
+                <Awards>2</Awards>
+                <Images>50</Images>
+                <Salons>30</Salons>
+            </Award>
+        </Awards>
+    </Organisation>
+
+    <Organisation>
+        <Name>FIAP Levels</Name>
+        <Awards>
+            <Award>
+                <Name>EFIAP/b</Name>
+                <Acceptances>200</Acceptances>
+                <Countries>5</Countries>
+                <Awards>4</Awards>
+                <Images>50</Images>
+            </Award>
+            <Award>
+                <Name>EFIAP/s</Name>
+                <Acceptances>300</Acceptances>
+                <Countries>10</Countries>
+                <Awards>5</Awards>
+                <Images>100</Images>
+            </Award>
+            <Award>
+                <Name>EFIAP/g</Name>
+                <Acceptances>500</Acceptances>
+                <Countries>15</Countries>
+                <Awards>6</Awards>
+                <Images>150</Images>
+            </Award>
+            <Award>
+                <Name>EFIAP/p</Name>
+                <Acceptances>700</Acceptances>
+                <Countries>20</Countries>
+                <Awards>7</Awards>
+                <Images>250</Images>
+            </Award>
+        </Awards>
+    </Organisation>
+
+    <Organisation>
+        <Name>BPE</Name>
+        <Awards>
+            <Award>
+                <Name>BPE 1*</Name>
+                <Acceptances>25</Acceptances>
+            </Award>
+            <Award>
+                <Name>BPE 2*</Name>
+                <Acceptances>50</Acceptances>
+            </Award>
+            <Award>
+                <Name>BPE 3*</Name>
+                <Acceptances>100</Acceptances>
+            </Award>
+            <Award>
+                <Name>BPE 4*</Name>
+                <Acceptances>200</Acceptances>
+            </Award>
+            <Award>
+                <Name>BPE 5*</Name>
+                <Acceptances>300</Acceptances>
+            </Award>
+        </Awards>
+    </Organisation>
+</Organisations>

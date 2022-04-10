@@ -1,0 +1,13 @@
+<Salon>
+    <Name>Bohemia</Name>
+    <Web>http://bohemia.photosalon.cz/</Web>
+    <Country>Czech Republic</Country>
+    <Year>2016</Year>
+    <JudgeDate>15-10-2016</JudgeDate>
+    <NotificationDate>15-10-2016</NotificationDate>
+    <Accreditation type="FIAP">2016/460</Accreditation>
+    <Cost>14</Cost>
+    <AcceptedImages>
+        <Image>Into The Mist</Image>
+    </AcceptedImages>
+</Salon>
