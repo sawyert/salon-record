@@ -6,6 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import uk.co.drumcoder.salon.service.achievements.AchievementsService;
 import uk.co.drumcoder.salon.service.achievements.dao.AwardAchievements;
 
+import java.math.BigDecimal;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -35,6 +37,7 @@ class AchievementsServiceTests {
         assertEquals(1, awardAchievements.getOrganisation("FIAP").getAward(0).getRequiredImages());
         assertEquals(1, awardAchievements.getOrganisation("FIAP").getAward(0).getRequiredSalons());
         assertTrue(awardAchievements.getOrganisation("FIAP").getAward(0).isAchieved());
+        assertEquals(new BigDecimal("37.14"), awardAchievements.getOrganisation("FIAP").getAward(0).getTotalCost());
 
         assertEquals("FIAP Test 2", awardAchievements.getOrganisation("FIAP").getAward(1).getName());
         assertEquals(2, awardAchievements.getOrganisation("FIAP").getAward(1).getRequiredAcceptances());
@@ -43,11 +46,14 @@ class AchievementsServiceTests {
         assertEquals(3, awardAchievements.getOrganisation("FIAP").getAward(1).getRequiredImages());
         assertEquals(2, awardAchievements.getOrganisation("FIAP").getAward(1).getRequiredSalons());
         assertTrue(awardAchievements.getOrganisation("FIAP").getAward(1).isAchieved());
+        assertEquals(new BigDecimal("46.14"), awardAchievements.getOrganisation("FIAP").getAward(1).getTotalCost());
 
         assertEquals("AFIAP", awardAchievements.getOrganisation("FIAP").getAward(2).getName());
         assertFalse(awardAchievements.getOrganisation("FIAP").getAward(2).isAchieved());
+        assertEquals(new BigDecimal("60.14"), awardAchievements.getOrganisation("FIAP").getAward(2).getTotalCost());
 
         assertEquals("EFIAP", awardAchievements.getOrganisation("FIAP").getAward(3).getName());
         assertFalse(awardAchievements.getOrganisation("FIAP").getAward(3).isAchieved());
+        assertEquals(new BigDecimal("60.14"), awardAchievements.getOrganisation("FIAP").getAward(3).getTotalCost());
 ;    }
 }

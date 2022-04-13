@@ -51,5 +51,6 @@ public class AwardDao extends AbstractDao {
         this.achievedAwards.addAll(salon.getAwardedImages());
         this.achievedImages.addAll(salon.getAcceptedImages().list());
         this.achievedSalons += 1;
+        this.totalCost = this.totalCost.add(salon.getCost());
     }
 }
