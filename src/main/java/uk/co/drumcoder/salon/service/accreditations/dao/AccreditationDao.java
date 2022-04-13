@@ -9,4 +9,8 @@ import uk.co.drumcoder.salon.service.award.dao.OrganisationDao;
 public class AccreditationDao {
     private OrganisationDao organisation;
     private String code;
+
+    public void setOrganisation(String organisationName) {
+        this.organisation = new OrganisationDao(organisationName);
+    }
 }

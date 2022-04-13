@@ -5,7 +5,6 @@ import org.jdom2.Element;
 import org.springframework.stereotype.Service;
 import uk.co.drumcoder.salon.service.accreditations.dao.AccreditationDao;
 import uk.co.drumcoder.salon.service.accreditations.dao.AccreditationListDao;
-import uk.co.drumcoder.salon.service.award.dao.OrganisationDao;
 
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class AccreditationServiceImpl implements AccreditationService {
         List<Element> numbersList = accreditationsElement.getChildren();
         for (Element accreditationElement : numbersList) {
             AccreditationDao accreditationDao = new AccreditationDao();
-            accreditationDao.setOrganisation(new OrganisationDao(accreditationElement.getAttribute("type").getValue()));
+            accreditationDao.setOrganisation(accreditationElement.getAttribute("type").getValue());
             accreditationDao.setCode(accreditationElement.getText());
 
             accreditations.add(accreditationDao);

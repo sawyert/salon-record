@@ -3,6 +3,22 @@
         <Name>FIAP</Name>
         <Awards>
             <Award>
+                <Name>FIAP Test 1</Name>
+                <Acceptances>2</Acceptances>
+                <Countries>1</Countries>
+                <Awards>0</Awards>
+                <Images>1</Images>
+                <Salons>1</Salons>
+            </Award>
+            <Award>
+                <Name>FIAP Test 2</Name>
+                <Acceptances>2</Acceptances>
+                <Countries>1</Countries>
+                <Awards>1</Awards>
+                <Images>3</Images>
+                <Salons>2</Salons>
+            </Award>
+            <Award>
                 <Name>AFIAP</Name>
                 <Acceptances>40</Acceptances>
                 <Countries>8</Countries>

@@ -1,12 +1,8 @@
 package uk.co.drumcoder.salon.service.country.dao;
 
-import lombok.Getter;
-import uk.co.drumcoder.salon.service.award.dao.AwardDao;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class CountryListDao {
 

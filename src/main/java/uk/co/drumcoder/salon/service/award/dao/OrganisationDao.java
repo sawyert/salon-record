@@ -1,19 +1,38 @@
 package uk.co.drumcoder.salon.service.award.dao;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import uk.co.drumcoder.salon.framework.AbstractDao;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class OrganisationDao extends AbstractDao {
-    private String name;
+
+    private AwardListDao awardList = new AwardListDao();
+    private final String name;
+
+    public OrganisationDao(String name) {
+        super();
+
+        this.name = name;
+    }
+
+    public int awardCount() {
+        return this.awardList.awardCount();
+    }
+
+    public AwardDao getAward(int position) {
+        return this.awardList.getAwardByPosition(position);
+    }
+
+    public void add(AwardDao award) {
+        this.awardList.add(award);
+    }
+
+    public void addResults(SalonDao salon) {
+        for (AwardDao eachAward : this.awardList.notAchievedList()) {
+            eachAward.addResults(salon);
+        }
+    }
 }

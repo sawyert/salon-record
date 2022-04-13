@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Photo Art Vision</Name>
+    <Web>http://vision.photoart.cz/</Web>
+    <Country>Czech Republic</Country>
+    <Year>2016</Year>
+    <JudgeDate>04-12-2016</JudgeDate>
+    <NotificationDate>11-12-2016</NotificationDate>
+    <Accreditations>
+      <Accreditation type="FIAP">2016/499</Accreditation>
+      <Accreditation type="PSA">2016-317</Accreditation>
+    </Accreditations>
+    <Cost>22.07</Cost>
+    <AcceptedImages>
+        <Image award="PSA HM">Into The Mist</Image>
+    </AcceptedImages>
+</Salon>

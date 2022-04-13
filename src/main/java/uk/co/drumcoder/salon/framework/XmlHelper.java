@@ -23,7 +23,7 @@ public interface XmlHelper {
         }
     }
 
-    static int getLong(Element element, String childName) {
+    static int getInt(Element element, String childName) {
         String text = element.getChildText(childName);
         if (text == null) {
             return 0;

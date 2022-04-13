@@ -25,4 +25,8 @@ public class AccreditationListDao {
 
         throw new UnsupportedOperationException("Accreditation for " + organisationName + " not found");
     }
+
+    public List<AccreditationDao> list() {
+        return this.accreditations;
+    }
 }

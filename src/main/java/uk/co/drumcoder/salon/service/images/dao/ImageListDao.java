@@ -1,6 +1,9 @@
 package uk.co.drumcoder.salon.service.images.dao;
 
+import uk.co.drumcoder.salon.service.achievements.dao.SalonPrizeDao;
+
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class ImageListDao {
@@ -36,5 +39,19 @@ public class ImageListDao {
 
     public ImageDao get(int position) {
         return this.images.get(position);
+    }
+
+    public Collection<? extends ImageDao> list() {
+        return this.images;
+    }
+
+    public List<SalonPrizeDao> getAwardedImages() {
+        List<SalonPrizeDao> allSalonPrizes = new ArrayList<>();
+        for (ImageDao eachImage : this.images) {
+            if (eachImage.getAward() != null) {
+                allSalonPrizes.add(new SalonPrizeDao(eachImage));
+            }
+        }
+        return allSalonPrizes;
     }
 }

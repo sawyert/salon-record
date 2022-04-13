@@ -31,4 +31,8 @@ public class SalonListDao {
         }
         throw new UnsupportedOperationException("Salon " + salonName + " not found");
     }
+
+    public List<SalonDao> list() {
+        return this.salons;
+    }
 }
