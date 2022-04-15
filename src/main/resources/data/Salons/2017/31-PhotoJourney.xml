@@ -1,0 +1,19 @@
+<Salon>
+    <Name>Photo Journey</Name>
+    <Web>http://journey.photosalon.cz</Web>
+    <Country>Czech Republic</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="FIAP">2017/478</Accreditation>
+    </Accreditations>
+    <Cost>28.92</Cost>
+    <AcceptedImages>
+        <Image>Grasses Triptych</Image>
+        <Image award="FIAP Ribbon">Into The Mist</Image>
+        <Image>Budir Church</Image>
+    </AcceptedImages>
+</Salon>
+
+

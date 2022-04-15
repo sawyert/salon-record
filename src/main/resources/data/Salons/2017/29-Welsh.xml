@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Welsh</Name>
+    <Web>http://thewpf.co.uk/?cat=9</Web>
+    <Country>Wales</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-250</Accreditation>
+        <Accreditation type="FIAP">2017/379</Accreditation>
+    </Accreditations>
+    <Cost>18</Cost>
+    <AcceptedImages>
+        <Image>Olivers Castle</Image>
+    </AcceptedImages>
+</Salon>

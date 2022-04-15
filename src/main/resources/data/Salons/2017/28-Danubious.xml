@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Danubious</Name>
+    <Web>http://www.photoclub.voltin.ro</Web>
+    <Country>Romania</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-237</Accreditation>
+        <Accreditation type="FIAP">2017/313</Accreditation>
+    </Accreditations>
+    <Cost>23.26</Cost>
+    <AcceptedImages>
+        <Image>The Watcher In The Waves</Image>
+    </AcceptedImages>
+</Salon>

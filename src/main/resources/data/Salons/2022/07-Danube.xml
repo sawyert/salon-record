@@ -1,0 +1,57 @@
+<Circuit>
+    <Name>People Of The World</Name>
+    <Web>https://photoclub-danube.com/</Web>
+    <Cost>30.77</Cost>
+    <JudgeDate>04-04-2022</JudgeDate>
+    <NotificationDate>140-04-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Vidin</Name>
+            <Country>Bulgaria</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-156</Accreditation>
+                <Accreditation type="FIAP">2022/131</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Contented Owl</Image>
+                <Image>Three Figures</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Jesenice</Name>
+            <Country>Slovenia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-156</Accreditation>
+                <Accreditation type="FIAP">2022/132</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Contented Owl</Image>
+                <Image>Mossy Frog On Branch</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Donji Milanovac</Name>
+            <Country>Serbia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-156</Accreditation>
+                <Accreditation type="FIAP">2022/130</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Red Fox</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Paracin</Name>
+            <Country>Serbia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-156</Accreditation>
+                <Accreditation type="FIAP">2022/133</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image award="Salon Mention">Red Fox</Image>
+                <Image>Water Vole In Bank</Image>
+                <Image>Mossy Frog On Branch</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

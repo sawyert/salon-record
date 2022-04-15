@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Golden</Name>
+    <Web>https://www.the-golden.dk/public_default.php</Web>
+    <Country>Denmark</Country>
+    <Year>2022</Year>
+    <JudgeDate>06-03-2022</JudgeDate>
+    <NotificationDate>30-03-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-51</Accreditation>
+        <Accreditation type="FIAP">2022/034</Accreditation>
+    </Accreditations>
+    <Cost>18.33</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>

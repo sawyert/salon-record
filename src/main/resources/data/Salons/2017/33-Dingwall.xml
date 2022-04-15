@@ -1,0 +1,18 @@
+<Salon>
+    <Name>Dingwall</Name>
+    <Web>http://www.dingwallcameraclub.com/nationalcompetition.asp</Web>
+    <Country>England</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="BPE">2017</Accreditation>
+    </Accreditations>
+    <Cost>12</Cost>
+    <AcceptedImages>
+        <Image>Into The Mist</Image>
+        <Image>The Watcher In The Waves</Image>
+    </AcceptedImages>
+</Salon>
+
+

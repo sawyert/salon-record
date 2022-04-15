@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Southampton</Name>
+    <Web></Web>https://southamptoninternationalexhibition.co.uk/</Web>
+    <Country>England</Country>
+    <Year>2022</Year>
+    <JudgeDate>06-03-2022</JudgeDate>
+    <NotificationDate>20-03-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-003</Accreditation>
+        <Accreditation type="FIAP">2022-102</Accreditation>
+    </Accreditations>
+    <Cost>21</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>

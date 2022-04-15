@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Swedish International</Name>
+    <Web>https://www.svenskfotografi.org/internationellt/swedish-international-exhibition/</Web>
+    <Country>Sweden</Country>
+    <Year>2022</Year>
+    <JudgeDate>27-02-2022</JudgeDate>
+    <NotificationDate>06-03-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="FIAP">2022/123</Accreditation>
+    </Accreditations>
+    <Cost>18.33</Cost>
+    <AcceptedImages>
+        <Image>The Opening</Image>
+        <Image award="GPU Ribbon Mono">Desolate Tree</Image>
+    </AcceptedImages>
+</Salon>

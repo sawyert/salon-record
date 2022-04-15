@@ -1,0 +1,19 @@
+<Salon>
+    <Name>Smethwick</Name>
+    <Web>http://www.smethwickps.co.uk/sps-international/4591954408</Web>
+    <Country>England</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-325</Accreditation>
+        <Accreditation type="FIAP">2017/407</Accreditation>
+    </Accreditations>
+    <Cost>23</Cost>
+    <AcceptedImages>
+        <Image>Into The Mist</Image>
+        <Image>The Watcher In The Waves</Image>
+        <Image>Olivers Castle</Image>
+        <Image>Cathedral Ceiling</Image>
+    </AcceptedImages>
+</Salon>

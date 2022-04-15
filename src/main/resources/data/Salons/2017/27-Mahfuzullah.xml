@@ -1,0 +1,18 @@
+<Salon>
+    <Name>Mahfuzullah Memorial</Name>
+    <Web>http://mmsalon.net/</Web>
+    <Country>Bangladesh</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-210</Accreditation>
+        <Accreditation type="FIAP">2017/281</Accreditation>
+    </Accreditations>
+    <Cost>23.32</Cost>
+    <AcceptedImages>
+        <Image>Heron Fishing</Image>
+        <Image>Water Vole In Pipe</Image>
+        <Image>Flooding In Leeds</Image>
+    </AcceptedImages>
+</Salon>

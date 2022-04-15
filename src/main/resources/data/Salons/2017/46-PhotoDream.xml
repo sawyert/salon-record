@@ -1,0 +1,25 @@
+<Salon>
+    <Name>Photo Dream</Name>
+    <Web>http://www.pca-exhibition.com/photodream</Web>
+    <Country>Serbia</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-383</Accreditation>
+        <Accreditation type="FIAP">2017/462</Accreditation>
+    </Accreditations>
+    <Cost>18.33</Cost>
+    <AcceptedImages>
+        <Image>Mdina Malta</Image>
+        <Image>Little Owl</Image>
+        <Image>Young Red Kite</Image>
+        <Image>Great Grey Owl</Image>
+        <Image award="PCA HM">Grasses Triptych</Image>
+        <Image>Olivers Castle</Image>
+        <Image>Ruins By Night</Image>
+        <Image>BirdsS ilhouette</Image>
+        <Image>Zombie Attack</Image>
+        <Image>Theres Something Behind You</Image>
+    </AcceptedImages>
+</Salon>

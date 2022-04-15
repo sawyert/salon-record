@@ -1,0 +1,25 @@
+<Salon>
+    <Name>Canvas</Name>
+    <Web>http://www.gradacfoto.com/</Web>
+    <Country>Montenegro</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-290</Accreditation>
+        <Accreditation type="FIAP">2017/364</Accreditation>
+    </Accreditations>
+    <Cost>17.56</Cost>
+    <AcceptedImages>
+        <Image>Olivers Castle</Image>
+    </AcceptedImages>
+</Salon>
+
+
+<Image>Into The Mist</Image>
+                new CompetitionEntryEntity { Section = lSalonYearCanvasColour, Image = lAWorldBeyond, IsAwarded = false, IsAccepted = true, Score=20 },
+<Image>The Watcher In The Waves</Image>
+                new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score= 19},
+                new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=19 },
+                new CompetitionEntryEntity { Section = lSalonYearCanvasNature, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = true, Score=24 },
+                new CompetitionEntryEntity { Section = lSalonYearCanvasTravel, Image = lAfternoonGun, IsAwarded = false, IsAccepted = true, Score=21 },

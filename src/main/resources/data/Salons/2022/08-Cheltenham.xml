@@ -1,0 +1,18 @@
+<Salon>
+    <Name>Cheltenham</Name>
+    <Web>https://cheltenhamcameraclub.uk/salon-2022//Web>
+    <Country>England</Country>
+    <Year>2022</Year>
+    <JudgeDate>16-04-2022</JudgeDate>
+    <NotificationDate>24-04-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-109</Accreditation>
+        <Accreditation type="FIAP">2022/059</Accreditation>
+    </Accreditations>
+    <Cost>21</Cost>
+    <AcceptedImages>
+        <Image>The Abstraction Device</Image>
+        <Image>Overseer</Image>
+        <Image>Mossy Frog on Branch</Image>
+    </AcceptedImages>
+</Salon>

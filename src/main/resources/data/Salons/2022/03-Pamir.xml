@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Pamir</Name>
+    <Web>https://www.pamirexhibition.com/</Web>
+    <Country>Tajikistan</Country>
+    <Year>2022</Year>
+    <JudgeDate>04-03-2022</JudgeDate>
+    <NotificationDate>18-03-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-032</Accreditation>
+        <Accreditation type="FIAP">2022/230</Accreditation>
+    </Accreditations>
+    <Cost>22.82</Cost>
+    <AcceptedImages>
+        <Image>And The Light Illuminates</Image>
+    </AcceptedImages>
+</Salon>

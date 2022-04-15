@@ -1,0 +1,22 @@
+<Salon>
+    <Name>ISO</Name>
+    <Web>http://www.ddcontest.com</Web>
+    <Country>Belgium</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-294</Accreditation>
+        <Accreditation type="FIAP">2017/316</Accreditation>
+    </Accreditations>
+    <Cost>14.05</Cost>
+    <AcceptedImages>
+        <Image>The Watcher In The Waves</Image>
+        <Image>The Watcher</Image>
+        <Image>Orbs Triptych</Image>
+        <Image>Across The Lake</Image>
+        <Image>A World Beyond</Image>
+        <Image>Water Vole In Pipe</Image>
+    </AcceptedImages>
+</Salon>
+
