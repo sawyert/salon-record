@@ -10,10 +10,10 @@ import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 
 @Getter
 @Setter
-public class AwardAchievements extends AbstractDao {
+public class AwardAchievementsDao extends AbstractDao {
     private final OrganisationListDao organisationList ;
 
-    public AwardAchievements(OrganisationListDao organisationList) {
+    public AwardAchievementsDao(OrganisationListDao organisationList) {
         super();
         this.organisationList = organisationList;
     }

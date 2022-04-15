@@ -2,7 +2,8 @@ package uk.co.drumcoder.salon.service.achievements;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import uk.co.drumcoder.salon.service.achievements.dao.AwardAchievements;
+import uk.co.drumcoder.salon.service.achievements.dao.AwardAchievementsDao;
+import uk.co.drumcoder.salon.service.achievements.dao.SubmissionListDao;
 import uk.co.drumcoder.salon.service.award.dao.OrganisationListDao;
 import uk.co.drumcoder.salon.service.award.AwardService;
 import uk.co.drumcoder.salon.service.salon.SalonService;
@@ -16,17 +17,17 @@ public class AchievementsServiceImpl implements AchievementsService {
     private final SalonService salonService;
 
     @Override
-    public AwardAchievements fetchAllAwardsStatus() {
+    public AwardAchievementsDao fetchAllAwardsStatus() {
         OrganisationListDao allAwards = this.awardService.listAllAwards();
         SalonListDao salons = this.salonService.fetchAllSalons();
 
-        AwardAchievements awardsWithStatus = this.populate(allAwards, salons);
+        AwardAchievementsDao awardsWithStatus = this.populate(allAwards, salons);
         return awardsWithStatus;
     }
 
-    private AwardAchievements populate(OrganisationListDao allAwards, SalonListDao salons) {
+    private AwardAchievementsDao populate(OrganisationListDao allAwards, SalonListDao salons) {
         // return structure - populate with awards
-        AwardAchievements awardAchievements = new AwardAchievements(allAwards);
+        AwardAchievementsDao awardAchievements = new AwardAchievementsDao(allAwards);
 
         // fetch all salon results
         SalonListDao salonList = this.salonService.fetchAllSalons();
@@ -37,5 +38,15 @@ public class AchievementsServiceImpl implements AchievementsService {
          }
 
         return awardAchievements;
+    }
+
+    @Override
+    public SubmissionListDao fetchSubmissionList(String organisation, String award) {
+        AwardAchievementsDao awardAchievements = this.fetchAllAwardsStatus();
+
+        SubmissionListDao submissionList = new SubmissionListDao();
+        submissionList.populateFromAchievements(awardAchievements, organisation, award);
+
+        return submissionList;
     }
 }

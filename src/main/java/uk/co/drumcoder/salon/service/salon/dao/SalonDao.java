@@ -57,4 +57,8 @@ public class SalonDao {
         return this.acceptedImages.getAwardedImages();
 
     }
+
+    public String getAccreditationCode(String organisationName) {
+        return this.accreditations.findByOrganisation(organisationName).getCode();
+    }
 }

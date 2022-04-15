@@ -1,7 +1,5 @@
 package uk.co.drumcoder.salon.service.accreditations.dao;
 
-import antlr.NameSpace;
-
 import java.util.ArrayList;
 import java.util.List;
 

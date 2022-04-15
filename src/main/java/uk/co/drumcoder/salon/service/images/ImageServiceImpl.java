@@ -10,6 +10,7 @@ import uk.co.drumcoder.salon.service.country.dao.CountryDao;
 import uk.co.drumcoder.salon.service.country.dao.CountryListDao;
 import uk.co.drumcoder.salon.service.images.dao.ImageDao;
 import uk.co.drumcoder.salon.service.images.dao.ImageListDao;
+import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class ImageServiceImpl implements ImageService {
     }
 
     @Override
-    public ImageListDao processImagesForSalon(Element acceptedImagesElement) {
+    public ImageListDao processImagesForSalon(SalonDao salon, Element acceptedImagesElement) {
         ImageListDao allValidImages = this.fetchAllImages();
         ImageListDao salonImages = new ImageListDao();
 
@@ -48,8 +49,11 @@ public class ImageServiceImpl implements ImageService {
 
             if (imageElement.getAttribute("award") != null) {
                 imageDao.setAward(imageElement.getAttribute("award").getValue());
+            } else {
+                imageDao.setAward("");
             }
 
+            imageDao.setSalon(salon);
             salonImages.add(imageDao);
         }
 

@@ -13,9 +13,12 @@ import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 import uk.co.drumcoder.salon.service.salon.dao.SalonListDao;
 
 import java.io.File;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -32,9 +35,6 @@ public class SalonServiceImpl implements SalonService {
 
         List<String> yearFolders = this.fetchYearFolders();
         for (String year: yearFolders) {
-            if (year.startsWith(".")) {
-                continue;
-            }
             String salonPath = "data/Salons/" + year;
             System.out.println("Looking for files in " + salonPath);
             URL url = loader.getResource(salonPath);
@@ -47,9 +47,9 @@ public class SalonServiceImpl implements SalonService {
                 Document document = XmlHelper.parse(fileToLoad);
                 Element root = document.getRootElement();
                 if (root.getName().equalsIgnoreCase("circuit")) {
-                    this.processCircuit(salonList, root);
+                    this.processCircuit(salonList, root, year);
                 } else {
-                    this.processSalon(salonList, root);
+                    this.processSalon(salonList, root, year);
                 }
             }
         }
@@ -65,25 +65,37 @@ public class SalonServiceImpl implements SalonService {
         List<String> years = new ArrayList<>();
         for (File file: files) {
             String year = file.getName();
+            if (year.startsWith(".")) {
+                continue;
+            }
             years.add(year);
         }
 
-        return years;
+        return years.stream().sorted().collect(Collectors.toList());
     }
 
-    private void processCircuit(SalonListDao salonList, Element circuitElement) {
-        List<Element> salons = circuitElement.getChildren();
+    private void processCircuit(SalonListDao salonList, Element circuitElement, String year) {
+        List<Element> salons = circuitElement.getChild("Salons").getChildren();
+        BigDecimal totalCircuitCost = new BigDecimal(circuitElement.getChildText("Cost"));
+        BigDecimal eachSalonCost = totalCircuitCost.divide(new BigDecimal("" + salons.size()), 2, RoundingMode.HALF_UP);
         for (Element salon: salons) {
-            this.processSalon(salonList, salon);
+            salon.addContent(new Element("Web").setText(circuitElement.getChild("Web").getText()));
+            salon.addContent(new Element("Cost").setText(eachSalonCost.toPlainString()));
+            salon.addContent(new Element("JudgeDate").setText(circuitElement.getChild("JudgeDate").getText()));
+            salon.addContent(new Element("NotificationDate").setText(circuitElement.getChild("NotificationDate").getText()));
+            Element salonNameElement = salon.getChild("Name");
+            String newName = circuitElement.getChildText("Name") + " - " + salonNameElement.getText();
+            salonNameElement.setText(newName);
+            this.processSalon(salonList, salon, year);
         }
     }
 
-    private void processSalon(SalonListDao salonList, Element salonElement) {
+    private void processSalon(SalonListDao salonList, Element salonElement, String year) {
         SalonDao salon = new SalonDao();
         salon.setName(salonElement.getChildText("Name"));
         salon.setWeb(salonElement.getChildText("Web"));
         salon.setCountry(this.countryService.findCountry(salonElement.getChildText("Country")));
-        salon.setYear(salonElement.getChildText("Year"));
+        salon.setYear(year);
         salon.setJudgeDate(salonElement.getChildText("JudgeDate"));
         salon.setNotificationDate(salonElement.getChildText("NotificationDate"));
         if (salonElement.getChild("Cost") != null) {
@@ -91,7 +103,7 @@ public class SalonServiceImpl implements SalonService {
         }
 
         salon.setAccreditations(this.accreditationService.processAccreditations(salonElement.getChild("Accreditations")));
-        salon.setAcceptedImages(this.imageService.processImagesForSalon(salonElement.getChild("AcceptedImages")));
+        salon.setAcceptedImages(this.imageService.processImagesForSalon(salon, salonElement.getChild("AcceptedImages")));
 
         salonList.add(salon);
     }

@@ -25,7 +25,7 @@ class SalonServiceTests {
         // act
         SalonListDao allSalons = this.salonService.fetchAllSalons();
 
-        assertEquals(4, allSalons.count());
+        assertEquals(7, allSalons.count());
         assertTrue(allSalons.containsName("Photo Art Vision"));
         assertTrue(allSalons.containsName("Belghoria Photo Lovers"));
         assertFalse(allSalons.containsName("Rubbish"));

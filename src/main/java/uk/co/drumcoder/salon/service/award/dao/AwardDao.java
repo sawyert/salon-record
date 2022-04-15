@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import uk.co.drumcoder.salon.framework.AbstractDao;
 import uk.co.drumcoder.salon.service.achievements.dao.SalonPrizeDao;
+import uk.co.drumcoder.salon.service.achievements.dao.SubmissionListItemDao;
 import uk.co.drumcoder.salon.service.country.dao.CountryDao;
 import uk.co.drumcoder.salon.service.images.dao.ImageDao;
 import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
@@ -52,5 +53,15 @@ public class AwardDao extends AbstractDao {
         this.achievedImages.addAll(salon.getAcceptedImages().list());
         this.achievedSalons += 1;
         this.totalCost = this.totalCost.add(salon.getCost());
+    }
+
+    public List<SubmissionListItemDao> getSubmissionList(String organisationName) {
+        List<SubmissionListItemDao> submissionList = new ArrayList<>();
+        for (ImageDao eachImage : this.getAchievedImages()) {
+            SubmissionListItemDao submissionItem = new SubmissionListItemDao(eachImage, organisationName);
+            submissionList.add(submissionItem);
+        }
+
+        return submissionList;
     }
 }

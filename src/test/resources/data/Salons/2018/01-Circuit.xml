@@ -1,0 +1,45 @@
+<Circuit>
+    <Name>Example Circuit</Name>
+    <Web>https://drumcoder.co.uk</Web>
+    <Cost>25</Cost>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Salon 1</Name>
+            <Country>Czech Republic</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2018-111</Accreditation>
+                <Accreditation type="FIAP">2018/222</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Young Red Kite</Image>
+                <Image>Sprial Nine</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Salon 2</Name>
+            <Country>France</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2018-111</Accreditation>
+                <Accreditation type="FIAP">2018/223</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Ruins By Night</Image>
+                <Image>Sprial Nine</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Salon 3</Name>
+            <Country>Italy</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2018-111</Accreditation>
+                <Accreditation type="FIAP">2018/224</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Bolton Abbey</Image>
+                <Image>Harbour Sailing In Malta</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

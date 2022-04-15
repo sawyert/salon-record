@@ -2,6 +2,7 @@ package uk.co.drumcoder.salon.service.award.dao;
 
 import lombok.Getter;
 import lombok.Setter;
+import uk.co.drumcoder.salon.service.achievements.dao.SubmissionListItemDao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,5 +27,14 @@ public class AwardListDao {
 
     public List<AwardDao> notAchievedList() {
         return this.awards.stream().filter(a -> !a.isAchieved()).collect(Collectors.toList());
+    }
+
+    public List<SubmissionListItemDao> getSubmissionList(String organisationName, String awardName) {
+        for (AwardDao award: this.awards) {
+            if (award.getName().equals(awardName)) {
+                return award.getSubmissionList(organisationName);
+            }
+        }
+        throw new UnsupportedOperationException("Award " + awardName + " not found");
     }
 }
