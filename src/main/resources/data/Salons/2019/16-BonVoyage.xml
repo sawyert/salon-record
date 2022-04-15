@@ -1,0 +1,49 @@
+<Salon>
+    <Name>Bon Voyage</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Bon Voyage 2019
+        var lSalonBonVoyage = new SalonEntity { Name = "Bon Voyage", Website = "https://www.photoclub202.com/", Country = lCountrySerbia };
+
+        var lSalonYearBonVoyage2019 = new SalonYearEntity { Name = "Bon Voyage", Salon = lSalonBonVoyage, Year = 2019, ClosingDate = new DateTime(2019, 7, 23), JudgeDate = new DateTime(2019, 8, 6), NotificationDate = new DateTime(2019, 8, 16), CataloguesPostedDate = new DateTime(2019, 10, 22) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/420", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBonVoyage2019 },
+    });
+
+
+    var lSalonYearBonVoyage2019Travel = new SectionEntity() { SalonYear = lSalonYearBonVoyage2019, SectionType = lSectionTypeTravelPdi };
+    var lSalonYearBonVoyage2019Colour = new SectionEntity() { SalonYear = lSalonYearBonVoyage2019, SectionType = lSectionTypeColourPdi };
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 11.24M,
+        SalonYear = lSalonYearBonVoyage2019,
+        EntryDate = new DateTime(2019, 7, 20),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Travel, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Colour, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBonVoyage2019Colour, Image = lSymmetricalOrangeFlower, IsAwarded = false, IsAccepted = false, Score=0 },
+            },
+            },
+            });

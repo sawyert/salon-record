@@ -1,0 +1,42 @@
+<Salon>
+    <Name>Otofokus</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // otofocus 2021
+        var llSalonOtoFokus = new SalonEntity { Name = "Otofokus", Website = "", Country = lCountryTurkey };
+        var llSalonOtoFokus2021 = new SalonYearEntity { Name = "Otofokus", Salon = llSalonOtoFokus, Year = 2021, ClosingDate = new DateTime(2021, 9, 25), JudgeDate = new DateTime(2021, 10, 10), NotificationDate = new DateTime(2021, 10, 12), CataloguesPostedDate = new DateTime(2021, 10, 12) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2021/466", PhotoOrganisation = lFiapLevels, SalonYear = llSalonOtoFokus2021 },
+    });
+
+    var llSalonOtoFokus2021Travel = new SectionEntity() { SalonYear = llSalonOtoFokus2021, SectionType = lSectionTypeTravelPdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 15.38M,
+        SalonYear = llSalonOtoFokus2021,
+        EntryDate = new DateTime(2021, 9, 29),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = llSalonOtoFokus2021Travel, Image = lATowerByTheSea, IsAwarded = false, IsAccepted = true, Score=0 },
+
+            },
+            },
+            });

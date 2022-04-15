@@ -1,0 +1,60 @@
+<Salon>
+    <Name>MOF</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // MOF 2019
+        var lSalonYearMOF2019 = new SalonYearEntity { Name = "MOF", Salon = lSalonMof, Year = 2019, ClosingDate = new DateTime(2019, 9, 28), JudgeDate = new DateTime(2019, 10, 14), NotificationDate = new DateTime(2019, 10, 31), CataloguesPostedDate = new DateTime(2019, 10, 31) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/348", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMOF2019 },
+    });
+
+    var lSalonYearPhotoMof2019Colour = new SectionEntity() { SalonYear = lSalonYearMOF2019, SectionType = lSectionTypeColourPdi };
+    var lSalonYearPhotoMof2019Mono = new SectionEntity() { SalonYear = lSalonYearMOF2019, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearPhotoMof2019Travel = new SectionEntity() { SalonYear = lSalonYearMOF2019, SectionType = lSectionTypeTravelPdi };
+    var lSalonYearPhotoMof2019Nature = new SectionEntity() { SalonYear = lSalonYearMOF2019, SectionType = lSectionTypeNaturePdi };
+
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 23.20M,
+        SalonYear = lSalonYearMOF2019,
+        EntryDate = new DateTime(2019, 9, 28),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = lThreeRoses, IsAwarded = false, IsAccepted = false, Score=14 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 15},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=15 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = true, Score=16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score= 17},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=15 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Travel, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score= 10},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = true, Score=16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 19},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lContentedOwl, IsAwarded = true, AwardDetails = "Salon Diploma", IsAccepted = true, Score=22 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = true, Score=21 },
+
+            },
+            },
+            });

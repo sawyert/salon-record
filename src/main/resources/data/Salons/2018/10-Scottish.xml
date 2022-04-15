@@ -1,0 +1,85 @@
+<Salon>
+    <Name>Scottish</Name>
+    <Web>http</Web>
+    <Country>Scotland</Country>
+    <Year>2018</Year>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAP">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Scottish Salon 2018
+        var lSalonYearScottish2018 = new SalonYearEntity { Name = "Scottish", Salon = lSalonScottish, Year = 2018, ClosingDate = new DateTime(2018, 4, 15), JudgeDate = new DateTime(2018, 4, 29), NotificationDate = new DateTime(2018, 5, 4), CataloguesPostedDate = new DateTime(2018, 7, 15) };
+        lContext.SalonYears.Add(lSalonYearScottish2018);
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2018/141", PhotoOrganisation = lFiap, SalonYear = lSalonYearScottish2018 },
+    new AccreditationEntity() { SalonNumber = "2018-133", PhotoOrganisation = lPsa, SalonYear = lSalonYearScottish2018 },
+    });
+
+    var lTulipInTheRound = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Tulip in the Round" };
+    var lPointedReflection = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Pointed Reflection" };
+    var lTerracedOliveGrove = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Terraced Olive Grove" };
+
+    lContext.Images.AddRange(new List<ImageEntity>
+        {
+        lTulipInTheRound,
+        lPointedReflection,
+        lTerracedOliveGrove,
+        });
+
+
+        var lSalonYearScottish2018MonoPrint = new SectionEntity() { SalonYear = lSalonYearScottish2018, SectionType = lSectionTypeMonoPrint };
+        var lSalonYearScottish2018NaturePDI = new SectionEntity() { SalonYear = lSalonYearScottish2018, SectionType = lSectionTypeNaturePdi };
+        var lSalonYearScottish2018ColourPrint = new SectionEntity() { SalonYear = lSalonYearScottish2018, SectionType = lSectionTypeColourPrint };
+        var lSalonYearScottish2018ColourPDI = new SectionEntity() { SalonYear = lSalonYearScottish2018, SectionType = lSectionTypeColourPdi };
+        var lSalonYearScottish201MonoPDI = new SectionEntity() { SalonYear = lSalonYearScottish2018, SectionType = lSectionTypeMonoPdi };
+
+        lContext.SalonSections.AddRange(new List<SectionEntity> {
+        lSalonYearScottish2018MonoPrint,
+        lSalonYearScottish2018NaturePDI,
+        lSalonYearScottish2018ColourPrint,
+        lSalonYearScottish2018ColourPDI,
+        lSalonYearScottish201MonoPDI,
+        });
+
+
+        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 23.20M,
+            SalonYear = lSalonYearScottish2018,
+            EntryDate = new DateTime(2018, 4, 9),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018MonoPrint, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018MonoPrint, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = true, Score= 12},
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018MonoPrint, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=11 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018MonoPrint, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018NaturePDI, Image = lLittleOwl, IsAwarded = false, IsAccepted = false, Score= 9},
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018NaturePDI, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018NaturePDI, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018NaturePDI, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=9},
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPrint, Image = lTulipInTheRound, IsAwarded = false, IsAccepted = true, Score=13 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPrint, Image = lTheWatcher, IsAwarded = false, IsAccepted = true, Score=13 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPrint, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPrint, Image = lBlueSymmetree, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPDI, Image = lLoneTree, IsAwarded = false, IsAccepted = true, Score=12 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPDI, Image = lTheWatcherInTheWaves, IsAwarded = false, IsAccepted = true, Score=13 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPDI, Image = lAcrossTheLake, IsAwarded = false, IsAccepted = true, Score=12 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish2018ColourPDI, Image = lPyramidEclipse, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish201MonoPDI, Image = lWinterTree, IsAwarded = false, IsAccepted = true, Score=12 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish201MonoPDI, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish201MonoPDI, Image = lPointedReflection, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearScottish201MonoPDI, Image = lTerracedOliveGrove, IsAwarded = false, IsAccepted = false, Score=9 },
+
+                },
+                },
+                });

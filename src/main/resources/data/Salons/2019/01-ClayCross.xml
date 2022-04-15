@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Clay Cross</Name>
+    <Web></Web>
+    <Country>England</Country>
+    <Year>2019</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="BPE">2019</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image>The Wishing Tree</Image>
+    </AcceptedImages>
+</Salon>
+

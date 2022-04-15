@@ -1,0 +1,125 @@
+<Circuit>
+    <Name>Olympic</Name>
+    <Web>http</Web>
+    <Cost>34</Cost>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Carlisle</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-<Accreditation>
+                <Accreditation type="FIAPLevels">2019/</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
+
+        // Snowy circuit 2021
+        var lTheFirePyramid = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Fire Pyramid" };
+
+        var lSalonOlympicApollo2021 = new SalonYearEntity { Name = "Olympic - Apollo", Salon = lSalonOlympicApollo, Year = 2021, ClosingDate = new DateTime(2021, 10, 17), JudgeDate = new DateTime(2021, 11, 7), NotificationDate = new DateTime(2021, 11, 21), CataloguesPostedDate = new DateTime(2021, 11, 21)};
+        var lSalonOlympicHermes2021 = new SalonYearEntity { Name = "Olympic - Hermes", Salon = lSalonOlympicHermes, Year = 2021, ClosingDate = new DateTime(2021, 10, 17), JudgeDate = new DateTime(2021, 11, 7), NotificationDate = new DateTime(2021, 11, 21), CataloguesPostedDate = new DateTime(2021, 11, 21)};
+        var lSalonOlympicZeus2021 = new SalonYearEntity { Name = "Olympic - Zeus", Salon = lSalonOlympicZeus, Year = 2021, ClosingDate = new DateTime(2021, 10, 17), JudgeDate = new DateTime(2021, 11, 7), NotificationDate = new DateTime(2021, 11, 21), CataloguesPostedDate = new DateTime(2021, 11, 21)};
+        var lSalonOlympicAphrodite2021 = new SalonYearEntity { Name = "Olympic - Aphrodite", Salon = lSalonOlympicAphrodite, Year = 2021, ClosingDate = new DateTime(2021, 10, 17), JudgeDate = new DateTime(2021, 11, 7), NotificationDate = new DateTime(2021, 11, 21), CataloguesPostedDate = new DateTime(2021, 11, 21)};
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2021/385", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOlympicApollo2021 },
+    new AccreditationEntity() { SalonNumber = "2021-1486", PhotoOrganisation = lPsa, SalonYear = lSalonOlympicApollo2021 },
+    });
+    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+        new AccreditationEntity() { SalonNumber = "2021/384", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOlympicHermes2021 },
+        new AccreditationEntity() { SalonNumber = "2021-1486", PhotoOrganisation = lPsa, SalonYear = lSalonOlympicHermes2021 },
+        });
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+            new AccreditationEntity() { SalonNumber = "2021/382", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOlympicZeus2021 },
+            new AccreditationEntity() { SalonNumber = "2021-1486", PhotoOrganisation = lPsa, SalonYear = lSalonOlympicZeus2021 },
+            });
+            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+                new AccreditationEntity() { SalonNumber = "2021/383", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOlympicAphrodite2021 },
+                new AccreditationEntity() { SalonNumber = "2021-1486", PhotoOrganisation = lPsa, SalonYear = lSalonOlympicAphrodite2021 },
+                });
+
+                var lSalonOlympicApollo2021Nature = new SectionEntity() { SalonYear = lSalonOlympicApollo2021, SectionType = lSectionTypeNaturePdi };
+                var lSalonOlympicApollo2021Travel = new SectionEntity() { SalonYear = lSalonOlympicApollo2021, SectionType = lSectionTypeTravelPdi };
+                var lSalonOlympicHermes2021Nature = new SectionEntity() { SalonYear = lSalonOlympicHermes2021, SectionType = lSectionTypeNaturePdi };
+                var lSalonOlympicHermes2021Travel = new SectionEntity() { SalonYear = lSalonOlympicHermes2021, SectionType = lSectionTypeTravelPdi };
+                var lSalonOlympicHermes2021Colour = new SectionEntity() { SalonYear = lSalonOlympicHermes2021, SectionType = lSectionTypeColourPdi };
+                var lSalonOlympicZeus2021Travel = new SectionEntity() { SalonYear = lSalonOlympicZeus2021, SectionType = lSectionTypeTravelPdi };
+                var lSalonOlympicZeus2021Colour = new SectionEntity() { SalonYear = lSalonOlympicZeus2021, SectionType = lSectionTypeColourPdi };
+                var lSalonOlympicZeus2021Nature = new SectionEntity() { SalonYear = lSalonOlympicZeus2021, SectionType = lSectionTypeNaturePdi };
+                var lSalonOlympicAphrodite2021Travel = new SectionEntity() { SalonYear = lSalonOlympicAphrodite2021, SectionType = lSectionTypeTravelPdi };
+
+
+                lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                    new SubmissionEntity(){
+                    IsJudged = true,
+                    EntryCost = 8.88M,
+                    SalonYear = lSalonOlympicApollo2021,
+                    EntryDate = new DateTime(2021, 10, 17),
+                    Person = lTim,
+                    Entries = new List<CompetitionEntryEntity> {
+
+                        new CompetitionEntryEntity { Section = lSalonOlympicApollo2021Nature, Image = lHedgehogInLeaves, IsAwarded = false, IsAccepted = true, Score=0 },
+                        new CompetitionEntryEntity { Section = lSalonOlympicApollo2021Travel, Image = lGlacierWalkers, IsAwarded = false, IsAccepted = true, Score=0 },
+
+                        },
+                        },
+                        });
+
+                        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                            new SubmissionEntity(){
+                            IsJudged = true,
+                            EntryCost = 8.88M,
+                            SalonYear = lSalonOlympicHermes2021,
+                            EntryDate = new DateTime(2021, 10, 17),
+                            Person = lTim,
+                            Entries = new List<CompetitionEntryEntity> {
+
+                                new CompetitionEntryEntity { Section = lSalonOlympicHermes2021Nature, Image = lLeopardGecko, IsAwarded = false, IsAccepted = true, Score=0 },
+                                new CompetitionEntryEntity { Section = lSalonOlympicHermes2021Travel, Image = lGlacierWalkers, IsAwarded = false, IsAccepted = true, Score=0 },
+                                new CompetitionEntryEntity { Section = lSalonOlympicHermes2021Colour, Image = lTwoButterflies, IsAwarded = false, IsAccepted = true, Score=0 },
+                                new CompetitionEntryEntity { Section = lSalonOlympicHermes2021Colour, Image = lTheFirePyramid, IsAwarded = false, IsAccepted = true, Score=0 },
+
+                                },
+                                },
+                                });
+
+                                lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                                    new SubmissionEntity(){
+                                    IsJudged = true,
+                                    EntryCost = 8.88M,
+                                    SalonYear = lSalonOlympicZeus2021,
+                                    EntryDate = new DateTime(2021, 10, 17),
+                                    Person = lTim,
+                                    Entries = new List<CompetitionEntryEntity> {
+
+                                        new CompetitionEntryEntity { Section = lSalonOlympicZeus2021Travel, Image = lATowerByTheSea, IsAwarded = false, IsAccepted = true, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonOlympicZeus2021Travel, Image = lGlacierWalkers, IsAwarded = false, IsAccepted = true, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonOlympicZeus2021Colour, Image = lTwoButterflies, IsAwarded = false, IsAccepted = true, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonOlympicZeus2021Colour, Image = lTheFirePyramid, IsAwarded = false, IsAccepted = true, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonOlympicZeus2021Nature, Image = lHedgehogInLeaves, IsAwarded = false, IsAccepted = true, Score=0 },
+
+                                        },
+                                        },
+                                        });
+
+                                        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                                            new SubmissionEntity(){
+                                            IsJudged = true,
+                                            EntryCost = 8.88M,
+                                            SalonYear = lSalonOlympicAphrodite2021,
+                                            EntryDate = new DateTime(2021, 10, 17),
+                                            Person = lTim,
+                                            Entries = new List<CompetitionEntryEntity> {
+
+                                                new CompetitionEntryEntity { Section = lSalonOlympicAphrodite2021Travel, Image = lATowerByTheSea, IsAwarded = false, IsAccepted = true, Score=0 },
+                                                new CompetitionEntryEntity { Section = lSalonOlympicAphrodite2021Travel, Image = lGlacierWalkers, IsAwarded = true, AwardDetails="GPU HM", IsAccepted = true, Score=0 },
+
+                                                },
+                                                },
+                                                });

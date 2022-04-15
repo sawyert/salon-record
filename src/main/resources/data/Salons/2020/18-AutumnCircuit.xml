@@ -1,0 +1,57 @@
+<Circuit>
+    <Name>Autumn</Name>
+    <Web>http</Web>
+    <Cost>34</Cost>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Carlisle</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-<Accreditation>
+                <Accreditation type="FIAPLevels">2019/</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
+
+        // autumn circuit
+        var lAutumnCircuit2020 = new CircuitEntity() { Name = "Autumn Circuit" };
+        lContext.Circuits.AddRange(new List<CircuitEntity> {
+    lAutumnCircuit2020,
+    });
+
+    var lSalonAutumnMladost = new SalonEntity { Name = "Autumn - Mladost", Website = "https://victory-photo.club/", Country = lCountrySerbia };
+
+
+    var lSalonAutumnMladost2020 = new SalonYearEntity { Name = "Autumn - Mladost", Salon = lSalonAutumnMladost, Year = 2020, ClosingDate = new DateTime(2020, 11, 8), JudgeDate = new DateTime(2020, 11, 19), NotificationDate = new DateTime(2020, 11, 20), CataloguesPostedDate = new DateTime(2020, 11, 20), Circuit = lAutumnCircuit2020 };
+
+    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+        new AccreditationEntity() { SalonNumber = "2020/491", PhotoOrganisation = lFiapLevels, SalonYear = lSalonAutumnMladost2020 },
+        });
+
+        var lSalonAutumnMladost2020People = new SectionEntity() { SalonYear = lSalonAutumnMladost2020, SectionType = lSectionTypePeoplePdi };
+        var lSalonAutumnMladost2020Nature = new SectionEntity() { SalonYear = lSalonAutumnMladost2020, SectionType = lSectionTypeNaturePdi };
+
+
+        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 31.98M,
+            SalonYear = lSalonAutumnMladost2020,
+            EntryDate = new DateTime(2020, 11, 8),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+
+                new CompetitionEntryEntity { Section = lSalonAutumnMladost2020People, Image = lDomiAtTheBall, IsAwarded = false, IsAccepted = true, Score=21 },
+                new CompetitionEntryEntity { Section = lSalonAutumnMladost2020Nature, Image = lRedFox, IsAwarded = false, IsAccepted = true, Score= 21 },
+
+
+
+                },
+                },
+                });

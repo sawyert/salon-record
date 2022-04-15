@@ -1,0 +1,60 @@
+<Salon>
+    <Name>Tramontana</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Tramontana 2019
+        var lSalonYearTramontana2019 = new SalonYearEntity { Name = "Tramontana", Salon = lSalonTramontana, Year = 2019, ClosingDate = new DateTime(2019, 10, 27), JudgeDate = new DateTime(2019, 11, 7), NotificationDate = new DateTime(2019, 11, 12), CataloguesPostedDate = new DateTime(2019, 11, 12) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/502", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearTramontana2019 },
+    new AccreditationEntity() { SalonNumber = "2019-461", PhotoOrganisation = lPsa, SalonYear = lSalonYearTramontana2019 },
+    });
+
+    var lSalonYearPhotoTramontana2019Colour = new SectionEntity() { SalonYear = lSalonYearTramontana2019, SectionType = lSectionTypeColourPdi };
+    var lSalonYearPhotoTramontana2019Mono = new SectionEntity() { SalonYear = lSalonYearTramontana2019, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearPhotoTramontana2019Nature = new SectionEntity() { SalonYear = lSalonYearTramontana2019, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearPhotoTramontana2019People = new SectionEntity() { SalonYear = lSalonYearTramontana2019, SectionType = lSectionTypePeoplePdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 17.59M,
+        SalonYear = lSalonYearTramontana2019,
+        EntryDate = new DateTime(2019, 10, 14),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lTheSeamstressTakesHerFee, IsAwarded = false, IsAccepted = false, Score=18 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 14 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lToDreamOfCalmerShores, IsAwarded = false, IsAccepted = false, Score=13 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = false, Score=13 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 17},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=18 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=13 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = true, AwardDetails="PC Perasto Praise", IsAccepted = true, Score=22 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = false, Score=17 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=19 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lJilted, IsAwarded = false, IsAccepted = true, Score=20 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score= 19},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lEngineDriver, IsAwarded = false, IsAccepted = false, Score=16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score=16 },
+
+            },
+            },
+            });

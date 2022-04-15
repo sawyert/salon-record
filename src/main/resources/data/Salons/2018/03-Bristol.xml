@@ -1,0 +1,69 @@
+<Salon>
+    <Name>Bristol</Name>
+    <Web>http</Web>
+    <Country>England</Country>
+    <Year>2018</Year>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAP">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Bristol
+        var lSalonYearBristol2018 = new SalonYearEntity { Name = "Bristol", Salon = lSalonBristol, Year = 2018, ClosingDate = new DateTime(2018, 1, 27), JudgeDate = new DateTime(2018, 2, 18), NotificationDate = new DateTime(2018, 2, 26), CataloguesPostedDate = new DateTime(2018, 5, 6) };
+        lContext.SalonYears.Add(lSalonYearBristol2018);
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2018/023", PhotoOrganisation = lFiap, SalonYear = lSalonYearBristol2018 },
+    new AccreditationEntity() { SalonNumber = "2018-023", PhotoOrganisation = lPsa, SalonYear = lSalonYearBristol2018 },
+    new AccreditationEntity() { SalonNumber = "GPU L180010", PhotoOrganisation = lGpu, SalonYear = lSalonYearBristol2018 },
+    });
+
+    var lSalonYearBristol2018Colour = new SectionEntity() { SalonYear = lSalonYearBristol2018, SectionType = lSectionTypeColourPdi };
+    var lSalonYearBristol2018Mono = new SectionEntity() { SalonYear = lSalonYearBristol2018, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearBristol2018Nature = new SectionEntity() { SalonYear = lSalonYearBristol2018, SectionType = lSectionTypeNaturePdi };
+
+    lContext.SalonSections.AddRange(new List<SectionEntity> {
+        lSalonYearBristol2018Colour,
+        lSalonYearBristol2018Mono,
+        lSalonYearBristol2018Nature,
+        });
+
+        var lSymmetreeBlue = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Blue Symmetree Blue" };
+
+
+        lContext.Images.AddRange(new List<ImageEntity>
+            {
+            lSymmetreeBlue,
+            });
+
+
+            lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 17.00M,
+            SalonYear = lSalonYearBristol2018,
+            EntryDate = new DateTime(2018, 1, 21),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lThreeTulipCircle, IsAwarded = false, IsAccepted = false, Score= 10},
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lSymmetreeBlue, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score= 11},
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lTheTower, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Nature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Nature, Image = lWaterVole, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Nature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=11 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Nature, Image = lRimlitKingfisher, IsAwarded = false, IsAccepted = false, Score=9 },
+                },
+                },
+                });

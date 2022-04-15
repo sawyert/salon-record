@@ -1,0 +1,61 @@
+<Salon>
+    <Name>Narava</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+
+        // Narava 2019
+        var lSalonNarava = new SalonEntity { Name = "Narava", Website = "http://www.fotodrustvo-grca.si/narava.html", Country = lCountrySlovenia };
+
+        var lSalonYearNarava2019 = new SalonYearEntity { Name = "Narava", Salon = lSalonNarava, Year = 2019, ClosingDate = new DateTime(2019, 8, 29), JudgeDate = new DateTime(2019, 9, 8), NotificationDate = new DateTime(2019, 9, 15), CataloguesPostedDate = new DateTime(2019, 10, 30) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/291", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearNarava2019 },
+    new AccreditationEntity() { SalonNumber = "2019-422", PhotoOrganisation = lPsa, SalonYear = lSalonYearNarava2019 },
+    });
+
+    var lSalonYearNarava2019Open = new SectionEntity() { SalonYear = lSalonYearNarava2019, SectionType = lSectionTypeColourPdi };
+    var lSalonYearNarava2019Scapes = new SectionEntity() { SalonYear = lSalonYearNarava2019, SectionType = lSectionTypeScapesPdi };
+    var lSalonYearNarava2019Nature = new SectionEntity() { SalonYear = lSalonYearNarava2019, SectionType = lSectionTypeNaturePdi };
+
+
+    var lSingleYellowRose = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Single Yellow Rose" };
+    var lMossyFrogOnBranch = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Mossy Frog On Branch" };
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 23.75M,
+        SalonYear = lSalonYearNarava2019,
+        EntryDate = new DateTime(2019, 8, 26),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Open, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Open, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Open, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Open, Image = lSingleYellowRose, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Scapes, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Scapes, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Scapes, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Scapes, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score=0 },
+
+            },
+            },
+            });

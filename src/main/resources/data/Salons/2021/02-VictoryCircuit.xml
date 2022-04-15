@@ -1,0 +1,110 @@
+<Circuit>
+    <Name>Victory</Name>
+    <Web>Victory</Web>
+    <Cost>34</Cost>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Carlisle</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-<Accreditation>
+                <Accreditation type="FIAPLevels">2019/</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
+
+        // victory circuit
+        var lGlacierWalkers = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Glacier Walkers" };
+        var lVictoryCircuit2021 = new CircuitEntity() { Name = "Victory Circuit" };
+        lContext.Circuits.AddRange(new List<CircuitEntity> {
+    lVictoryCircuit2021,
+    });
+
+    var lSalonVictoryPerasto = new SalonEntity { Name = "Victory - Perasto", Website = "https://victory-photo.club/", Country = lCountryMontenegro };
+    var lSalonVictoryCacak = new SalonEntity { Name = "Victory - Cacak", Website = "https://victory-photo.club/", Country = lCountrySerbia };
+    var lSalonVictoryMladost = new SalonEntity { Name = "Victory - Mladost", Website = "https://victory-photo.club/", Country = lCountryMontenegro };
+
+
+    var lSalonVictoryPerasto2021 = new SalonYearEntity { Name = "Victory - Perasto", Salon = lSalonVictoryPerasto, Year = 2021, ClosingDate = new DateTime(2021, 2, 7), JudgeDate = new DateTime(2021, 2, 17), NotificationDate = new DateTime(2021, 2, 23), CataloguesPostedDate = new DateTime(2021, 2, 23), Circuit = lVictoryCircuit2021 };
+    var lSalonVictoryCacak2021 = new SalonYearEntity { Name = "Victory - Cacak", Salon = lSalonVictoryCacak, Year = 2021, ClosingDate = new DateTime(2021, 2, 7), JudgeDate = new DateTime(2021, 2, 17), NotificationDate = new DateTime(2021, 2, 23), CataloguesPostedDate = new DateTime(2021, 2, 23), Circuit = lVictoryCircuit2021 };
+    var lSalonVictoryMladost2021 = new SalonYearEntity { Name = "Victory - Mladost", Salon = lSalonVictoryMladost, Year = 2021, ClosingDate = new DateTime(2021, 2, 7), JudgeDate = new DateTime(2021, 2, 17), NotificationDate = new DateTime(2021, 2, 23), CataloguesPostedDate = new DateTime(2021, 2, 23), Circuit = lVictoryCircuit2021 };
+
+
+    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+        new AccreditationEntity() { SalonNumber = "2021/131", PhotoOrganisation = lFiapLevels, SalonYear = lSalonVictoryPerasto2021 },
+        new AccreditationEntity() { SalonNumber = "2021-1099", PhotoOrganisation = lPsa, SalonYear = lSalonVictoryPerasto2021 },
+        });
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+            new AccreditationEntity() { SalonNumber = "2021/132", PhotoOrganisation = lFiapLevels, SalonYear = lSalonVictoryCacak2021 },
+            new AccreditationEntity() { SalonNumber = "2021-1099", PhotoOrganisation = lPsa, SalonYear = lSalonVictoryCacak2021 },
+            });
+            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+                new AccreditationEntity() { SalonNumber = "2021/133", PhotoOrganisation = lFiapLevels, SalonYear = lSalonVictoryMladost2021 },
+                new AccreditationEntity() { SalonNumber = "2021-1099", PhotoOrganisation = lPsa, SalonYear = lSalonVictoryMladost2021 },
+                });
+
+                var lSalonVictoryCacak2021Nature = new SectionEntity() { SalonYear = lSalonVictoryCacak2021, SectionType = lSectionTypeNaturePdi };
+                var lSalonVictoryCacak2021Mono = new SectionEntity() { SalonYear = lSalonVictoryCacak2021, SectionType = lSectionTypeMonoPdi };
+
+                var lSalonVictoryMladost2021Travel = new SectionEntity() { SalonYear = lSalonVictoryMladost2021, SectionType = lSectionTypeTravelPdi };
+                var lSalonVictoryPerasto2021Travel = new SectionEntity() { SalonYear = lSalonVictoryPerasto2021, SectionType = lSectionTypeTravelPdi };
+
+
+                lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                    new SubmissionEntity(){
+                    IsJudged = true,
+                    EntryCost = 11M,
+                    SalonYear = lSalonVictoryCacak2021,
+                    EntryDate = new DateTime(2021, 2, 6),
+                    Person = lTim,
+                    Entries = new List<CompetitionEntryEntity> {
+
+                        new CompetitionEntryEntity { Section = lSalonVictoryCacak2021Nature, Image = lEdibleFrog, IsAwarded = false, IsAccepted = true, Score=22 },
+                        new CompetitionEntryEntity { Section = lSalonVictoryCacak2021Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=  23},
+                        new CompetitionEntryEntity { Section = lSalonVictoryCacak2021Mono, Image = lATowerByTheSea, IsAwarded = false, IsAccepted = true, Score= 21 },
+
+
+
+                        },
+                        },
+                        });
+
+                        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                            new SubmissionEntity(){
+                            IsJudged = true,
+                            EntryCost = 11M,
+                            SalonYear = lSalonVictoryMladost2021,
+                            EntryDate = new DateTime(2021, 2, 6),
+                            Person = lTim,
+                            Entries = new List<CompetitionEntryEntity> {
+
+                                new CompetitionEntryEntity { Section = lSalonVictoryMladost2021Travel, Image = lUninterestingView, IsAwarded = false, IsAccepted = true, Score=21 },
+
+
+
+                                },
+                                },
+                                });
+
+                                lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                                    new SubmissionEntity(){
+                                    IsJudged = true,
+                                    EntryCost = 11M,
+                                    SalonYear = lSalonVictoryPerasto2021,
+                                    EntryDate = new DateTime(2021, 2, 6),
+                                    Person = lTim,
+                                    Entries = new List<CompetitionEntryEntity> {
+
+                                        new CompetitionEntryEntity { Section = lSalonVictoryPerasto2021Travel, Image = lGlacierWalkers, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score=21 },
+
+
+
+                                        },
+                                        },
+                                        });

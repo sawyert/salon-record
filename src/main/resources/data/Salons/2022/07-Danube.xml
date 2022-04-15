@@ -3,14 +3,14 @@
     <Web>https://photoclub-danube.com/</Web>
     <Cost>30.77</Cost>
     <JudgeDate>04-04-2022</JudgeDate>
-    <NotificationDate>140-04-2022</NotificationDate>
+    <NotificationDate>14-04-2022</NotificationDate>
     <Salons>
         <Salon>
             <Name>Vidin</Name>
             <Country>Bulgaria</Country>
             <Accreditations>
                 <Accreditation type="PSA">2022-156</Accreditation>
-                <Accreditation type="FIAP">2022/131</Accreditation>
+                <Accreditation type="FIAPLevels">2022/131</Accreditation>
             </Accreditations>
             <AcceptedImages>
                 <Image>Contented Owl</Image>
@@ -22,7 +22,7 @@
             <Country>Slovenia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2022-156</Accreditation>
-                <Accreditation type="FIAP">2022/132</Accreditation>
+                <Accreditation type="FIAPLevels">2022/132</Accreditation>
             </Accreditations>
             <AcceptedImages>
                 <Image>Contented Owl</Image>
@@ -34,7 +34,7 @@
             <Country>Serbia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2022-156</Accreditation>
-                <Accreditation type="FIAP">2022/130</Accreditation>
+                <Accreditation type="FIAPLevels">2022/130</Accreditation>
             </Accreditations>
             <AcceptedImages>
                 <Image>Red Fox</Image>
@@ -45,7 +45,7 @@
             <Country>Serbia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2022-156</Accreditation>
-                <Accreditation type="FIAP">2022/133</Accreditation>
+                <Accreditation type="FIAPLevels">2022/133</Accreditation>
             </Accreditations>
             <AcceptedImages>
                 <Image award="Salon Mention">Red Fox</Image>

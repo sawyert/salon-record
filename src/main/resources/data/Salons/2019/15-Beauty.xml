@@ -1,0 +1,51 @@
+<Salon>
+    <Name>Beauty</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Beauty 2019
+        var lSymmetricalOrangeFlower = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Symmetrical Orange Flower" };
+
+        var lSalonBeauty = new SalonEntity { Name = "Beauty", Website = "http://fotografija.rs/2nd-contest-of-photography-beauty-2019/", Country = lCountrySerbia };
+
+        var lSalonYearBeauty2019 = new SalonYearEntity { Name = "Beauty", Salon = lSalonBeauty, Year = 2019, ClosingDate = new DateTime(2019, 7, 22), JudgeDate = new DateTime(2019, 8, 5), NotificationDate = new DateTime(2019, 8, 15), CataloguesPostedDate = new DateTime(2019, 10, 21) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/421", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBeauty2019 },
+    });
+
+
+    var lSalonYearBeauty2019Nature = new SectionEntity() { SalonYear = lSalonYearBeauty2019, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearBeauty2019Colour = new SectionEntity() { SalonYear = lSalonYearBeauty2019, SectionType = lSectionTypeColourPdi };
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 11.24M,
+        SalonYear = lSalonYearBeauty2019,
+        EntryDate = new DateTime(2019, 7, 20),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = false, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Colour, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearBeauty2019Colour, Image = lSymmetricalOrangeFlower, IsAwarded = false, IsAccepted = false, Score=0 },
+            },
+            },
+            });

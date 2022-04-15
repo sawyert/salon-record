@@ -1,0 +1,84 @@
+<Salon>
+    <Name>Boka Bay</Name>
+    <Web>http://www.gradacfoto.com</Web>
+    <Country>Montenegro</Country>
+    <Year>2018</Year>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAP">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+
+        var lSalonBokaBay = new SalonEntity { Name = "Boka Bay", Website = "http://www.gradacfoto.com", Country = lCountryMontenegro };
+        lContext.Salons.Add(lSalonBokaBay);
+
+
+        var lSalonYearBokaBay = new SalonYearEntity { Name = "Boka Bay", Salon = lSalonBokaBay, Year = 2018, ClosingDate = new DateTime(2018, 1, 14), JudgeDate = new DateTime(2018, 1, 29), NotificationDate = new DateTime(2018, 2, 1), CataloguesPostedDate = new DateTime(2018, 4, 13) };
+        lContext.SalonYears.Add(lSalonYearBokaBay);0
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2018/051", PhotoOrganisation = lFiap, SalonYear = lSalonYearBokaBay },
+    new AccreditationEntity() { SalonNumber = "2018-046", PhotoOrganisation = lPsa, SalonYear = lSalonYearBokaBay },
+    });
+
+    var lSalonYearBokaBayColour = new SectionEntity() { SalonYear = lSalonYearBokaBay, SectionType = lSectionTypeColourPdi };
+    var lSalonYearBokaBayMono = new SectionEntity() { SalonYear = lSalonYearBokaBay, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearBokaBayNature = new SectionEntity() { SalonYear = lSalonYearBokaBay, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearBokaBayTravel = new SectionEntity() { SalonYear = lSalonYearBokaBay, SectionType = lSectionTypeTravelPdi };
+
+
+    lContext.SalonSections.AddRange(new List<SectionEntity> {
+        lSalonYearBokaBayColour,
+        lSalonYearBokaBayMono,
+        lSalonYearBokaBayNature,
+        lSalonYearBokaBayTravel,
+        });
+
+        var lStarOfWonder = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Star of Wonder" };
+        var lDiagonalTulip = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Diagonal Tulip" };
+        var lThreeTulipCircle = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Tulip Circle" };
+        var lWinterTree = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Winter Tree" };
+
+        lContext.Images.AddRange(new List<ImageEntity>
+            {
+            lStarOfWonder,
+            lDiagonalTulip,
+            lThreeTulipCircle,
+            lWinterTree,
+            });
+
+
+            lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 18.49M,
+            SalonYear = lSalonYearBokaBay,
+            EntryDate = new DateTime(2018, 1, 6),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayColour, Image = lStarOfWonder, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayColour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score= 18},
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayColour, Image = lDiagonalTulip, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayColour, Image = lThreeTulipCircle, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score= 17},
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayMono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = true, Score=20 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayMono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayMono, Image = lTheTower, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayNature, Image = lLittleOwl, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayNature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayNature, Image = lGreatGreyOwl, IsAwarded = true, AwardDetails = "PC Perasto Honorable Mention", IsAccepted = true, Score=24 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayNature, Image = lRimlitKingfisher, IsAwarded = false, IsAccepted = false, Score=19 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = lIcelandicRefuge, IsAwarded = false, IsAccepted = true, Score= 20},
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = lMdinaMalta, IsAwarded = false, IsAccepted = false, Score=18 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = lAfternoonGun, IsAwarded = false, IsAccepted = true, Score=20 },
+                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = lHarbourSailingInMalta, IsAwarded = false, IsAccepted = false, Score=18 },
+                },
+                },
+                });

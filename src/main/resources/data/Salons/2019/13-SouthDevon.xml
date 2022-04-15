@@ -1,0 +1,59 @@
+<Salon>
+    <Name>South Devon</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // South Devon 2019
+        var lSalonSouthDevon2019 = new SalonYearEntity { Name = "South Devon", Salon = lSalonSouthDevon, Year = 2019, ClosingDate = new DateTime(2019, 7, 14), JudgeDate = new DateTime(2019, 7, 28), NotificationDate = new DateTime(2019, 8, 7), CataloguesPostedDate = new DateTime(2019, 10, 5) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2019/210", PhotoOrganisation = lFiapLevels, SalonYear = lSalonSouthDevon2019 },
+    new AccreditationEntity() { SalonNumber = "2019-306", PhotoOrganisation = lPsa, SalonYear = lSalonSouthDevon2019 },
+    new AccreditationEntity() { SalonNumber = "L190064", PhotoOrganisation = lGpu, SalonYear = lSalonSouthDevon2019 },
+    });
+
+
+    var lSalonYearSouthDevon2019Nature = new SectionEntity() { SalonYear = lSalonSouthDevon2019, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearSouthDevon2019Mono = new SectionEntity() { SalonYear = lSalonSouthDevon2019, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearSouthDevon201Colour = new SectionEntity() { SalonYear = lSalonSouthDevon2019, SectionType = lSectionTypeColourPdi };
+    var lSalonYearSouthDevon2019Creative = new SectionEntity() { SalonYear = lSalonSouthDevon2019, SectionType = lSectionTypeCreativePdi };
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 20.00M,
+        SalonYear = lSalonSouthDevon2019,
+        EntryDate = new DateTime(2019, 7, 7),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=11 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 8},
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=10 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=8 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=11 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=9 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=10 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=10},
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon201Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=11 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon201Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=11 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon201Colour, Image = lWartimeLettersHome, IsAwarded = false, IsAccepted = true, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon201Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=9 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Creative, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=11 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Creative, Image = lTimeFlies, IsAwarded = false, IsAccepted = true, Score=13 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Creative, Image = Party At The Apocalypse, IsAwarded = false, IsAccepted = false, Score=10 },
+            new CompetitionEntryEntity { Section = lSalonYearSouthDevon2019Creative, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=10 },
+            },
+            },
+            });

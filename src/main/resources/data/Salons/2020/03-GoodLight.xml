@@ -1,0 +1,79 @@
+<Salon>
+    <Name>Good Light</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Good Light 2020
+
+        var lGlowingRose = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Glowing Rose" };
+        var lPyramidSwirl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Pyramind Swirl" };
+        var lIncomingRain = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Incoming Rain" };
+        var lZigZagShadow = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Zig Zag Shadow" };
+        var lUninterestingView = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Uninteresting View" };
+        var lHogOnCar = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Hog On Car" };
+        var lPurpleBloom = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Purple Bloom" };
+        var lAMeetingOfMinds = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "A Meeting of Minds" };
+        var lTheSummoning = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Summoning" };
+        var lMaskedRed = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Masked Red" };
+        var lThreeLeavesMono = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Leaves Mono" };
+        var lNighttimeExcursions = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Nighttime Excursions" };
+
+        var lSalonYearGoodLight2020 = new SalonYearEntity { Name = "Good Light", Salon = lSalonGoodLight, Year = 2020, ClosingDate = new DateTime(2020, 5, 8), JudgeDate = new DateTime(2020, 05, 23), NotificationDate = new DateTime(2020, 05, 30), CataloguesPostedDate = new DateTime(2020, 7, 1) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2020/119", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGoodLight2020 },
+    new AccreditationEntity() { SalonNumber = "2020-162", PhotoOrganisation = lPsa, SalonYear = lSalonYearGoodLight2020 },
+    });
+
+    var lSalonYearGoodLight2020GoodLight = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeGoodLightPdi };
+    var lSalonYearGoodLight2020Life = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypePhotojournalismPdi };
+    var lSalonYearGoodLight2020Nature = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearGoodLight2020Colour = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeColourPdi };
+    var lSalonYearGoodLight2020Mono = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeMonoPdi };
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 18.35M,
+        SalonYear = lSalonYearGoodLight2020,
+        EntryDate = new DateTime(2020, 5, 1),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020GoodLight, Image = lGlowingRose, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020GoodLight, Image = lPyramidSwirl, IsAwarded = false, IsAccepted = false, Score= 0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020GoodLight, Image = lIncomingRain, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020GoodLight , Image = lZigZagShadow, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Life, Image = lUninterestingView, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Life, Image = lHogOnCar, IsAwarded = false, IsAccepted = false, Score= 0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Life, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Life , Image = lSolentSunset, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Nature, Image = lMarbledTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Nature, Image = lCommonToadOnRock, IsAwarded = false, IsAccepted = false, Score= 0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Nature, Image = lLeopardGecko, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Nature , Image = lChileanRoseTarantulaOnTree, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Colour, Image = lPurpleBloom, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Colour, Image = lAMeetingOfMinds, IsAwarded = false, IsAccepted = false, Score= 0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Colour, Image = lTheSummoning, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Colour , Image = lMaskedRed, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Mono, Image = lADaisyInMono, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Mono, Image = lNighttimeExcursions, IsAwarded = false, IsAccepted = false, Score= 0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearGoodLight2020Mono , Image = lThreeLeavesMono, IsAwarded = false, IsAccepted = false, Score=0 },
+
+
+            },
+            },
+            });

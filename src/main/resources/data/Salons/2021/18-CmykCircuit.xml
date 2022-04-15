@@ -1,0 +1,76 @@
+<Circuit>
+    <Name>CMYK</Name>
+    <Web>http</Web>
+    <Cost>34</Cost>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Carlisle</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-<Accreditation>
+                <Accreditation type="FIAPLevels">2019/</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
+
+        // CMYK circuit 2021
+        var lBuildersTea = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Builder's Tea" };
+
+        var lSalonCmykPerasto = new SalonEntity { Name = "CMYK - Perasto", Website = "", Country = lCountryMontenegro};
+        var lSalonCmykCacak = new SalonEntity { Name = "CMYK - Cacak", Website = "", Country = lCountryMontenegro };
+
+        var lSalonCmykPerasto2021 = new SalonYearEntity { Name = "CMYK - Perasto", Salon = lSalonCmykPerasto, Year = 2021, ClosingDate = new DateTime(2021, 9, 12), JudgeDate = new DateTime(2021, 9, 30), NotificationDate = new DateTime(2021, 10, 5), CataloguesPostedDate = new DateTime(2021, 10, 5)};
+        var lSalonCmykCacak2021 = new SalonYearEntity { Name = "CMYK - Cacak", Salon = lSalonCmykCacak, Year = 2021, ClosingDate = new DateTime(2021, 9, 12), JudgeDate = new DateTime(2021, 9, 30), NotificationDate = new DateTime(2021, 10, 5), CataloguesPostedDate = new DateTime(2021, 10, 5)};
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2021/474", PhotoOrganisation = lFiapLevels, SalonYear = lSalonCmykPerasto2021 },
+    new AccreditationEntity() { SalonNumber = "2021-1502", PhotoOrganisation = lPsa, SalonYear = lSalonCmykPerasto2021 },
+    });
+
+
+    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+        new AccreditationEntity() { SalonNumber = "2021/475", PhotoOrganisation = lFiapLevels, SalonYear = lSalonCmykCacak2021 },
+        new AccreditationEntity() { SalonNumber = "2021-1502", PhotoOrganisation = lPsa, SalonYear = lSalonCmykCacak2021 },
+        });
+
+        var lSalonCmykPerasto2021People = new SectionEntity() { SalonYear = lSalonCmykPerasto2021, SectionType = lSectionTypePeoplePdi };
+        var lSalonCmykCacak2021Colour = new SectionEntity() { SalonYear = lSalonCmykCacak2021, SectionType = lSectionTypeColourPdi };
+        var lSalonCmykCacak2021People = new SectionEntity() { SalonYear = lSalonCmykCacak2021, SectionType = lSectionTypePeoplePdi };
+
+
+        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 16.55M,
+            SalonYear = lSalonCmykPerasto2021,
+            EntryDate = new DateTime(2021, 9, 12),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+
+                new CompetitionEntryEntity { Section = lSalonCmykPerasto2021People, Image = lByLamplight, IsAwarded = false, IsAccepted = true, Score=0 },
+
+                },
+                },
+                });
+
+                lContext.Submissions.AddRange(new List<SubmissionEntity> {
+                    new SubmissionEntity(){
+                    IsJudged = true,
+                    EntryCost = 16.55M,
+                    SalonYear = lSalonCmykCacak2021,
+                    EntryDate = new DateTime(2021, 9, 12),
+                    Person = lTim,
+                    Entries = new List<CompetitionEntryEntity> {
+
+                        new CompetitionEntryEntity { Section = lSalonCmykCacak2021Colour, Image = lByLamplight, IsAwarded = false, IsAccepted = true, Score=0 },
+                        new CompetitionEntryEntity { Section = lSalonCmykCacak2021People, Image = lBuildersTea, IsAwarded = false, IsAccepted = true, Score=0 },
+
+                        },
+                        },
+                        });

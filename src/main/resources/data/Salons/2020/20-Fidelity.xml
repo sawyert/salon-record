@@ -1,0 +1,44 @@
+<Salon>
+    <Name>Fidelity</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Fidelity
+        var lEdibleFrog = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Edible Frog" };
+
+        var lSalonFidelity = new SalonEntity { Name = "Fidelity", Website = "http://sopronifotoklub.hu/", Country = lCountryHungary };
+        var lSalonFidelity2020 = new SalonYearEntity { Name = "Fidelity", Salon = lSalonFidelity, Year = 2020, ClosingDate = new DateTime(2020, 11, 23), JudgeDate = new DateTime(2020, 11, 28), NotificationDate = new DateTime(2020, 12, 8), CataloguesPostedDate = new DateTime(2020, 12, 8) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2020/532", PhotoOrganisation = lFiapLevels, SalonYear = lSalonFidelity2020 },
+    });
+
+    var lSalonFidelity2020Nature = new SectionEntity() { SalonYear = lSalonFidelity2020, SectionType = lSectionTypeNaturePdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 18.62M,
+        SalonYear = lSalonFidelity2020,
+        EntryDate = new DateTime(2020, 11, 22),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonFidelity2020Nature, Image = lEdibleFrog, IsAwarded = false, IsAccepted = true, Score=0 },
+
+            },
+            },
+            });

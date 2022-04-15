@@ -1,0 +1,49 @@
+<Salon>
+    <Name>Issyk Kul</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // ISSYK-KUL 2020
+        var lHalfTheWorldIsUpsideDown = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Half The World Is Upside Down" };
+        var lVermodalen = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Vermodalen" };
+        var lIsolation = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Isolation" };
+        var lSalonIssykKul = new SalonEntity { Name = "Issyk Kul", Website = "http://issyk-kulexhibition.com/", Country = lCountryKyrgystan };
+        var lSalonYearIssykKul2020 = new SalonYearEntity { Name = "Issyk Kul", Salon = lSalonIssykKul, Year = 2020, ClosingDate = new DateTime(2020, 6, 26), JudgeDate = new DateTime(2020, 7, 1), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2020/316", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearIssykKul2020 },
+    new AccreditationEntity() { SalonNumber = "2020-151", PhotoOrganisation = lPsa, SalonYear = lSalonYearIssykKul2020 },
+    });
+
+    var lSalonYearIssykKul2020Colour = new SectionEntity() { SalonYear = lSalonYearIssykKul2020, SectionType = lSectionTypeColourPdi };
+    var lSalonYearIssykKul2020Sea = new SectionEntity() { SalonYear = lSalonYearIssykKul2020, SectionType = lSectionTypeColourPdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 21.12M,
+        SalonYear = lSalonYearIssykKul2020,
+        EntryDate = new DateTime(2020, 7, 1),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Colour, Image = lHalfTheWorldIsUpsideDown, IsAwarded = false, IsAccepted = true, Score=19 },
+            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Colour, Image = lVermodalen, IsAwarded = false, IsAccepted = true, Score=19 },
+            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Sea, Image = lWatchingTheWind, IsAwarded = false, IsAccepted = true, Score=19 },
+            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Sea, Image = lIsolation, IsAwarded = false, IsAccepted = true, Score=18},
+            },
+            },
+            });

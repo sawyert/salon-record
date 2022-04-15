@@ -1,0 +1,46 @@
+<Salon>
+    <Name>Big North Story</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // BIG NORTH STORY Iceland 2021
+        var lBeacon = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Beacon" };
+
+        var lSalonBigNorthStory = new SalonEntity { Name = "Big North Story", Website = "", Country = lCountryIceland };
+        var lSalonBigNorthStory2021 = new SalonYearEntity { Name = "Big North Story", Salon = lSalonBigNorthStory, Year = 2021, ClosingDate = new DateTime(2021, 8, 13), JudgeDate = new DateTime(2021, 8, 25), NotificationDate = new DateTime(2021, 8, 27), CataloguesPostedDate = new DateTime(2021, 8, 27) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2021/500", PhotoOrganisation = lFiapLevels, SalonYear = lSalonBigNorthStory2021 },
+    new AccreditationEntity() { SalonNumber = "2021-5418", PhotoOrganisation = lPsa, SalonYear = lSalonBigNorthStory2021 },
+    });
+
+    var lSalonBigNorthStory2021Colour = new SectionEntity() { SalonYear = lSalonBigNorthStory2021, SectionType = lSectionTypeColourPdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 17.72M,
+        SalonYear = lSalonBigNorthStory2021,
+        EntryDate = new DateTime(2021, 8, 13),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonThisIsLife2021Mono, Image = lTheMagiciansHouse, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonThisIsLife2021Nature, Image = lBeacon, IsAwarded = false, IsAccepted = true, Score=0 },
+
+            },
+            },
+            });

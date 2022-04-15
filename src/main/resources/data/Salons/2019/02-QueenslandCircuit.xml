@@ -1,0 +1,82 @@
+<Circuit>
+    <Name>Queensland</Name>
+    <Web>http://www.queensland-photo.com</Web>
+    <Cost>48.52</Cost>
+    <JudgeDate>31-01-2019</JudgeDate>
+    <NotificationDate>31-02-2019</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Gold Coast</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-204</Accreditation>
+                <Accreditation type="FIAPLevels">2019/135</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>I Used To Dream I'd Marry A Prince</Image>
+                <Image>Crested Gecko Tongue</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+                <Image>Argentinian Horned Frog</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Maryborough</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-204</Accreditation>
+                <Accreditation type="FIAPLevels">2019/136</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>I Used To Dream I'd Marry A Prince</Image>
+                <Image>Party At The Apocalypse</Image>
+                <Image>Contemplation By Starlight</Image>
+                <Image>Amazon Milk Frog</Image>
+                <Image>Crested Gecko Tongue</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+                <Image>Argentinian Horned Frog</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Mt Gravatt</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-204</Accreditation>
+                <Accreditation type="FIAPLevels">2019/137</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>I Used To Dream I'd Marry A Prince</Image>
+                <Image>Queen Of The Castle</Image>
+                <Image>Chrysanthemum Close Up</Image>
+                <Image>Betwixt Realities</Image>
+                <Image>Mirror Of Reminiscence</Image>
+                <Image>Amazon Milk Frog</Image>
+                <Image>Crested Gecko Tongue</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+                <Image>Argentinian Horned Frog</Image>
+
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Townsville</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-204</Accreditation>
+                <Accreditation type="FIAPLevels">2019/138</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>I Used To Dream I'd Marry A Prince</Image>
+                <Image>Protectors</Image>
+                <Image>Worship Impressions</Image>
+                <Image>Crested Gecko Tongue</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
+
+     
+
+     
+                               
+                                                
+                                                               

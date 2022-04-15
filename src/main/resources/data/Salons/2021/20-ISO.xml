@@ -1,0 +1,45 @@
+<Salon>
+    <Name>Iso</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // ISO 2021
+        var lBirdsOnProfile = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Birds On Profile" };
+        var lSalonIso2021 = new SalonYearEntity { Name = "Iso", Salon = lSalonIso, Year = 2021, ClosingDate = new DateTime(2021, 10, 2), JudgeDate = new DateTime(2021, 10, 17), NotificationDate = new DateTime(2021, 10, 25), CataloguesPostedDate = new DateTime(2021, 10, 25) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2021/325", PhotoOrganisation = lFiapLevels, SalonYear = lSalonIso2021 },
+    new AccreditationEntity() { SalonNumber = "2021-1436", PhotoOrganisation = lPsa, SalonYear = lSalonIso2021 },
+    });
+
+    var lSalonIso2021Colour = new SectionEntity() { SalonYear = lSalonIso2021, SectionType = lSectionTypeColourPdi };
+    var lSalonIso2021Creative= new SectionEntity() { SalonYear = lSalonIso2021, SectionType = lSectionTypeCreativePdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 13.54M,
+        SalonYear = lSalonIso2021,
+        EntryDate = new DateTime(2021, 10, 2),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonIso2021Colour, Image = lBuildersTea, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonIso2021Creative, Image = lBirdsOnProfile, IsAwarded = false, IsAccepted = true, Score=0 },
+
+            },
+            },
+            });

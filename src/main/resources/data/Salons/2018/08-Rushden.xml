@@ -1,0 +1,71 @@
+<Salon>
+    <Name>Rushden</Name>
+    <Web>http://www.rdps.co.uk/open/</Web>
+    <Country>England</Country>
+    <Year>2018</Year>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAP">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Rushden Bpe
+        var lSalonRushden = new SalonEntity { Name = "Rushden", Website = "http://www.rdps.co.uk/open/", Country = lCountryEngland };
+        lContext.Salons.Add(lSalonRushden);
+
+        var lSalonYearRushden2018 = new SalonYearEntity { Name = "Rushden", Salon = lSalonRushden, Year = 2018, ClosingDate = new DateTime(2018, 4, 8), JudgeDate = new DateTime(2018, 4, 22), NotificationDate = new DateTime(2018, 4, 30), CataloguesPostedDate = new DateTime(2018, 5, 13) };
+        lContext.SalonYears.Add(lSalonYearRushden2018);
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2018 BPE", PhotoOrganisation = lBpe, SalonYear = lSalonYearRushden2018 },
+
+    });
+
+    var lSalonYearRushdenColour = new SectionEntity() { SalonYear = lSalonYearRushden2018, SectionType = lSectionTypeColourPdi };
+    var lSalonYearRushdenMono = new SectionEntity() { SalonYear = lSalonYearRushden2018, SectionType = lSectionTypeMonoPdi };
+    var lSalonYearRushdenNature = new SectionEntity() { SalonYear = lSalonYearRushden2018, SectionType = lSectionTypeNaturePdi };
+    var lSalonYearRushdenCreative = new SectionEntity() { SalonYear = lSalonYearRushden2018, SectionType = lSectionTypeCreativePdi };
+
+
+    lContext.SalonSections.AddRange(new List<SectionEntity> {
+        lSalonYearRushdenColour,
+        lSalonYearRushdenMono,
+        lSalonYearRushdenNature,
+        lSalonYearRushdenCreative,
+        });
+
+
+        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 16M,
+            SalonYear = lSalonYearRushden2018,
+            EntryDate = new DateTime(2018, 3, 30),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+                new CompetitionEntryEntity { Section = lSalonYearRushdenColour, Image = lThroughTheArch, IsAwarded = false, IsAccepted = true, Score=11 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenColour, Image = lTreeGroveInTheMist, IsAwarded = false, IsAccepted = false, Score= 10},
+                new CompetitionEntryEntity { Section = lSalonYearRushdenColour, Image = lIcelandicRefuge, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenColour, Image = lDaisy, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenMono, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = false, Score= 9},
+                new CompetitionEntryEntity { Section = lSalonYearRushdenMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=11 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenMono, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=9},
+                new CompetitionEntryEntity { Section = lSalonYearRushdenNature, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenNature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenNature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenNature, Image = lKingfisherWithFish, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenCreative, Image = lGrassesTriptych, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenCreative, Image = lLakeGuardian, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenCreative, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearRushdenCreative, Image = lOrbsTriptych, IsAwarded = false, IsAccepted = false, Score=8 },
+
+                },
+                },
+                });

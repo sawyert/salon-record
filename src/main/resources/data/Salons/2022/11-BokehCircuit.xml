@@ -1,0 +1,39 @@
+<Circuit>
+    <Name>Bokeh</Name>
+    <Web>http://fotosalons.net/menu_id/18/lang/1/entry_rules?project=1</Web>
+    <Cost>30.31</Cost>
+    <JudgeDate>01-05-2022</JudgeDate>
+    <NotificationDate>15-05-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Georgia</Name>
+            <Country>Georgia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-241</Accreditation>
+                <Accreditation type="FIAPLevels">2022/249</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>UAE</Name>
+            <Country>UAE</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-241</Accreditation>
+                <Accreditation type="FIAPLevels">2022/250</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Cote D'Ivoire</Name>
+            <Country>Ivory Coast</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-241</Accreditation>
+                <Accreditation type="FIAPLevels">2022/251</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

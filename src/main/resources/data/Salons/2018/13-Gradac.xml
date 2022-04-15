@@ -1,0 +1,80 @@
+<Salon>
+    <Name>Gradac</Name>
+    <Web>http://www.gradacfoto.com</Web>
+    <Country>Montenegro</Country>
+    <Year>2018</Year>
+    <JudgeDate>19-01-2018</JudgeDate>
+    <NotificationDate>31-01-2018</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAP">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Gradac 2018 - http://perasto.club
+        var lSalonYearGradac2018 = new SalonYearEntity { Name = "Gradac", Salon = lSalonGradac, Year = 2018, ClosingDate = new DateTime(2018, 4, 15), JudgeDate = new DateTime(2018, 5, 1), NotificationDate = new DateTime(2018, 5, 4), CataloguesPostedDate = new DateTime(2018, 5, 4) };
+        lContext.SalonYears.Add(lSalonYearGradac2018);
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2018/179", PhotoOrganisation = lFiap, SalonYear = lSalonYearGradac2018 },
+    new AccreditationEntity() { SalonNumber = "2018-152", PhotoOrganisation = lPsa, SalonYear = lSalonYearGradac2018 },
+    });
+
+    var lAlhambraAtDusk = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Alhambra at Dusk" };
+
+    lContext.Images.AddRange(new List<ImageEntity>
+        {
+        lAlhambraAtDusk,
+        });
+
+        var lSalonYearGradac2018Mono = new SectionEntity() { SalonYear = lSalonYearGradac2018, SectionType = lSectionTypeMonoPdi };
+        var lSalonYearGradac2018ManWomanChild = new SectionEntity() { SalonYear = lSalonYearGradac2018, SectionType = lSectionTypeManWomanChildPdi };
+        var lSalonYearGradac2018Nature = new SectionEntity() { SalonYear = lSalonYearGradac2018, SectionType = lSectionTypeNaturePdi };
+        var lSalonYearGradac2018Colour = new SectionEntity() { SalonYear = lSalonYearGradac2018, SectionType = lSectionTypeColourPdi };
+        var lSalonYearGradac2018Travel = new SectionEntity() { SalonYear = lSalonYearGradac2018, SectionType = lSectionTypeTravelPdi };
+
+        lContext.SalonSections.AddRange(new List<SectionEntity> {
+        lSalonYearGradac2018Mono,
+        lSalonYearGradac2018ManWomanChild,
+        lSalonYearGradac2018Nature,
+        lSalonYearGradac2018Colour,
+        lSalonYearGradac2018Travel,
+        });
+
+
+        lContext.Submissions.AddRange(new List<SubmissionEntity> {
+            new SubmissionEntity(){
+            IsJudged = true,
+            EntryCost = 17.09M,
+            SalonYear = lSalonYearGradac2018,
+            EntryDate = new DateTime(2018, 4, 14),
+            Person = lTim,
+            Entries = new List<CompetitionEntryEntity> {
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = true, Score= 20},
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=14 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018ManWomanChild, Image = lWraith, IsAwarded = false, IsAccepted = true, Score=19 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018ManWomanChild, Image = lZombieAttack, IsAwarded = false, IsAccepted = true, Score=19 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018ManWomanChild, Image = lThePriest, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018ManWomanChild, Image = lTheresSomethingBehindYou, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Nature, Image = lWaterVole, IsAwarded = false, IsAccepted = false, Score=16 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Nature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=18 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Nature, Image = lKingfisherWithFish, IsAwarded = false, IsAccepted = false, Score=15 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Nature, Image = lRimlitKingfisher, IsAwarded = false, IsAccepted = false, Score=18 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Colour, Image = lThroughTheArch, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Colour, Image = lTreeGroveInTheMist, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Colour, Image = lTulipInTheRound, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Colour, Image = lTheWatcher, IsAwarded = false, IsAccepted = true, Score=20 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Travel, Image = lMdinaMalta, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=16 },
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Travel, Image = lAlhambraAtDusk, IsAwarded = false, IsAccepted = false, Score=17 },
+
+                },
+                },
+                });

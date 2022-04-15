@@ -1,0 +1,64 @@
+<Salon>
+    <Name>Summer, Sea, Sun</Name>
+    <Web>http</Web>
+    <Country>Czech</Country>
+    <Year>2018</Year>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2018-</Accreditation>
+        <Accreditation type="FIAPLevels">2018/</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>
+
+        // Summer, Sea, Sun 2020
+        var lRailwayChildren = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Railway Children" };
+        var lEngineDriversSon = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Engine Driver's Son" };
+        var lDomi = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Domi" };
+        var lMajesty = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Majesty" };
+        var lDomiAtTheBall = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Domi At The Ball" };
+        var lWindswept = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Windswept" };
+
+        var lSalonSummerSeaSun = new SalonEntity { Name = "Summer, Sea, Sun", Website = "https://summerseasun.fotoklubkrk.hr/", Country = lCountryCroatia};
+        var lSalonSummerSeaSun2020 = new SalonYearEntity { Name = "Summer, Sea, Sun", Salon = lSalonSummerSeaSun, Year = 2020, ClosingDate = new DateTime(2020, 9, 20), JudgeDate = new DateTime(2020, 9, 27), NotificationDate = new DateTime(2020, 10, 5), CataloguesPostedDate = new DateTime(2020, 10, 27) };
+
+        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
+    new AccreditationEntity() { SalonNumber = "2020/287", PhotoOrganisation = lFiapLevels, SalonYear = lSalonSummerSeaSun2020 },
+    new AccreditationEntity() { SalonNumber = "2020-310", PhotoOrganisation = lPsa, SalonYear = lSalonSummerSeaSun2020 },
+    });
+
+    var lSalonSummerSeaSun2020Child = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeChildPdi };
+    var lSalonSummerSeaSun2020Portrait = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypePortraitPdi };
+    var lSalonSummerSeaSun2020Nature = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeNaturePdi };
+    var lSalonSummerSeaSun2020Colour = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeColourPdi };
+    var lSalonSummerSeaSun2020Mono = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeMonoPdi };
+
+
+    lContext.Submissions.AddRange(new List<SubmissionEntity> {
+        new SubmissionEntity(){
+        IsJudged = true,
+        EntryCost = 24.06M,
+        SalonYear = lSalonSummerSeaSun2020,
+        EntryDate = new DateTime(2020, 9, 19),
+        Person = lTim,
+        Entries = new List<CompetitionEntryEntity> {
+
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Child, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Child, Image = lRailwayChildren, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Child, Image = lEngineDriversSon, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Portrait, Image = lDomi, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Portrait, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Portrait, Image = lDomiAtTheBall, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Colour, Image = lWindswept, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonSummerSeaSun2020Mono, Image = lTwinIsolation, IsAwarded = true, AwardDetails="Silver", IsAccepted = true, Score=0 },
+            },
+            },
+            });
