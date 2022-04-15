@@ -1,0 +1,18 @@
+<Salon>
+    <Name>Scottish</Name>
+    <Web>http://www.scottish-photographic-salon.org/</Web>
+    <Country>Scotland</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-113</Accreditation>
+        <Accreditation type="FIAP">2017/217</Accreditation>
+    </Accreditations>
+    <Cost>15</Cost>
+    <AcceptedImages>
+        <Image>Into The Mist</Image>
+        <Image>Spiral Nine</Image>
+        </Image>
+    </AcceptedImages>
+</Salon>

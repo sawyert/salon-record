@@ -1,0 +1,17 @@
+<Salon>
+    <Name>Bristol</Name>
+    <Web>http://www.bristolphoto.org.uk/pages/bristol-salon.php</Web>
+    <Country>England</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-006</Accreditation>
+        <Accreditation type="FIAP">2017/002</Accreditation>
+    </Accreditations>
+    <Cost>14</Cost>
+    <AcceptedImages>
+        <Image>The Dance</Image>
+        <Image>Through The Arch</Image>
+    </AcceptedImages>
+</Salon>

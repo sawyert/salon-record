@@ -1,0 +1,19 @@
+<Salon>
+    <Name>Sydney Harbour</Name>
+    <Web>http://www.sydney-harbour-international.org.au/</Web>
+    <Country>Australia</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-020</Accreditation>
+        <Accreditation type="FIAP">2017/052</Accreditation>
+    </Accreditations>
+    <Cost>18.35</Cost>
+    <AcceptedImages>
+        <Image>The Watcher In The Waves</Image>
+        <Image award="Sydney Harbour Ribbon">Ruins By Night</Image>
+        <Image award="Sydney Harbour Bronze Medal">A World Beyond</Image>
+        <Image>Watchfulness</Image>
+    </AcceptedImages>
+</Salon>

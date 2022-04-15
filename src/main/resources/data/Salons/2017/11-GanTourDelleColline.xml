@@ -1,0 +1,49 @@
+<Circuit>
+    <Name>Gan Tour Delle Colline</Name>
+    <Web>http://www.grantourdellecolline.it/en/</Web>
+    <Cost>35.56</Cost>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Incisa</Name>
+            <Country>Italy</Country>
+            <Accreditations>
+                <Accreditation type="FIAP">2017/125</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Valdarnoe</Name>
+            <Country>Italy</Country>
+            <Accreditations>
+                <Accreditation type="FIAP">2017/126</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Chianti</Name>
+            <Country>Italy</Country>
+            <Accreditations>
+                <Accreditation type="FIAP">2017/127</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Ruins By Night</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Pratomagno</Name>
+            <Country>Italy</Country>
+            <Accreditations>
+                <Accreditation type="FIAP">2017/128</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Cathedral Ceiling</Image>
+                <Image>Ruins By Night</Image>
+                <Image>Tree Grove In The Mist</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

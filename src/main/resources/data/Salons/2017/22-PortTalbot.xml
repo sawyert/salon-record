@@ -1,0 +1,22 @@
+<Salon>
+    <Name>Port Talbot</Name>
+    <Web>http://www.cps-cidpc.com/</Web>
+    <Country>Wales</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2017-175</Accreditation>
+        <Accreditation type="FIAP">2017/250</Accreditation>
+    </Accreditations>
+    <Cost>15.3</Cost>
+    <AcceptedImages>
+        <Image>Daisy</Image>
+        <Image>Into The Mist</Image>
+        <Image>Cathedral Ceiling</Image>
+        <Image>Olivers Castle</Image>
+        <Image>Ruins By Night</Image>
+        <Image>The Watcher In The Waves</Image>
+        <Image>Across The Lake</Image>
+    </AcceptedImages>
+</Salon>

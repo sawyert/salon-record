@@ -1,0 +1,60 @@
+<Circuit>
+    <Name>GBSPC</Name>
+    <Web>http://www.solwaysalon.co.uk/gb17/entry.php</Web>
+    <Cost>34</Cost>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Carlisle</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2017-091</Accreditation>
+                <Accreditation type="FIAP">2017/084</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>The Watcher In The Waves</Image>
+                <Image>Daisy</Image>
+                <Image>Through The Arch</Image>
+                <Image award="FIAP Gold Medal">Into The Mist</Image>
+                <Image>Long Eared Owl</Image>
+                <Image>Buttermere</Image>
+                <Image award="HM">Olivers Castle</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Penrith</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2017-091</Accreditation>
+                <Accreditation type="FIAP">2017/085</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>The Watcher In The Waves</Image>
+                <Image>Daisy</Image>
+                <Image>Through The Arch</Image>
+                <Image>Into The Mist</Image>
+                <Image>Afternoon Gun</Image>
+                <Image>Fresh Snow</Image>
+                <Image>Buttermere</Image>
+                <Image>Buttermere Tree</Image>
+                <Image>Lake Kaniere</Image>
+                <Image>Olivers Castle</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Solway</Name>
+            <Country>England</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2017-091</Accreditation>
+                <Accreditation type="FIAP">2017/086</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Daisy</Image>
+                <Image>Into The Mist</Image>
+                <Image>Lake Kaniere</Image>
+                <Image>Olivers Castle</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

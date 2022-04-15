@@ -1,0 +1,19 @@
+<Salon>
+    <Name>SRGB Print Celebration</Name>
+    <Web>http://srgbphotogroup.co.uk/</Web>
+    <Country>England</Country>
+    <Year>2017</Year>
+    <JudgeDate>31-01-2017</JudgeDate>
+    <NotificationDate>31-02-2017</NotificationDate>
+    <Accreditations>
+        <Accreditation type="BPE">2017</Accreditation>
+    </Accreditations>
+    <Cost>26</Cost>
+    <AcceptedImages>
+        <Image>The Watcher In The Waves</Image>
+        <Image award="Ribbon">Into The Mist</Image>
+        <Image>Grasses Triptych</Image>
+        <Image>Parisian Light Triptych</Image>
+        <Image award="Gold">Orbs Triptych</Image>
+    </AcceptedImages>
+</Salon>
