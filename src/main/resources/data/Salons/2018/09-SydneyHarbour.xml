@@ -51,7 +51,7 @@
             Entries = new List<CompetitionEntryEntity> {
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Mono, Image = lButtermereTree, IsAwarded = false, IsAccepted = false, Score=7 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Mono, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score= 9},
-                new CompetitionEntryEntity { Section = lSalonYearSydney2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearSydney2018Mono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = false, Score=8 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Colour, Image = lIntoTheMist, IsAwarded = false, IsAccepted = true, Score= 12},
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Colour, Image = lDaisy, IsAwarded = false, IsAccepted = false, Score=9 },
@@ -61,7 +61,7 @@
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Creative, Image = lOrbsTriptych, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Creative, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=8 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Creative, Image = lBlueSymmetree, IsAwarded = false, IsAccepted = false, Score=9 },
-                new CompetitionEntryEntity { Section = lSalonYearSydney2018Nature, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = false, Score=10 },
+                new CompetitionEntryEntity { Section = lSalonYearSydney2018Nature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = false, Score=10 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Nature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Nature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=3 },
                 new CompetitionEntryEntity { Section = lSalonYearSydney2018Nature, Image = lWaterVole, IsAwarded = false, IsAccepted = false, Score=7 },

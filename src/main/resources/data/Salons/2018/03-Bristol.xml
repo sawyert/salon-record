@@ -57,7 +57,7 @@
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=8 },
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Colour, Image = lSymmetreeBlue, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score= 11},
-                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = false, Score=8 },
+                new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = false, Score=8 },
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=10 },
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Mono, Image = lTheTower, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearBristol2018Nature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = false, Score=9 },

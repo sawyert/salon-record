@@ -2,7 +2,7 @@
     <Name>Fotogram</Name>
     <Web>http</Web>
     <Country>Czech</Country>
-    <Year>2018</Year>
+    <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
@@ -20,8 +20,8 @@
         var lSalonYearFotogram2020 = new SalonYearEntity { Name = "Fotogram", Salon = lSalonFotogram, Year = 2020, ClosingDate = new DateTime(2020, 5, 8), JudgeDate = new DateTime(2020, 05, 23), NotificationDate = new DateTime(2020, 05, 30), CataloguesPostedDate = new DateTime(2020, 7, 1) };
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/132", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearFotogram2020 },
-    new AccreditationEntity() { SalonNumber = "2020-148", PhotoOrganisation = lPsa, SalonYear = lSalonYearFotogram2020 },
+    new AccreditationEntity() { SalonNumber = "2020/132", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearFotogram2020</Image>
+    new AccreditationEntity() { SalonNumber = "2020-148", PhotoOrganisation = lPsa, SalonYear = lSalonYearFotogram2020</Image>
     });
 
     var lSalonYearFotogram2020Colour = new SectionEntity() { SalonYear = lSalonYearFotogram2020, SectionType = lSectionTypeColourPdi };
@@ -37,8 +37,8 @@
         Person = lTim,
         Entries = new List<CompetitionEntryEntity> {
 
-            new CompetitionEntryEntity { Section = lSalonYearFotogram2020Colour, Image = lByLamplight, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearFotogram2020Mono, Image = lThreeLeavesMono, IsAwarded = false, IsAccepted = true, Score= 0 },
-            },
-            },
+            <Image>YearFotogram2020Colour, Image = By Lamplight</Image>
+            <Image>YearFotogram2020Mono, Image = lThreeLeavesMono, IsAwarded = false, IsAccepted = true, Score= 0</Image>
+           </Image>
+           </Image>
             });

@@ -21,5 +21,5 @@
 <Image>The Watcher In The Waves</Image>
                 new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score= 19},
                 new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearCanvasNature, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = true, Score=24 },
-                new CompetitionEntryEntity { Section = lSalonYearCanvasTravel, Image = lAfternoonGun, IsAwarded = false, IsAccepted = true, Score=21 },
+                new CompetitionEntryEntity { Section = lSalonYearCanvasNature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=24 },
+                new CompetitionEntryEntity { Section = lSalonYearCanvasTravel, Image = Afternoon Gun, IsAwarded = false, IsAccepted = true, Score=21 },

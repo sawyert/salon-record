@@ -50,7 +50,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=13 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=16 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Creative, Image = Party At The Apocalypse, IsAwarded = false, IsAccepted = false, Score=16 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Creative, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score= 21},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Creative, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = true, Score= 21},
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Creative, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=21 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Creative, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=18 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoIso2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=22 },

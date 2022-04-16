@@ -43,7 +43,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Colour, Image = lThreeRoses, IsAwarded = false, IsAccepted = false, Score=16 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 16},
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=17 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Colour, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score=17 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Colour, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=17 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=15 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 17},
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=14 },
@@ -54,7 +54,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=17 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=15 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 20},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=15 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=15 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoCanvas2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score=19 },
 
             },

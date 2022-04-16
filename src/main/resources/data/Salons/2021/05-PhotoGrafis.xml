@@ -1,46 +1,22 @@
 <Salon>
     <Name>Photo Grafis</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web></Web>
+    <Country>Montenegro</Country>
+    <Year>2021</Year>
     <JudgeDate>31-01-2021</JudgeDate>
     <NotificationDate>31-02-2021</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2021-1268</Accreditation>
+        <Accreditation type="FIAPLevels">2021/167</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>13.61</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Portal Eight</Image>
+        <Image>Memories Of A Tattered Shadow</Image>
     </AcceptedImages>
 </Salon>
 
-        // Photo Grafis 2021
-        var lSalonPhotoGrafis = new SalonEntity { Name = "Photo Grafis", Website = "", Country = lCountryMontenegro };
-        var lPhotoGrafis2021 = new SalonYearEntity { Name = "Photo Grafis", Salon = lSalonPhotoGrafis, Year = 2021, ClosingDate = new DateTime(2021, 5, 8), JudgeDate = new DateTime(2021, 5, 20), NotificationDate = new DateTime(2021, 5, 20), CataloguesPostedDate = new DateTime(2021, 6, 1) };
 
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2021/167", PhotoOrganisation = lFiapLevels, SalonYear = lPhotoGrafis2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1268", PhotoOrganisation = lPsa, SalonYear = lPhotoGrafis2021 },
-    });
 
-    var lPhotoGrafis2021Colour = new SectionEntity() { SalonYear = lPhotoGrafis2021, SectionType = lSectionTypeColourPdi };
 
-    var lPortalEight = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Portal Eight" };
-    var lMemoriesOfATatteredShadow = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Memories of a Tattered Shadow" };
 
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 13.61M,
-        SalonYear = lPhotoGrafis2021,
-        EntryDate = new DateTime(2021, 5, 8),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lPhotoGrafis2021Colour, Image = lPortalEight, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lPhotoGrafis2021Colour, Image = lMemoriesOfATatteredShadow, IsAwarded = false, IsAccepted = true, Score=0 },
-
-            },
-            },
-            });

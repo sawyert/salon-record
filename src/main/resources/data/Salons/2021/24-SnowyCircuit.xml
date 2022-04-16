@@ -6,71 +6,27 @@
     <NotificationDate>31-02-2021</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Perasto</Name>
+            <Country>Montenegro</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2021-1688</Accreditation>
+                <Accreditation type="FIAPLevels">2021/552</Accreditation>
             </Accreditations>
             <AcceptedImages>
-
+                <Image award="HM">Three Figures</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Mladost</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2021-1688</Accreditation>
+                <Accreditation type="FIAPLevels">2021/554</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Preparing To Play</Image>
+                <Image award="Diploma">Northern White Faced Owl</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
-
-        // Olympic circuit 2021
-        var lThreeFigures = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Figures" };
-
-        var lSalonSnowyPerasto = new SalonEntity { Name = "Snowy - Perasto", Website = "", Country = lCountryMontenegro };
-        var lSalonSnowyMladost = new SalonEntity { Name = "Snowy - Mladost", Website = "", Country = lCountryMontenegro };
-
-
-        var lSalonSnowyPerasto2021 = new SalonYearEntity { Name = "Snowy - Perasto", Salon = lSalonSnowyPerasto, Year = 2021, ClosingDate = new DateTime(2021, 12, 5), JudgeDate = new DateTime(2021, 12, 22), NotificationDate = new DateTime(2021, 12, 28), CataloguesPostedDate = new DateTime(2021, 12, 28)};
-        var lSalonSnowyMladost2021 = new SalonYearEntity { Name = "Snowy - Mladost", Salon = lSalonSnowyMladost, Year = 2021, ClosingDate = new DateTime(2021, 12, 5), JudgeDate = new DateTime(2021, 12, 22), NotificationDate = new DateTime(2021, 12, 28), CataloguesPostedDate = new DateTime(2021, 12, 28)};
-
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2021/552", PhotoOrganisation = lFiapLevels, SalonYear = lSalonSnowyPerasto2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1688", PhotoOrganisation = lPsa, SalonYear = lSalonSnowyPerasto2021 },
-    });
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2021/554", PhotoOrganisation = lFiapLevels, SalonYear = lSalonSnowyMladost2021 },
-        new AccreditationEntity() { SalonNumber = "2021-1688", PhotoOrganisation = lPsa, SalonYear = lSalonSnowyMladost2021 },
-        });
-
-        var lSalonSnowyPerasto2021People = new SectionEntity() { SalonYear = lSalonSnowyPerasto2021, SectionType = lSectionTypePeoplePdi };
-        var lSalonSnowyMladost2021People = new SectionEntity() { SalonYear = lSalonSnowyMladost2021, SectionType = lSectionTypePeoplePdi };
-        var lSalonSnowyMladost2021Nature = new SectionEntity() { SalonYear = lSalonSnowyMladost2021, SectionType = lSectionTypeNaturePdi };
-
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 16.37M,
-            SalonYear = lSalonSnowyPerasto2021,
-            EntryDate = new DateTime(2021, 11, 27),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-
-                new CompetitionEntryEntity { Section = lSalonSnowyPerasto2021People, Image = lThreeFigures, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score=0 },
-
-                },
-                },
-                });
-
-                lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                    new SubmissionEntity(){
-                    IsJudged = true,
-                    EntryCost = 16.37M,
-                    SalonYear = lSalonSnowyMladost2021,
-                    EntryDate = new DateTime(2021, 11, 27),
-                    Person = lTim,
-                    Entries = new List<CompetitionEntryEntity> {
-
-                        new CompetitionEntryEntity { Section = lSalonSnowyMladost2021People, Image = lPreparingToPlay, IsAwarded = false, IsAccepted = true, Score=0 },
-                        new CompetitionEntryEntity { Section = lSalonSnowyMladost2021Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = true, AwardDetails="Diploma", IsAccepted = true, Score=0 },
-
-                        },
-                        },
-                        });

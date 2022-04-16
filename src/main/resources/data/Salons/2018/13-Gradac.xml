@@ -55,7 +55,7 @@
             Person = lTim,
             Entries = new List<CompetitionEntryEntity> {
                 new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = true, Score= 20},
+                new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = true, Score= 20},
                 new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=15 },
                 new CompetitionEntryEntity { Section = lSalonYearGradac2018Mono, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=14 },
                 new CompetitionEntryEntity { Section = lSalonYearGradac2018ManWomanChild, Image = lWraith, IsAwarded = false, IsAccepted = true, Score=19 },

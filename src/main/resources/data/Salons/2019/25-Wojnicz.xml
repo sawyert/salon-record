@@ -48,9 +48,9 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lByLamplight, IsAwarded = false, IsAccepted = true, Score= 0},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = By Lamplight, IsAwarded = false, IsAccepted = true, Score= 0},
             new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lComfortInAHarshWorld },
 
             },
             },

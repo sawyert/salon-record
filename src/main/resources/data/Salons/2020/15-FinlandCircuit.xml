@@ -38,19 +38,19 @@
     var lSalonVihtiFinland2020 = new SalonYearEntity { Name = "Finland - Vihti", Salon = lSalonVihtiFinland, Year = 2020, ClosingDate = new DateTime(2020, 10, 19), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 1, 5), CataloguesPostedDate = new DateTime(2020, 11, 5), Circuit = lFinlandCircuit2020 };
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/432", PhotoOrganisation = lFiapLevels, SalonYear = lSalonKouvolaFinland2020 },
+        new AccreditationEntity() { SalonNumber = "2020/432", PhotoOrganisation = lFiapLevels, SalonYear = lSalonKouvolaFinland2020</Image>
         });
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/433", PhotoOrganisation = lFiapLevels, SalonYear = lSalonKuopioFinland2020 },
+            new AccreditationEntity() { SalonNumber = "2020/433", PhotoOrganisation = lFiapLevels, SalonYear = lSalonKuopioFinland2020</Image>
             });
             lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                new AccreditationEntity() { SalonNumber = "2020/434", PhotoOrganisation = lFiapLevels, SalonYear = lSalonTampereFinland2020 },
+                new AccreditationEntity() { SalonNumber = "2020/434", PhotoOrganisation = lFiapLevels, SalonYear = lSalonTampereFinland2020</Image>
                 });
                 lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2020/435", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYivieskaFinland2020 },
+                    new AccreditationEntity() { SalonNumber = "2020/435", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYivieskaFinland2020</Image>
                     });
                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                        new AccreditationEntity() { SalonNumber = "2020/436", PhotoOrganisation = lFiapLevels, SalonYear = lSalonVihtiFinland2020 },
+                        new AccreditationEntity() { SalonNumber = "2020/436", PhotoOrganisation = lFiapLevels, SalonYear = lSalonVihtiFinland2020</Image>
                         });
 
                         var lSalonKouvolaFinland2020Colour = new SectionEntity() { SalonYear = lSalonKouvolaFinland2020, SectionType = lSectionTypeColourPdi };
@@ -72,11 +72,11 @@
                             Person = lTim,
                             Entries = new List<CompetitionEntryEntity> {
 
-                                new CompetitionEntryEntity { Section = lSalonKouvolaFinland2020Colour, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=20 },
-                                new CompetitionEntryEntity { Section = lSalonKouvolaFinland2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score= 22},
-                                new CompetitionEntryEntity { Section = lSalonKouvolaFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 19},
-                                },
-                                },
+                                <Image>KouvolaFinland2020Colour, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                                <Image>KouvolaFinland2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score= 22},
+                                <Image>KouvolaFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 19},
+                               </Image>
+                               </Image>
                                 });
 
                                 lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -88,12 +88,12 @@
                                     Person = lTim,
                                     Entries = new List<CompetitionEntryEntity> {
 
-                                        new CompetitionEntryEntity { Section = lSalonKuopioFinland2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        new CompetitionEntryEntity { Section = lSalonKuopioFinland2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score= 21},
-                                        new CompetitionEntryEntity { Section = lSalonKuopioFinland2020Nature, Image = Peacock Tree Frog Trio, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score= 24},
-                                        new CompetitionEntryEntity { Section = lSalonKuopioFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 24},
-                                        },
-                                        },
+                                        <Image>KuopioFinland2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                        <Image>KuopioFinland2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score= 21},
+                                        <Image>KuopioFinland2020Nature, Image = Peacock Tree Frog Trio, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score= 24},
+                                        <Image>KuopioFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 24},
+                                       </Image>
+                                       </Image>
                                         });
 
                                         lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -105,14 +105,14 @@
                                             Person = lTim,
                                             Entries = new List<CompetitionEntryEntity> {
 
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Colour, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=19 },
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Mono, Image = lTowersInTheSky, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score= 22},
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score= 19},
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=19 },
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Nature, Image = Peacock Tree Frog Trio, IsAwarded = true, AwardDetails = "HM", IsAccepted = true, Score= 22},
-                                                new CompetitionEntryEntity { Section = lSalonTampereFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 21},
-                                                },
-                                                },
+                                                <Image>TampereFinland2020Colour, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=19</Image>
+                                                <Image>TampereFinland2020Mono, Image = lTowersInTheSky, IsAwarded = true, AwardDetails="HM", IsAccepted = true, Score= 22},
+                                                <Image>TampereFinland2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score= 19},
+                                                <Image>TampereFinland2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=19</Image>
+                                                <Image>TampereFinland2020Nature, Image = Peacock Tree Frog Trio, IsAwarded = true, AwardDetails = "HM", IsAccepted = true, Score= 22},
+                                                <Image>TampereFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 21},
+                                               </Image>
+                                               </Image>
                                                 });
 
                                                 lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -124,10 +124,10 @@
                                                     Person = lTim,
                                                     Entries = new List<CompetitionEntryEntity> {
 
-                                                        new CompetitionEntryEntity { Section = lSalonYivieskaFinland2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=16 },
-                                                        new CompetitionEntryEntity { Section = lSalonYivieskaFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 17},
-                                                        },
-                                                        },
+                                                        <Image>YivieskaFinland2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=16</Image>
+                                                        <Image>YivieskaFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 17},
+                                                       </Image>
+                                                       </Image>
                                                         });
 
                                                         lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -139,8 +139,8 @@
                                                             Person = lTim,
                                                             Entries = new List<CompetitionEntryEntity> {
 
-                                                                new CompetitionEntryEntity { Section = lSalonVihtiFinland2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=0 },
-                                                                new CompetitionEntryEntity { Section = lSalonVihtiFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 0},
-                                                                },
-                                                                },
+                                                                <Image>VihtiFinland2020Nature, Image = lRedKiteCall</Image>
+                                                                <Image>VihtiFinland2020Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 0},
+                                                               </Image>
+                                                               </Image>
                                                                 });

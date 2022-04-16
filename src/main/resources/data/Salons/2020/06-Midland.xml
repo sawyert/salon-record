@@ -2,7 +2,7 @@
     <Name>Midland</Name>
     <Web>http</Web>
     <Country>Czech</Country>
-    <Year>2018</Year>
+    <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
@@ -19,9 +19,9 @@
         var lSalonYearMidland2020 = new SalonYearEntity { Name = "Midland", Salon = lSalonMidlandCounties, Year = 2020, ClosingDate = new DateTime(2020, 6, 25), JudgeDate = new DateTime(2020, 7, 1), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15) };
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/246", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMidland2020 },
-    new AccreditationEntity() { SalonNumber = "2020-267", PhotoOrganisation = lPsa, SalonYear = lSalonYearMidland2020 },
-    new AccreditationEntity() { SalonNumber = "L200073-M6G", PhotoOrganisation = lGpu, SalonYear = lSalonYearMidland2020 },
+    new AccreditationEntity() { SalonNumber = "2020/246", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMidland2020</Image>
+    new AccreditationEntity() { SalonNumber = "2020-267", PhotoOrganisation = lPsa, SalonYear = lSalonYearMidland2020</Image>
+    new AccreditationEntity() { SalonNumber = "L200073-M6G", PhotoOrganisation = lGpu, SalonYear = lSalonYearMidland2020</Image>
     });
 
     var llSalonYeaMidland2020Creative = new SectionEntity() { SalonYear = lSalonYearMidland2020, SectionType = lSectionTypeCreativePdi };
@@ -36,8 +36,8 @@
         Person = lTim,
         Entries = new List<CompetitionEntryEntity> {
 
-            new CompetitionEntryEntity { Section = llSalonYeaMidland2020Creative, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score=0 },
-            },
-            },
+            new CompetitionEntryEntity { Section = llSalonYeaMidland2020Creative, Image = The Hall Of Gateways</Image>
+           </Image>
+           </Image>
             });
 

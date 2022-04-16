@@ -85,7 +85,7 @@
                 new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lFloodingInLeeds, IsAwarded = false, IsAccepted = true, Score=15 },
                 new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lZombieAttack, IsAwarded = false, IsAccepted = false, Score=13 },
                 new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lRimlitKingfisher, IsAwarded = false, IsAccepted = false, Score=13 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lGreatGreyOwl, IsAwarded = false, IsAccepted = true, Score=17 },
+                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=17 },
                 new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lLittleOwl, IsAwarded = false, IsAccepted = true, Score=17 },
                 new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = true, Score=17 },
                 new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenColour, Image = lThroughTheArch, IsAwarded = false, IsAccepted = true, Score=21 },

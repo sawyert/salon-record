@@ -55,7 +55,7 @@
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score=20 },
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Mono, Image = lADaisyInMono, IsAwarded = false, IsAccepted = false, Score=17 },
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=14 },
-            new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Woman, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score= 18},
+            new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score= 18},
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=15 },
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=15 },
             new CompetitionEntryEntity { Section = lSalonYearGoldCamera2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score=18 },

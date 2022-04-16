@@ -1,114 +1,60 @@
 <Circuit>
     <Name>Danube</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Web></Web>
+    <Cost>31.20</Cost>
     <JudgeDate>31-01-2021</JudgeDate>
     <NotificationDate>31-02-2021</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Serbia</Name>
+            <Country>Serbia</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2021-1340</Accreditation>
+                <Accreditation type="FIAPLevels">2021/229</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Pyramid Of Storm</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Russia</Name>
+            <Country>Russia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2021-1340</Accreditation>
+                <Accreditation type="FIAPLevels">2021/230</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Planet Fall</Image>
+                <Image>Portal Blue</Image>
+                <Image>Moonrise</Image>
 
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Bulgaria</Name>
+            <Country>Bulgaria</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2021-1340</Accreditation>
+                <Accreditation type="FIAPLevels">2021/231</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Into The Wild</Image>
+                <Image>Contented Owl</Image>
+                <Image>Edible Frog</Image>
+                <Image>Leopard Gecko</Image>
+
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Belarus</Name>
+            <Country>Belarus</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2021-1340</Accreditation>
+                <Accreditation type="FIAPLevels">2021/232</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Contented Owl</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
-
-        // Danube Circuit
-        var lSalonDanubeSerbia = new SalonEntity { Name = "Danube - Serbia", Website = "", Country = lCountrySerbia };
-        var lSalonDanubeRussia = new SalonEntity { Name = "Danube - Russia", Website = "", Country = lCountryRussia };
-        var lSalonDanubeBelarus = new SalonEntity { Name = "Danube - Belarus", Website = "", Country = lCountryBelarus };
-        var lSalonDanubeSerbia2021 = new SalonYearEntity { Name = "Danube - Serbia", Salon = lSalonDanubeSerbia, Year = 2021, ClosingDate = new DateTime(2021, 6, 26), JudgeDate = new DateTime(2021, 7, 13), NotificationDate = new DateTime(2021, 7, 20), CataloguesPostedDate = new DateTime(2021, 9, 25) };
-        var lSalonDanubeRussia2021 = new SalonYearEntity { Name = "Danube - Russia", Salon = lSalonDanubeRussia, Year = 2021, ClosingDate = new DateTime(2021, 6, 26), JudgeDate = new DateTime(2021, 7, 13), NotificationDate = new DateTime(2021, 7, 20), CataloguesPostedDate = new DateTime(2021, 9, 25) };
-        var lSalonDanubeBulgaria2021 = new SalonYearEntity { Name = "Danube - Bulgaria", Salon = lSalonDanubeBulgaria, Year = 2021, ClosingDate = new DateTime(2021, 6, 26), JudgeDate = new DateTime(2021, 7, 13), NotificationDate = new DateTime(2021, 7, 20), CataloguesPostedDate = new DateTime(2021, 9, 25) };
-        var lSalonDanubeBelarus2021 = new SalonYearEntity { Name = "Danube - Belarus", Salon = lSalonDanubeBelarus, Year = 2021, ClosingDate = new DateTime(2021, 6, 26), JudgeDate = new DateTime(2021, 7, 13), NotificationDate = new DateTime(2021, 7, 20), CataloguesPostedDate = new DateTime(2021, 9, 25) };
-
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2021/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonDanubeSerbia2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1340", PhotoOrganisation = lPsa, SalonYear = lSalonDanubeSerbia2021 },
-    new AccreditationEntity() { SalonNumber = "2021/230", PhotoOrganisation = lFiapLevels, SalonYear = lSalonDanubeRussia2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1340", PhotoOrganisation = lPsa, SalonYear = lSalonDanubeRussia2021 },
-    new AccreditationEntity() { SalonNumber = "2021/231", PhotoOrganisation = lFiapLevels, SalonYear = lSalonDanubeBulgaria2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1340", PhotoOrganisation = lPsa, SalonYear = lSalonDanubeBulgaria2021 },
-    new AccreditationEntity() { SalonNumber = "2021/232", PhotoOrganisation = lFiapLevels, SalonYear = lSalonDanubeBelarus2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1340", PhotoOrganisation = lPsa, SalonYear = lSalonDanubeBelarus2021 },
-    });
-
-    var lSalonDanubeSerbia2021Mono = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeMonoPdi };
-    var lSalonDanubeRussia2021Water = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeColourPdi};
-    var lSalonDanubeRussia2021Colour = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeColourPdi};
-    var lSalonDanubeBulgaria2021Mono = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeMonoPdi};
-    var lSalonDanubeBulgaria2021Nature = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeNaturePdi};
-    var lSalonDanubeBelarus2021Nature = new SectionEntity() { SalonYear = lSalonFiapBiennial2020, SectionType = lSectionTypeNaturePdi};
-
-    var lPyramidOfStorm = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Pyramid Of Storm" };
-    var lPlanetFall = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Planetfall" };
-    var lPortalBlue = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Portal Blue" };
-    var lIntoTheWild = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Into The Wild" };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 7.80M,
-        SalonYear = lSalonDanubeSerbia2021,
-        EntryDate = new DateTime(2021, 6, 24),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonDanubeSerbia2021Mono, Image = lPyramidOfStorm, IsAwarded = false, IsAccepted = true, Score=0 },
-            },
-            },
-            });
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                new SubmissionEntity(){
-                IsJudged = true,
-                EntryCost = 7.80M,
-                SalonYear = lSalonDanubeRussia2021,
-                EntryDate = new DateTime(2021, 6, 24),
-                Person = lTim,
-                Entries = new List<CompetitionEntryEntity> {
-
-                    new CompetitionEntryEntity { Section = lSalonDanubeRussia2021Colour, Image = lPlanetFall, IsAwarded = false, IsAccepted = true, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonDanubeRussia2021Colour, Image = lPortalBlue, IsAwarded = false, IsAccepted = true, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonDanubeRussia2021Water, Image = lMoonrise, IsAwarded = false, IsAccepted = true, Score=0 },
-                    },
-                    },
-                    });
-
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 7.80M,
-                        SalonYear = lSalonDanubeBulgaria2021,
-                        EntryDate = new DateTime(2021, 6, 24),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            new CompetitionEntryEntity { Section = lSalonDanubeBulgaria2021Mono, Image = lIntoTheWild, IsAwarded = false, IsAccepted = true, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonDanubeBulgaria2021Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = true, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonDanubeBulgaria2021Nature, Image = lEdibleFrog, IsAwarded = false, IsAccepted = true, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonDanubeBulgaria2021Nature, Image = lLeopardGecko, IsAwarded = false, IsAccepted = true, Score=0 },
-                            },
-                            },
-                            });
-
-                            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                new SubmissionEntity(){
-                                IsJudged = true,
-                                EntryCost = 7.80M,
-                                SalonYear = lSalonDanubeBelarus2021,
-                                EntryDate = new DateTime(2021, 6, 24),
-                                Person = lTim,
-                                Entries = new List<CompetitionEntryEntity> {
-
-                                    new CompetitionEntryEntity { Section = lSalonDanubeBelarus2021Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = true, Score=0 },
-                                    },
-                                    },
-                                    });

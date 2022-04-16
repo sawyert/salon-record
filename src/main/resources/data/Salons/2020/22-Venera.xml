@@ -1,0 +1,20 @@
+<Salon>
+    <Name>Venera</Name>
+    <Web>http://www.jadran-foto.com/</Web>
+    <Country>Bosnia and Herzegovina</Country>
+    <Year>2020</Year>
+    <JudgeDate>31-01-2020</JudgeDate>
+    <NotificationDate>31-02-2020</NotificationDate>
+    <Accreditations>
+        <Accreditation type="FIAPLevels">2020/516</Accreditation>
+    </Accreditations>
+    <Cost>22.68</Cost>
+    <AcceptedImages>
+        <Image>Comfort In A Harsh World</Image>
+        <Image>Railway Children</Image>
+        <Image award="Salon HM"></Image>
+        <Image award="FIAP HM">Northern White Faced Owl</Image>
+    </AcceptedImages>
+</Salon>
+
+

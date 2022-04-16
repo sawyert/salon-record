@@ -60,11 +60,11 @@
             EntryDate = new DateTime(2018, 1, 14),
             Person = lTim,
             Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lAfternoonGun, IsAwarded = false, IsAccepted = false, Score=9 },
+                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = Afternoon Gun, IsAwarded = false, IsAccepted = false, Score=9 },
                 new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score= 10},
                 new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lThreeTulips, IsAwarded = false, IsAccepted = false, Score=10 },
                 new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lWraith, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = false, Score= 8},
+                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = false, Score= 8},
                 new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score=10 },
                 new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=11 },
                 new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=11 },

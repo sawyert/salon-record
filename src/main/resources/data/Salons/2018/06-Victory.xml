@@ -61,7 +61,7 @@
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Colour, Image = lThreeTulips, IsAwarded = false, IsAccepted = false, Score=15 },
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Mono, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = false, Score= 15},
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=14 },
-                new CompetitionEntryEntity { Section = lSalonYearVictory2018Mono, Image = lBirdsSilhouette, IsAwarded = false, IsAccepted = true, Score=20 },
+                new CompetitionEntryEntity { Section = lSalonYearVictory2018Mono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = true, Score=20 },
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Mono, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=16 },
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Nature, Image = lWaterVole, IsAwarded = false, IsAccepted = false, Score=16 },
                 new CompetitionEntryEntity { Section = lSalonYearVictory2018Nature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=15 },

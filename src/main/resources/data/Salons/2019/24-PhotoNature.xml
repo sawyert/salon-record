@@ -49,10 +49,10 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
             new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = lSymmetricalFlowerInMono, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 0},
             new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lMossyFrogOnBranch, IsAwarded = true, AwardDetails = "Club Diploma", IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lGargoyleGecko },
 
             },
             },

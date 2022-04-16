@@ -41,7 +41,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lTheSeamstressTakesHerFee, IsAwarded = false, IsAccepted = false, Score=18 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 14 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lToDreamOfCalmerShores, IsAwarded = false, IsAccepted = false, Score=13 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = false, Score=13 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Colour, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = false, Score=13 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=16 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 17},
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=18 },
@@ -53,7 +53,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lJilted, IsAwarded = false, IsAccepted = true, Score=20 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score= 19},
             new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lEngineDriver, IsAwarded = false, IsAccepted = false, Score=16 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score=16 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoTramontana2019People, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=16 },
 
             },
             },

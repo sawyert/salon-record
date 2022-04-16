@@ -2,48 +2,18 @@
     <Name>Welsh</Name>
     <Web>http</Web>
     <Country>Czech</Country>
-    <Year>2018</Year>
+    <Year>2021</Year>
     <JudgeDate>31-01-2021</JudgeDate>
     <NotificationDate>31-02-2021</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2021-1485</Accreditation>
+        <Accreditation type="FIAPLevels">2021/428</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>20</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image award="Ribbon">Two Tree Triptych</Image>
+        <Image>Beacon</Image>
+        <Image>Magical Pilgrim</Image>
+        <Image>A Tree Of Fire And Water</Image>
     </AcceptedImages>
 </Salon>
-
-        // Welsh 2021
-        var lMagicalPilgrim = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Magical Pilgrim" };
-        var lATreeOfFireAndWater = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "A Tree Of Fire And Water" };
-
-        var lSalonWelsh2021 = new SalonYearEntity { Name = "Welsh", Salon = lSalonWelsh, Year = 2021, ClosingDate = new DateTime(2021, 8, 22), JudgeDate = new DateTime(2021, 8, 29), NotificationDate = new DateTime(2021, 9, 12), CataloguesPostedDate = new DateTime(2021, 9, 12) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2021/428", PhotoOrganisation = lFiapLevels, SalonYear = lSalonWelsh2021 },
-    new AccreditationEntity() { SalonNumber = "2021-1485", PhotoOrganisation = lPsa, SalonYear = lSalonWelsh2021 },
-    });
-
-    var lSalonWelsh2021Colour = new SectionEntity() { SalonYear = lSalonWelsh2021, SectionType = lSectionTypeColourPdi };
-    var lSalonWelsh2021Creative = new SectionEntity() { SalonYear = lSalonWelsh2021, SectionType = lSectionTypeCreativePdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 20M,
-        SalonYear = lSalonWelsh2021,
-        EntryDate = new DateTime(2021, 8, 22),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonWelsh2021Colour, Image = lTwoTreeTriptych, IsAwarded = true, AwardDetails="Ribbon", IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonWelsh2021Creative, Image = lBeacon, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonWelsh2021Creative, Image = lMagicalPilgrim, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonWelsh2021Creative, Image = lATreeOfFireAndWater, IsAwarded = false, IsAccepted = true, Score=0 },
-
-            },
-            },
-            });

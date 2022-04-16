@@ -37,16 +37,16 @@
     var lSalonResiteDesire2020 = new SalonYearEntity { Name = "Desire - Resita", Salon = lSalonResiteDesire, Year = 2020, ClosingDate = new DateTime(2020, 10, 18), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 11, 11), CataloguesPostedDate = new DateTime(2020, 11, 11), Circuit = lDesireCircuit2020 };
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/394", PhotoOrganisation = lFiapLevels, SalonYear = lSalonBorDesire2020 },
+        new AccreditationEntity() { SalonNumber = "2020/394", PhotoOrganisation = lFiapLevels, SalonYear = lSalonBorDesire2020</Image>
         });
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/395", PhotoOrganisation = lFiapLevels, SalonYear = lSalonLiassolDesire2020 },
+            new AccreditationEntity() { SalonNumber = "2020/395", PhotoOrganisation = lFiapLevels, SalonYear = lSalonLiassolDesire2020</Image>
             });
             lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                new AccreditationEntity() { SalonNumber = "2020/396", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOradeaDesire2020 },
+                new AccreditationEntity() { SalonNumber = "2020/396", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOradeaDesire2020</Image>
                 });
                 lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2020/397", PhotoOrganisation = lFiapLevels, SalonYear = lSalonResiteDesire2020 },
+                    new AccreditationEntity() { SalonNumber = "2020/397", PhotoOrganisation = lFiapLevels, SalonYear = lSalonResiteDesire2020</Image>
                     });
 
                     var lCaveOfTheYeti = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Cave Of The Yeti" };
@@ -71,16 +71,16 @@
                         Person = lTim,
                         Entries = new List<CompetitionEntryEntity> {
 
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=23 },
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Nature, Image = lRedFox, IsAwarded = false, IsAccepted = true, Score= 23},
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score= 24},
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score=23 },
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Mountain, Image = lTreeline, IsAwarded = false, IsAccepted = true, Score= 23},
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Mountain, Image = lSummit, IsAwarded = false, IsAccepted = true, Score= 25},
-                            new CompetitionEntryEntity { Section = lSalonBorDesire2020Mountain, Image = lSnowPeak, IsAwarded = false, IsAccepted = true, Score=23 },
+                            <Image>BorDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                            <Image>BorDesire2020Nature, Image = lRedFox, IsAwarded = false, IsAccepted = true, Score= 23},
+                            <Image>BorDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score= 24},
+                            <Image>BorDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                            <Image>BorDesire2020Mountain, Image = lTreeline, IsAwarded = false, IsAccepted = true, Score= 23},
+                            <Image>BorDesire2020Mountain, Image = lSummit, IsAwarded = false, IsAccepted = true, Score= 25},
+                            <Image>BorDesire2020Mountain, Image = lSnowPeak, IsAwarded = false, IsAccepted = true, Score=23</Image>
 
-                            },
-                            },
+                           </Image>
+                           </Image>
                             });
 
                             lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -92,10 +92,10 @@
                                 Person = lTim,
                                 Entries = new List<CompetitionEntryEntity> {
 
-                                    new CompetitionEntryEntity { Section = lSalonLiassolDesire2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=21 },
+                                    <Image>LiassolDesire2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=21</Image>
 
-                                    },
-                                    },
+                                   </Image>
+                                   </Image>
                                     });
 
                                     lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -107,10 +107,10 @@
                                         Person = lTim,
                                         Entries = new List<CompetitionEntryEntity> {
 
-                                            new CompetitionEntryEntity { Section = lSalonOradeaDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=23 },
-                                            new CompetitionEntryEntity { Section = lSalonOradeaDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false,IsAccepted = true, Score= 22},
-                                            },
-                                            },
+                                            <Image>OradeaDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                                            <Image>OradeaDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false,IsAccepted = true, Score= 22},
+                                           </Image>
+                                           </Image>
                                             });
 
                                             lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -122,11 +122,11 @@
                                                 Person = lTim,
                                                 Entries = new List<CompetitionEntryEntity> {
 
-                                                    new CompetitionEntryEntity { Section = lSalonResiteDesire2020Nature, Image = lWindsweptLittleOwl, IsAwarded = false, IsAccepted = true, Score=21 },
-                                                    new CompetitionEntryEntity { Section = lSalonResiteDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=21 },
-                                                    new CompetitionEntryEntity { Section = lSalonResiteDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=22 },
-                                                    new CompetitionEntryEntity { Section = lSalonResiteDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score= 20},
-                                                    new CompetitionEntryEntity { Section = lSalonResiteDesire2020Mountain, Image = lSummit, IsAwarded = true, AwardDetails="Gold", IsAccepted = true, Score= 23},
-                                                    },
-                                                    },
+                                                    <Image>ResiteDesire2020Nature, Image = lWindsweptLittleOwl, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                                    <Image>ResiteDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                                    <Image>ResiteDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=22</Image>
+                                                    <Image>ResiteDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score= 20},
+                                                    <Image>ResiteDesire2020Mountain, Image = lSummit, IsAwarded = true, AwardDetails="Gold", IsAccepted = true, Score= 23},
+                                                   </Image>
+                                                   </Image>
                                                     });

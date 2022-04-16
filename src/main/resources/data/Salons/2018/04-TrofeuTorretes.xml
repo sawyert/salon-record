@@ -62,7 +62,7 @@
             Person = lTim,
             Entries = new List<CompetitionEntryEntity> {
                 new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=533 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lAfternoonGun, IsAwarded = false, IsAccepted = false, Score= 533},
+                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = Afternoon Gun, IsAwarded = false, IsAccepted = false, Score= 533},
                 new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lMdinaMalta, IsAwarded = false, IsAccepted = false, Score=533 },
                 new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lKingfisherWithFish, IsAwarded = false, IsAccepted = false, Score=633 },
                 new CompetitionEntryEntity { Section = lSalonYearSpain2018Mono, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score= 467},

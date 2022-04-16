@@ -50,11 +50,11 @@
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = The Wishing Tree },
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lClownOfFear, IsAwarded = true, AwardDetails="NFFF HM", IsAccepted = true, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lMistressOfPain, IsAwarded = false, IsAccepted = false, Score= 0},
             new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lTheStuffOfNightmares, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lZombieLunch, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lZombieLunch },
 
             },
             },

@@ -41,7 +41,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = lThreeRoses, IsAwarded = false, IsAccepted = false, Score=14 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 15},
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=15 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = lByLamplight, IsAwarded = false, IsAccepted = false, Score=12 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Colour, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=12 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = true, Score=16 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score= 17},
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15 },
@@ -52,7 +52,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=12 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = true, Score=16 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score= 19},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lContentedOwl, IsAwarded = true, AwardDetails = "Salon Diploma", IsAccepted = true, Score=22 },
+            new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = Contented Owl, IsAwarded = true, AwardDetails = "Salon Diploma", IsAccepted = true, Score=22 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoMof2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = true, Score=21 },
 
             },

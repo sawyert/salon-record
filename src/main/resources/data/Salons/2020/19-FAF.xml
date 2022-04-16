@@ -1,45 +1,16 @@
 <Salon>
     <Name>FAF</Name>
     <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Country>Argentina</Country>
+    <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2020-485</Accreditation>
+        <Accreditation type="FIAPLevels">2020/531</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>14.12</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Queen Domi</Image>
     </AcceptedImages>
 </Salon>
-
-        // FAF
-        var lQueenDomi = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Queen Domi" };
-
-        var lSalonFaf = new SalonEntity { Name = "FAF", Website = "http://www.faf-internacional.com/?lg=en", Country = lCountryArgentina };
-        var lSalonFaf2020 = new SalonYearEntity { Name = "FAF", Salon = lSalonFaf, Year = 2020, ClosingDate = new DateTime(2020, 11, 23), JudgeDate = new DateTime(2020, 11, 29), NotificationDate = new DateTime(2020, 12, 7), CataloguesPostedDate = new DateTime(2020, 12, 7) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/531", PhotoOrganisation = lFiapLevels, SalonYear = lSalonFaf2020 },
-    new AccreditationEntity() { SalonNumber = "2020-485", PhotoOrganisation = lPsa, SalonYear = lSalonFaf2020 },
-    });
-
-    var lSalonFaf2020Colour = new SectionEntity() { SalonYear = lSalonFaf2020, SectionType = lSectionTypeColourPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 14.12M,
-        SalonYear = lSalonFaf2020,
-        EntryDate = new DateTime(2020, 11, 22),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonFaf2020Colour, Image = lQueenDomi, IsAwarded = false, IsAccepted = true, Score=20 },
-
-            },
-            },
-            });

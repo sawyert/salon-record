@@ -36,30 +36,30 @@
 
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/145", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGoldCoastQld2020 },
-        new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearGoldCoastQld2020 },
-        new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearGoldCoastQld2020 },
+        new AccreditationEntity() { SalonNumber = "2020/145", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGoldCoastQld2020</Image>
+        new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearGoldCoastQld2020</Image>
+        new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearGoldCoastQld2020</Image>
         });
 
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/146", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMaryboroughQld2020 },
-            new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearMaryboroughQld2020 },
-            new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearMaryboroughQld2020 },
+            new AccreditationEntity() { SalonNumber = "2020/146", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMaryboroughQld2020</Image>
+            new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearMaryboroughQld2020</Image>
+            new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearMaryboroughQld2020</Image>
             });
 
 
             lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                new AccreditationEntity() { SalonNumber = "2020/147", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMtGravattQld2020 },
-                new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearMtGravattQld2020 },
-                new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearMtGravattQld2020 },
+                new AccreditationEntity() { SalonNumber = "2020/147", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearMtGravattQld2020</Image>
+                new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYearMtGravattQld2020</Image>
+                new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYearMtGravattQld2020</Image>
                 });
 
 
                 lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2020/148", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYeartownsvilleQld2020 },
-                    new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYeartownsvilleQld2020 },
-                    new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYeartownsvilleQld2020 },
+                    new AccreditationEntity() { SalonNumber = "2020/148", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYeartownsvilleQld2020</Image>
+                    new AccreditationEntity() { SalonNumber = "20120-181", PhotoOrganisation = lPsa, SalonYear = lSalonYeartownsvilleQld2020</Image>
+                    new AccreditationEntity() { SalonNumber = "L200049", PhotoOrganisation = lGpu, SalonYear = lSalonYeartownsvilleQld2020</Image>
                     });
 
                     var lSalonYearGoldCoast2020Colour = new SectionEntity() { SalonYear = lSalonYearGoldCoastQld2020, SectionType = lSectionTypeColourPdi };
@@ -86,10 +86,10 @@
                         Person = lTim,
                         Entries = new List<CompetitionEntryEntity> {
 
-                            new CompetitionEntryEntity { Section = lSalonYearGoldCoast2020Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonYearGoldCoast2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score= 0},
-                            },
-                            },
+                            <Image>YearGoldCoast2020Colour, Image = The Hall Of Gateways</Image>
+                            <Image>YearGoldCoast2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score= 0},
+                           </Image>
+                           </Image>
                             });
 
                             lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -101,10 +101,10 @@
                                 Person = lTim,
                                 Entries = new List<CompetitionEntryEntity> {
 
-                                    new CompetitionEntryEntity { Section = lSalonYearMaryborough2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearMaryborough2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
-                                    },
-                                    },
+                                    <Image>YearMaryborough2020Mono, Image = lTowersInTheSky</Image>
+                                    <Image>YearMaryborough2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
+                                   </Image>
+                                   </Image>
                                     });
 
                                     lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -116,15 +116,15 @@
                                         Person = lTim,
                                         Entries = new List<CompetitionEntryEntity> {
 
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Colour, Image = lSecondSummoning, IsAwarded = false, IsAccepted = true, Score=0 },
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Colour, Image = lTheSeamstressTakesHerFee, IsAwarded = false, IsAccepted = true, Score=0 },
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Colour, Image = lBlueFeather, IsAwarded = false, IsAccepted = true, Score=0 },
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Action, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = true, Score= 0},
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score= 0},
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
-                                            new CompetitionEntryEntity { Section = lSalonYearMtGravatt2020Nature, Image = lMarbledTreeFrog, IsAwarded = false, IsAccepted = true, Score= 0},
-                                            },
-                                            },
+                                            <Image>YearMtGravatt2020Colour, Image = lSecondSummoning</Image>
+                                            <Image>YearMtGravatt2020Colour, Image = lTheSeamstressTakesHerFee</Image>
+                                            <Image>YearMtGravatt2020Colour, Image = lBlueFeather</Image>
+                                            <Image>YearMtGravatt2020Action, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = true, Score= 0},
+                                            <Image>YearMtGravatt2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score= 0},
+                                            <Image>YearMtGravatt2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
+                                            <Image>YearMtGravatt2020Nature, Image = lMarbledTreeFrog, IsAwarded = false, IsAccepted = true, Score= 0},
+                                           </Image>
+                                           </Image>
                                             });
 
                                             lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -136,8 +136,8 @@
                                                 Person = lTim,
                                                 Entries = new List<CompetitionEntryEntity> {
 
-                                                    new CompetitionEntryEntity { Section = lSalonYearTownsville2020Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearTownsville2020Action, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = true, Score= 0},
-                                                    },
-                                                    },
+                                                    <Image>YearTownsville2020Nature, Image = lGargoyleGecko</Image>
+                                                    <Image>YearTownsville2020Action, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = true, Score= 0},
+                                                   </Image>
+                                                   </Image>
                                                     });

@@ -35,12 +35,12 @@
     var lSalonYearDanubeBulgaria2020 = new SalonYearEntity { Name = "Danube - Bulgaria", Salon = lSalonDanubeBulgaria, Year = 2020, ClosingDate = new DateTime(2020, 6, 27), JudgeDate = new DateTime(2020, 7, 1), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15), Circuit = lDanubeCircuit2020 };
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/248", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDanubeRomania2020 },
-        new AccreditationEntity() { SalonNumber = "2020-264", PhotoOrganisation = lPsa, SalonYear = lSalonYearDanubeRomania2020 },
+        new AccreditationEntity() { SalonNumber = "2020/248", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDanubeRomania2020</Image>
+        new AccreditationEntity() { SalonNumber = "2020-264", PhotoOrganisation = lPsa, SalonYear = lSalonYearDanubeRomania2020</Image>
         });
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/249", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDanubeBulgaria2020 },
-            new AccreditationEntity() { SalonNumber = "2020-264", PhotoOrganisation = lPsa, SalonYear = lSalonYearDanubeBulgaria2020 },
+            new AccreditationEntity() { SalonNumber = "2020/249", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDanubeBulgaria2020</Image>
+            new AccreditationEntity() { SalonNumber = "2020-264", PhotoOrganisation = lPsa, SalonYear = lSalonYearDanubeBulgaria2020</Image>
             });
 
             var lSalonYearDanubeRomania2020Water = new SectionEntity() { SalonYear = lSalonYearDanubeRomania2020, SectionType = lSectionTypeColourPdi };
@@ -56,10 +56,10 @@
                 Person = lTim,
                 Entries = new List<CompetitionEntryEntity> {
 
-                    new CompetitionEntryEntity { Section = lSalonYearDanubeRomania2020Water, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = true, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearDanubeRomania2020Colour, Image = lDandelionTurbulance, IsAwarded = false, IsAccepted = true, Score= 21},
-                    },
-                    },
+                    <Image>YearDanubeRomania2020Water, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                    <Image>YearDanubeRomania2020Colour, Image = lDandelionTurbulance, IsAwarded = false, IsAccepted = true, Score= 21},
+                   </Image>
+                   </Image>
                     });
 
                     lContext.Submissions.AddRange(new List<SubmissionEntity> {
@@ -71,8 +71,8 @@
                         Person = lTim,
                         Entries = new List<CompetitionEntryEntity> {
 
-                            new CompetitionEntryEntity { Section = lSalonYearDanubeBulgaria2020Nature, Image = lCommonToadOnRock, IsAwarded = false, IsAccepted = true, Score=22 },
+                            <Image>YearDanubeBulgaria2020Nature, Image = lCommonToadOnRock, IsAwarded = false, IsAccepted = true, Score=22</Image>
 
-                            },
-                            },
+                           </Image>
+                           </Image>
                             });

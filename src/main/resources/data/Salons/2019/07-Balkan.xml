@@ -48,7 +48,7 @@
         var lWindsweptLittleOwl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Windswept Little Owl" };
         var lRedKiteCall = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Red Kite Call" };
         var lNorthernWhiteFacedOwl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Northern White Faced Owl" };
-        var lContentedOwl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Contented Owl" };
+        var Contented Owl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Contented Owl" };
 
 
         lContext.Images.AddRange(new List<ImageEntity>
@@ -57,7 +57,7 @@
             lWindsweptLittleOwl,
             lRedKiteCall,
             lNorthernWhiteFacedOwl,
-            lContentedOwl,
+            Contented Owl,
 
             });
 
@@ -89,7 +89,7 @@
                 new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lWindsweptLittleOwl, IsAwarded = false, IsAccepted = false, Score=15 },
                 new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lRedKiteCall, IsAwarded = false, IsAccepted = false, Score=20 },
                 new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=19 },
+                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=19 },
                 },
                 },
                 });

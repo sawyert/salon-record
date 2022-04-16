@@ -53,8 +53,8 @@
             new CompetitionEntryEntity { Section = lSalonYearNarava2019Scapes, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=0 },
             new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lMossyFrogOnBranch, IsAwarded = false, IsAccepted = true, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
+            new CompetitionEntryEntity { Section = lSalonYearNarava2019Nature, Image = lMossyFrogOnBranch },
 
             },
             },

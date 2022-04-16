@@ -2,7 +2,7 @@
     <Name>Issyk Kul</Name>
     <Web>http</Web>
     <Country>Czech</Country>
-    <Year>2018</Year>
+    <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
@@ -23,8 +23,8 @@
         var lSalonYearIssykKul2020 = new SalonYearEntity { Name = "Issyk Kul", Salon = lSalonIssykKul, Year = 2020, ClosingDate = new DateTime(2020, 6, 26), JudgeDate = new DateTime(2020, 7, 1), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15) };
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/316", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearIssykKul2020 },
-    new AccreditationEntity() { SalonNumber = "2020-151", PhotoOrganisation = lPsa, SalonYear = lSalonYearIssykKul2020 },
+    new AccreditationEntity() { SalonNumber = "2020/316", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearIssykKul2020</Image>
+    new AccreditationEntity() { SalonNumber = "2020-151", PhotoOrganisation = lPsa, SalonYear = lSalonYearIssykKul2020</Image>
     });
 
     var lSalonYearIssykKul2020Colour = new SectionEntity() { SalonYear = lSalonYearIssykKul2020, SectionType = lSectionTypeColourPdi };
@@ -40,10 +40,10 @@
         Person = lTim,
         Entries = new List<CompetitionEntryEntity> {
 
-            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Colour, Image = lHalfTheWorldIsUpsideDown, IsAwarded = false, IsAccepted = true, Score=19 },
-            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Colour, Image = lVermodalen, IsAwarded = false, IsAccepted = true, Score=19 },
-            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Sea, Image = lWatchingTheWind, IsAwarded = false, IsAccepted = true, Score=19 },
-            new CompetitionEntryEntity { Section = lSalonYearIssykKul2020Sea, Image = lIsolation, IsAwarded = false, IsAccepted = true, Score=18},
-            },
-            },
+            <Image>YearIssykKul2020Colour, Image = lHalfTheWorldIsUpsideDown, IsAwarded = false, IsAccepted = true, Score=19</Image>
+            <Image>YearIssykKul2020Colour, Image = lVermodalen, IsAwarded = false, IsAccepted = true, Score=19</Image>
+            <Image>YearIssykKul2020Sea, Image = lWatchingTheWind, IsAwarded = false, IsAccepted = true, Score=19</Image>
+            <Image>YearIssykKul2020Sea, Image = lIsolation, IsAwarded = false, IsAccepted = true, Score=18},
+           </Image>
+           </Image>
             });

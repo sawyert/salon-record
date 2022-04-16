@@ -26,7 +26,7 @@
     lOlympicCircuit2019,
     });
 
-    var lTheHallOfGateways = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Hall of Gateways" };
+    var The Hall Of Gateways = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Hall of Gateways" };
     var lCityRechargingTower = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "City Recharging Tower" };
     var lCrestedGeckoOnStump = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Crested Gecko on Stump" };
 
@@ -57,13 +57,13 @@
 
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score= 0},
-                new CompetitionEntryEntity { Section = lSalonYearZeus2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score=0 },
+                new CompetitionEntryEntity { Section = lSalonYearZeus2019Colour, Image = The Hall Of Gateways },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0 },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score= 0},
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-                new CompetitionEntryEntity { Section = lSalonYearZeus2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=0 },
-                new CompetitionEntryEntity { Section = lSalonYearZeus2019Nature, Image = lContentedOwl, IsAwarded = true, AwardDetails="Judges Choice", IsAccepted = true, Score=0 },
+                new CompetitionEntryEntity { Section = lSalonYearZeus2019Mono, Image = The Wishing Tree },
+                new CompetitionEntryEntity { Section = lSalonYearZeus2019Nature, Image = Contented Owl, IsAwarded = true, AwardDetails="Judges Choice", IsAccepted = true, Score=0 },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = true, Score= 0},
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0 },
                 new CompetitionEntryEntity { Section = lSalonYearZeus2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },
@@ -99,13 +99,13 @@
 
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = false, Score=0 },
+                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Colour, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = false, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Mono, Image = Mirror Of Reminiscence, IsAwarded = true, AwardDetails = "GPU HM", IsAccepted = true, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score= 0},
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=0 },
-                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Nature, Image = lContentedOwl, IsAwarded = true, AwardDetails="GPU Bronze", IsAccepted = true, Score=0 },
+                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Mono, Image = The Wishing Tree },
+                            new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Nature, Image = Contented Owl, IsAwarded = true, AwardDetails="GPU Bronze", IsAccepted = true, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = true, Score= 0},
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0 },
                             new CompetitionEntryEntity { Section = lSalonYearAphrodite2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },
@@ -141,13 +141,13 @@
 
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                                        new CompetitionEntryEntity { Section = lSalonYearHermes2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = false, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonYearHermes2019Colour, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score= 0},
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                        new CompetitionEntryEntity { Section = lSalonYearHermes2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=0 },
+                                        new CompetitionEntryEntity { Section = lSalonYearHermes2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score= 0},
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0 },
                                         new CompetitionEntryEntity { Section = lSalonYearHermes2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },
@@ -183,13 +183,13 @@
 
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Colour, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score=0 },
+                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Colour, Image = The Hall Of Gateways },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = true, Score=0 },
+                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Mono, Image = Mirror Of Reminiscence },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Nature, Image = lContentedOwl, IsAwarded = false, IsAccepted = false, Score=0 },
+                                                    new CompetitionEntryEntity { Section = lSalonYearApollo2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score= 0},
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0 },
                                                     new CompetitionEntryEntity { Section = lSalonYearApollo2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },

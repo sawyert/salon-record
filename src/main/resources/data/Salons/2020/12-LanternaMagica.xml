@@ -2,7 +2,7 @@
     <Name>Lanterna Magica</Name>
     <Web>http</Web>
     <Country>Czech</Country>
-    <Year>2018</Year>
+    <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
@@ -21,8 +21,8 @@
         var lSalonYearLanternaMagica2020 = new SalonYearEntity { Name = "Lanterna Magica", Salon = lSalonLanternaMagica, Year = 2020, ClosingDate = new DateTime(2020, 9, 7), JudgeDate = new DateTime(2020, 9, 20), NotificationDate = new DateTime(2020, 10, 04), CataloguesPostedDate = new DateTime(2020, 11, 29) };
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearLanternaMagica2020 },
-    new AccreditationEntity() { SalonNumber = "2020-266", PhotoOrganisation = lPsa, SalonYear = lSalonYearLanternaMagica2020 },
+    new AccreditationEntity() { SalonNumber = "2020/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearLanternaMagica2020</Image>
+    new AccreditationEntity() { SalonNumber = "2020-266", PhotoOrganisation = lPsa, SalonYear = lSalonYearLanternaMagica2020</Image>
     });
 
     var lSalonYearLanternaMagica2020Mono = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2020, SectionType = lSectionTypeMonoPdi };
@@ -38,10 +38,10 @@
         Person = lTim,
         Entries = new List<CompetitionEntryEntity> {
 
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2020Mono, Image = lMonkPortal, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2020LanternaMagica, Image = lTheSummoning, IsAwarded = false, IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2020LanternaMagica, Image = lBaronBone, IsAwarded = false, IsAccepted = true, Score=0 },
-            },
-            },
+            <Image>YearLanternaMagica2020Mono, Image = lMonkPortal</Image>
+            <Image>YearLanternaMagica2020Mono, Image = lTowersInTheSky</Image>
+            <Image>YearLanternaMagica2020LanternaMagica, Image = lTheSummoning</Image>
+            <Image>YearLanternaMagica2020LanternaMagica, Image = lBaronBone</Image>
+           </Image>
+           </Image>
             });

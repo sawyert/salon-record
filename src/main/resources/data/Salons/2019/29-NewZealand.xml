@@ -48,7 +48,7 @@
             new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=8 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=7 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = Party At The Apocalypse, IsAwarded = false, IsAccepted = false, Score=90 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = lTheHallOfGateways, IsAwarded = false, IsAccepted = true, Score= 11},
+            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = true, Score= 11},
             new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=12 },
             new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=10 },
 
