@@ -6,77 +6,17 @@
     <JudgeDate>19-01-2018</JudgeDate>
     <NotificationDate>31-01-2018</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAP">2018/</Accreditation>
+        <Accreditation type="PSA">2018-059</Accreditation>
+        <Accreditation type="FIAP">2018/049</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>13.68</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Cathedral Ceiling</Image>
+        <Image>Ruins By Night</Image>
+        <Image>The Watcher In The Waves</Image>
+        <Image>Into The Mist</Image>
     </AcceptedImages>
 </Salon>
 
-        // Trofeu Torretes Spain, Ppq123
-        var lSalonSpain = new SalonEntity { Name = "Trofeu Torretes", Website = "https://www.festimatge.org/fotografia_torretes_EN.html", Country = lCountrySpain };
-        lContext.Salons.Add(lSalonSpain);
-
-        var lSalonYearSpain2018 = new SalonYearEntity { Name = "Trofeu Torretes", Salon = lSalonSpain, Year = 2018, ClosingDate = new DateTime(2018, 2, 15), JudgeDate = new DateTime(2018, 3, 4), NotificationDate = new DateTime(2018, 3, 17), CataloguesPostedDate = new DateTime(2018, 5, 19) };
-        lContext.SalonYears.Add(lSalonYearSpain2018);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2018/049", PhotoOrganisation = lFiap, SalonYear = lSalonYearSpain2018 },
-    new AccreditationEntity() { SalonNumber = "2018-059", PhotoOrganisation = lPsa, SalonYear = lSalonYearSpain2018 },
-    new AccreditationEntity() { SalonNumber = "GPU L180014", PhotoOrganisation = lGpu, SalonYear = lSalonYearSpain2018 },
-    });
-
-    var lSalonYearSpain2018Colour = new SectionEntity() { SalonYear = lSalonYearSpain2018, SectionType = lSectionTypeColourPdi };
-    var lSalonYearSpain2018Mono = new SectionEntity() { SalonYear = lSalonYearSpain2018, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearSpain2018Creative = new SectionEntity() { SalonYear = lSalonYearSpain2018, SectionType = lSectionTypeCreativePdi };
-    var lSalonYearSpain2018TheSea = new SectionEntity() { SalonYear = lSalonYearSpain2018, SectionType = lSectionTypeScapesPdi };
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearSpain2018Colour,
-        lSalonYearSpain2018Mono,
-        lSalonYearSpain2018Creative,
-        lSalonYearSpain2018TheSea,
-        });
-
-        var lIceBeachTrio = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Ice Beach Trio" };
-        var lIceBeachSwirls = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Ice Beach Swirls" };
-        var lIceBeachWaves = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Ice Beach Waves" };
 
 
-        lContext.Images.AddRange(new List<ImageEntity>
-            {
-            lIceBeachTrio,
-            lIceBeachSwirls,
-            lIceBeachWaves,
-            });
-
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 13.68M,
-            SalonYear = lSalonYearSpain2018,
-            EntryDate = new DateTime(2018, 1, 26),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=533 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = Afternoon Gun, IsAwarded = false, IsAccepted = false, Score= 533},
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lMdinaMalta, IsAwarded = false, IsAccepted = false, Score=533 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Colour, Image = lKingfisherWithFish, IsAwarded = false, IsAccepted = false, Score=633 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Mono, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score= 467},
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Mono, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = true, Score=667 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Mono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=533 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Mono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=633 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Creative, Image = lTheWatcherInTheWaves, IsAwarded = false, IsAccepted = true, Score=700 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Creative, Image = lIntoTheMist, IsAwarded = false, IsAccepted = true, Score=700 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Creative, Image = lLoneTree, IsAwarded = false, IsAccepted = false, Score=600 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018Creative, Image = lOrbsTriptych, IsAwarded = false, IsAccepted = false, Score=567 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018TheSea, Image = lTwelveApostlesSunset, IsAwarded = false, IsAccepted = false, Score=533 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018TheSea, Image = lIceBeachTrio, IsAwarded = false, IsAccepted = false, Score=600 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018TheSea, Image = lIceBeachSwirls, IsAwarded = false, IsAccepted = false, Score=467 },
-                new CompetitionEntryEntity { Section = lSalonYearSpain2018TheSea, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score=567 },
-                },
-                },
-                });

@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Capodimonte</Name>
+    <Web>https://unlimitedphoto.org/</Web>
+    <Country>Montenegro</Country>
+    <Year>2022</Year>
+    <JudgeDate>07-05-2022</JudgeDate>
+    <NotificationDate>21-05-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-190</Accreditation>
+        <Accreditation type="FIAPLevels">2022/211</Accreditation>
+    </Accreditations>
+    <Cost>16.58</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>

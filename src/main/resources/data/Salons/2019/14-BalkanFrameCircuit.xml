@@ -9,8 +9,8 @@
             <Name>Carlisle</Name>
             <Country>England</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2019-313</Accreditation>
+                <Accreditation type="FIAPLevels">2019/410</Accreditation>
             </Accreditations>
             <AcceptedImages>
 
@@ -34,8 +34,8 @@
     var lSalonYearBalkanFramePerasto2019 = new SalonYearEntity { Name = "Balkan Frame - Perasto", Salon = lSalonBalkanFramePerasto, Year = 2019, ClosingDate = new DateTime(2019, 7, 14), JudgeDate = new DateTime(2019, 7, 31), NotificationDate = new DateTime(2019, 8, 6), CataloguesPostedDate = new DateTime(2019, 10, 15), Circuit = lBalkanFrameCircuit2019 };
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/410", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFramePerasto2019 },
-        new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFramePerasto2019 },
+        new AccreditationEntity() { SalonNumber = "2019/410", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFramePerasto2019</Image>
+        new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFramePerasto2019</Image>
         });
 
         var lSalonYearBalkanFramePerasto2019Mono = new SectionEntity() { SalonYear = lSalonYearBalkanFramePerasto2019, SectionType = lSectionTypeMonoPdi };
@@ -53,28 +53,28 @@
             EntryDate = new DateTime(2019, 7, 13),
             Person = lTim,
             Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 18},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = true, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = false, Score= 15},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=16 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=22 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 17},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=16 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=14 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=15},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=14 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=16 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanFramePerasto2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=17},
-                },
-                },
+                <Image>BalkanFramePerasto2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                <Image>BalkanFramePerasto2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 18},
+                <Image>BalkanFramePerasto2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                <Image>BalkanFramePerasto2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                <Image>BalkanFramePerasto2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                <Image>BalkanFramePerasto2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = false, Score= 15},
+                <Image>BalkanFramePerasto2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                <Image>BalkanFramePerasto2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                <Image>BalkanFramePerasto2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=22</Image>
+                <Image>BalkanFramePerasto2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 17},
+                <Image>BalkanFramePerasto2019Nature, Image = Gargoyle Gecko, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                <Image>BalkanFramePerasto2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                <Image>BalkanFramePerasto2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                <Image>BalkanFramePerasto2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                <Image>BalkanFramePerasto2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                <Image>BalkanFramePerasto2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=15},
+                <Image>BalkanFramePerasto2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                <Image>BalkanFramePerasto2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                <Image>BalkanFramePerasto2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                <Image>BalkanFramePerasto2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=17},
+               </Image>
+               </Image>
                 });
 
                 var lSalonBalkanFrameElema = new SalonEntity { Name = "Balkan Frame - Elema", Website = "https://www.exhibitions.photo/?pg=6#cmain", Country = lCountryMacedonia };
@@ -82,8 +82,8 @@
                 var lSalonYearBalkanFrameElema2019 = new SalonYearEntity { Name = "Balkan Frame - Elema", Salon = lSalonBalkanFrameElema, Year = 2019, ClosingDate = new DateTime(2019, 7, 14), JudgeDate = new DateTime(2019, 7, 31), NotificationDate = new DateTime(2019, 8, 6), CataloguesPostedDate = new DateTime(2019, 10, 15), Circuit = lBalkanFrameCircuit2019 };
 
                 lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2019/411", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFrameElema2019 },
-                    new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFrameElema2019 },
+                    new AccreditationEntity() { SalonNumber = "2019/411", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFrameElema2019</Image>
+                    new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFrameElema2019</Image>
                     });
 
                     var lSalonYearBalkanFrameElema2019Mono = new SectionEntity() { SalonYear = lSalonYearBalkanFrameElema2019, SectionType = lSectionTypeMonoPdi };
@@ -101,28 +101,28 @@
                         EntryDate = new DateTime(2019, 7, 13),
                         Person = lTim,
                         Entries = new List<CompetitionEntryEntity> {
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Travel, Image = lTheRedHut, IsAwarded = true, AwardDetails="FK ELEMA HM", IsAccepted = true, Score=23 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 13},
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = false, Score= 15},
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=17 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=14 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Nature, Image = Crested Gecko Tongue, IsAwarded = true, AwardDetails="FIAP HM", IsAccepted = true, Score=25 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 15},
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=14 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=15 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=13 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=13 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=13},
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=13 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=14 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=15 },
-                            new CompetitionEntryEntity { Section = lSalonYearBalkanFrameElema2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score=20},
-                            },
-                            },
+                            <Image>BalkanFrameElema2019Travel, Image = lTheRedHut, IsAwarded = true, AwardDetails="FK ELEMA HM", IsAccepted = true, Score=23</Image>
+                            <Image>BalkanFrameElema2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 13},
+                            <Image>BalkanFrameElema2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>BalkanFrameElema2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                            <Image>BalkanFrameElema2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>BalkanFrameElema2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = false, Score= 15},
+                            <Image>BalkanFrameElema2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                            <Image>BalkanFrameElema2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                            <Image>BalkanFrameElema2019Nature, Image = Crested Gecko Tongue, IsAwarded = true, AwardDetails="FIAP HM", IsAccepted = true, Score=25</Image>
+                            <Image>BalkanFrameElema2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 15},
+                            <Image>BalkanFrameElema2019Nature, Image = Gargoyle Gecko, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>BalkanFrameElema2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                            <Image>BalkanFrameElema2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                            <Image>BalkanFrameElema2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=13</Image>
+                            <Image>BalkanFrameElema2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=13</Image>
+                            <Image>BalkanFrameElema2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=13},
+                            <Image>BalkanFrameElema2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=13</Image>
+                            <Image>BalkanFrameElema2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                            <Image>BalkanFrameElema2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                            <Image>BalkanFrameElema2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score=20},
+                           </Image>
+                           </Image>
                             });
 
                             var lSalonBalkanFrameCacak = new SalonEntity { Name = "Balkan Frame - Cacak", Website = "https://www.exhibitions.photo/?pg=6#cmain", Country = lCountrySerbia };
@@ -130,8 +130,8 @@
                             var lSalonYearBalkanFrameCacak2019 = new SalonYearEntity { Name = "Balkan Frame - Cacak", Salon = lSalonBalkanFrameCacak, Year = 2019, ClosingDate = new DateTime(2019, 7, 14), JudgeDate = new DateTime(2019, 7, 31), NotificationDate = new DateTime(2019, 8, 6), CataloguesPostedDate = new DateTime(2019, 10, 15), Circuit = lBalkanFrameCircuit2019 };
 
                             lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                new AccreditationEntity() { SalonNumber = "2019/412", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFrameCacak2019 },
-                                new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFrameCacak2019 },
+                                new AccreditationEntity() { SalonNumber = "2019/412", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanFrameCacak2019</Image>
+                                new AccreditationEntity() { SalonNumber = "2019-313", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanFrameCacak2019</Image>
                                 });
 
                                 var lSalonYearBalkanFrameCacak2019Mono = new SectionEntity() { SalonYear = lSalonYearBalkanFrameCacak2019, SectionType = lSectionTypeMonoPdi };
@@ -149,26 +149,26 @@
                                     EntryDate = new DateTime(2019, 7, 13),
                                     Person = lTim,
                                     Entries = new List<CompetitionEntryEntity> {
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 15},
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = true, Score= 20},
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 16},
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=15 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=15 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=15 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=16},
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=14 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=15 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        new CompetitionEntryEntity { Section = lSalonYearBalkanFrameCacak2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19},
-                                        },
-                                        },
+                                        <Image>BalkanFrameCacak2019Travel, Image = lTheRedHut, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                        <Image>BalkanFrameCacak2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 15},
+                                        <Image>BalkanFrameCacak2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                                        <Image>BalkanFrameCacak2019Travel, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                                        <Image>BalkanFrameCacak2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                                        <Image>BalkanFrameCacak2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = true, Score= 20},
+                                        <Image>BalkanFrameCacak2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                                        <Image>BalkanFrameCacak2019People, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                                        <Image>BalkanFrameCacak2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                        <Image>BalkanFrameCacak2019Nature, Image = lRedFox, IsAwarded = false, IsAccepted = false, Score= 16},
+                                        <Image>BalkanFrameCacak2019Nature, Image = Gargoyle Gecko, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                        <Image>BalkanFrameCacak2019Nature, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                                        <Image>BalkanFrameCacak2019Colour, Image = lBLuebellInWoodenVase, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                                        <Image>BalkanFrameCacak2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                                        <Image>BalkanFrameCacak2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                                        <Image>BalkanFrameCacak2019Colour, Image = lJourneysEnd, IsAwarded = false, IsAccepted = false, Score=16},
+                                        <Image>BalkanFrameCacak2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                                        <Image>BalkanFrameCacak2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                                        <Image>BalkanFrameCacak2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                        <Image>BalkanFrameCacak2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19},
+                                       </Image>
+                                       </Image>
                                         });

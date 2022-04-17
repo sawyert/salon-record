@@ -1,41 +1,15 @@
 <Salon>
     <Name>Gradac</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web>http://www.gradacfoto.com/</Web>
+    <Country>Montenegro</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="FIAPLevels">2020/360</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>18.89</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Twin Isolation</Image>
     </AcceptedImages>
 </Salon>
-
-        // Gradac 2020
-        var lTwinIsolation = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Twin Isolation" };
-        var lSalonYearGradac2020 = new SalonYearEntity { Name = "Gradac", Salon = lSalonGradac, Year = 2020, ClosingDate = new DateTime(2020, 6, 25), JudgeDate = new DateTime(2020, 7, 1), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/360", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGradac2020</Image>
-    });
-
-    var llSalonYeaGradac2020Mono = new SectionEntity() { SalonYear = lSalonYearGradac2020, SectionType = lSectionTypeMonoPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 18.89M,
-        SalonYear = lSalonYearGradac2020,
-        EntryDate = new DateTime(2020, 7, 1),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = llSalonYeaGradac2020Mono, Image = lTwinIsolation</Image>
-           </Image>
-           </Image>
-            });

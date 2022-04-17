@@ -9,8 +9,8 @@
             <Name>Carlisle</Name>
             <Country>England</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2019</Accreditation>
+                <Accreditation type="FIAPLevels">2019</Accreditation>
             </Accreditations>
             <AcceptedImages>
 
@@ -40,8 +40,8 @@
         lContext.SalonYears.Add(lSalonYearKula2019);
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/295", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKula2019 },
-        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearKula2019 },
+        new AccreditationEntity() { SalonNumber = "2019/295", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKula2019</Image>
+        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearKula2019</Image>
         });
 
         var lSalonYearKula2019Nature = new SectionEntity() { SalonYear = lSalonYearKula2019, SectionType = lSectionTypeNaturePdi };
@@ -65,24 +65,24 @@
                 EntryDate = new DateTime(2019, 6, 24),
                 Person = lTim,
                 Entries = new List<CompetitionEntryEntity> {
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Nature, Image = Crested Gecko Tongue, IsAwarded = true, AwardDetails = "HM", IsAccepted = true, Score=23 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 20},
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=17 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 19},
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = true, Score=21 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=17 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18},
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20 },
-                    new CompetitionEntryEntity { Section = lSalonYearKula2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=17},
-                    },
-                    },
+                    <Image>Kula2019Nature, Image = Crested Gecko Tongue, IsAwarded = true, AwardDetails = "HM", IsAccepted = true, Score=23</Image>
+                    <Image>Kula2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 20},
+                    <Image>Kula2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                    <Image>Kula2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 19},
+                    <Image>Kula2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                    <Image>Kula2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                    <Image>Kula2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                    <Image>Kula2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                    <Image>Kula2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18},
+                    <Image>Kula2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                    <Image>Kula2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=17},
+                   </Image>
+                   </Image>
                     });
 
                     var lSalonBudvaTour = new SalonEntity { Name = "Tour - Budva", Website = "https://www.fkk.rs/main/index.php", Country = lCountryMontenegro };
@@ -92,8 +92,8 @@
                     lContext.SalonYears.Add(lSalonYearBudvaTour2019);
 
                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                        new AccreditationEntity() { SalonNumber = "2019/296", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBudvaTour2019 },
-                        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearBudvaTour2019 },
+                        new AccreditationEntity() { SalonNumber = "2019/296", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBudvaTour2019</Image>
+                        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearBudvaTour2019</Image>
                         });
 
                         var lSalonYearBudvaTour2019Nature = new SectionEntity() { SalonYear = lSalonYearBudvaTour2019, SectionType = lSectionTypeNaturePdi };
@@ -117,24 +117,24 @@
                                 EntryDate = new DateTime(2019, 6, 24),
                                 Person = lTim,
                                 Entries = new List<CompetitionEntryEntity> {
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=23 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 18},
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=22 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=19 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=20 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 20},
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=20 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=20 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=20 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19},
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=19 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudvaTour2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=19},
-                                    },
-                                    },
+                                    <Image>BudvaTour2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                                    <Image>BudvaTour2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 18},
+                                    <Image>BudvaTour2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=22</Image>
+                                    <Image>BudvaTour2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                    <Image>BudvaTour2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                    <Image>BudvaTour2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 20},
+                                    <Image>BudvaTour2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                    <Image>BudvaTour2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                    <Image>BudvaTour2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                    <Image>BudvaTour2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                    <Image>BudvaTour2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                    <Image>BudvaTour2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19},
+                                    <Image>BudvaTour2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                    <Image>BudvaTour2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                    <Image>BudvaTour2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                    <Image>BudvaTour2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=19},
+                                   </Image>
+                                   </Image>
                                     });
 
                                     var lSalonKolasinTour = new SalonEntity { Name = "Tour - Kolasin", Website = "https://www.fkk.rs/main/index.php", Country = lCountryMontenegro };
@@ -144,8 +144,8 @@
                                     lContext.SalonYears.Add(lSalonYearKolasinTour2019);
 
                                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                        new AccreditationEntity() { SalonNumber = "2019/297", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKolasinTour2019 },
-                                        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearKolasinTour2019 },
+                                        new AccreditationEntity() { SalonNumber = "2019/297", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKolasinTour2019</Image>
+                                        new AccreditationEntity() { SalonNumber = "2019-289", PhotoOrganisation = lPsa, SalonYear = lSalonYearKolasinTour2019</Image>
                                         });
 
                                         var lSalonYearKolasinTour2019Nature = new SectionEntity() { SalonYear = lSalonYearKolasinTour2019, SectionType = lSectionTypeNaturePdi };
@@ -169,22 +169,22 @@
                                                 EntryDate = new DateTime(2019, 6, 24),
                                                 Person = lTim,
                                                 Entries = new List<CompetitionEntryEntity> {
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 18},
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 21},
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=18 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19},
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearKolasinTour2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=17},
-                                                    },
-                                                    },
+                                                    <Image>KolasinTour2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>KolasinTour2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 18},
+                                                    <Image>KolasinTour2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                    <Image>KolasinTour2019Nature, Image = lBacklitTarantula, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>KolasinTour2019Woman, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                    <Image>KolasinTour2019Woman, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score= 21},
+                                                    <Image>KolasinTour2019Woman, Image = By Lamplight, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>KolasinTour2019Woman, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                    <Image>KolasinTour2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                                    <Image>KolasinTour2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                                    <Image>KolasinTour2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                                    <Image>KolasinTour2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19},
+                                                    <Image>KolasinTour2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                                    <Image>KolasinTour2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                                    <Image>KolasinTour2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>KolasinTour2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=17},
+                                                   </Image>
+                                                   </Image>
                                                     });

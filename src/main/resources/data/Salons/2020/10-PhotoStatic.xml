@@ -1,42 +1,15 @@
 <Salon>
     <Name>Photo Static</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web>http://www.photostatic.in/</Web>
+    <Country>India</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="FIAPLevels">2020/407</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>18.79</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Monk Portal</Image>
     </AcceptedImages>
 </Salon>
-
-        // PhotoStatic 2020
-        var lMonkPortal = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Monk Portal" };
-        var lSalonPhotoStatic = new SalonEntity { Name = "Photo Static", Website = "http://www.photostatic.in/", Country = lCountryIndia };
-        var lSalonYearPhotoStatic2020 = new SalonYearEntity { Name = "Photo Static", Salon = lSalonPhotoStatic, Year = 2020, ClosingDate = new DateTime(2020, 7, 27), JudgeDate = new DateTime(2020, 7, 9), NotificationDate = new DateTime(2020, 7, 15), CataloguesPostedDate = new DateTime(2020, 7, 15) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/407", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearPhotoStatic2020</Image>
-    });
-
-    var lSalonYearPhotoStatic2020Mono = new SectionEntity() { SalonYear = lSalonYearPhotoStatic2020, SectionType = lSectionTypeMonoPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 18.79M,
-        SalonYear = lSalonYearPhotoStatic2020,
-        EntryDate = new DateTime(2020, 7, 26),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            <Image>YearPhotoStatic2020Mono, Image = lMonkPortal</Image>
-           </Image>
-           </Image>
-            });

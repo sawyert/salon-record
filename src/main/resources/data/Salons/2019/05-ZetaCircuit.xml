@@ -9,8 +9,8 @@
             <Name>Carlisle</Name>
             <Country>England</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2019</Accreditation>
+                <Accreditation type="FIAPLevels">2019</Accreditation>
             </Accreditations>
             <AcceptedImages>
 
@@ -41,8 +41,8 @@
         lContext.SalonYears.Add(lSalonYearPodgorica2019);
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/301", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearPodgorica2019 },
-        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearPodgorica2019 },
+        new AccreditationEntity() { SalonNumber = "2019/301", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearPodgorica2019</Image>
+        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearPodgorica2019</Image>
         });
 
         var lSalonYearPodgorica2019Colour = new SectionEntity() { SalonYear = lSalonYearPodgorica2019, SectionType = lSectionTypeColourPdi };
@@ -64,20 +64,20 @@
                 EntryDate = new DateTime(2019, 6, 8),
                 Person = lTim,
                 Entries = new List<CompetitionEntryEntity> {
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=17 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 22},
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=22 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=24 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 22},
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=22 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=17 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=21 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=23 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=22 },
-                    new CompetitionEntryEntity { Section = lSalonYearPodgorica2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=22},
-                    },
-                    },
+                    <Image>Podgorica2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                    <Image>Podgorica2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 22},
+                    <Image>Podgorica2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                    <Image>Podgorica2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=22</Image>
+                    <Image>Podgorica2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=24</Image>
+                    <Image>Podgorica2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 22},
+                    <Image>Podgorica2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=22</Image>
+                    <Image>Podgorica2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                    <Image>Podgorica2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                    <Image>Podgorica2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                    <Image>Podgorica2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=22</Image>
+                    <Image>Podgorica2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=22},
+                   </Image>
+                   </Image>
                     });
 
                     var lSalonBudva = new SalonEntity { Name = "Zeta - Budva", Website = "http://www.photoclubmontenegro.com", Country = lCountryMontenegro };
@@ -87,8 +87,8 @@
                     lContext.SalonYears.Add(lSalonYearBudva2019);
 
                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                        new AccreditationEntity() { SalonNumber = "2019/302", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBudva2019 },
-                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearBudva2019 },
+                        new AccreditationEntity() { SalonNumber = "2019/302", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBudva2019</Image>
+                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearBudva2019</Image>
                         });
 
                         var lSalonYearBudva2019Colour = new SectionEntity() { SalonYear = lSalonYearBudva2019, SectionType = lSectionTypeColourPdi };
@@ -110,20 +110,20 @@
                                 EntryDate = new DateTime(2019, 6, 8),
                                 Person = lTim,
                                 Entries = new List<CompetitionEntryEntity> {
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 22},
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=21 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=22 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 21},
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score=23 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=17 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = true, Score=25 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=25 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=24 },
-                                    new CompetitionEntryEntity { Section = lSalonYearBudva2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = true, Score=24},
-                                    },
-                                    },
+                                    <Image>Budva2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                                    <Image>Budva2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 22},
+                                    <Image>Budva2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                    <Image>Budva2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                    <Image>Budva2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=22</Image>
+                                    <Image>Budva2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 21},
+                                    <Image>Budva2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = true, Score=23</Image>
+                                    <Image>Budva2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                                    <Image>Budva2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = true, Score=25</Image>
+                                    <Image>Budva2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=25</Image>
+                                    <Image>Budva2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=24</Image>
+                                    <Image>Budva2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = true, Score=24},
+                                   </Image>
+                                   </Image>
                                     });
 
                                     var lSalonNiksic = new SalonEntity { Name = "Zeta - Niksic", Website = "http://www.photoclubmontenegro.com", Country = lCountryMontenegro };
@@ -133,8 +133,8 @@
                                     lContext.SalonYears.Add(lSalonYearNiksic2019);
 
                                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                        new AccreditationEntity() { SalonNumber = "2019/303", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearNiksic2019 },
-                                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearNiksic2019 },
+                                        new AccreditationEntity() { SalonNumber = "2019/303", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearNiksic2019</Image>
+                                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearNiksic2019</Image>
                                         });
 
                                         var lSalonYearNiksic2019Colour = new SectionEntity() { SalonYear = lSalonYearNiksic2019, SectionType = lSectionTypeColourPdi };
@@ -156,20 +156,20 @@
                                                 EntryDate = new DateTime(2019, 6, 8),
                                                 Person = lTim,
                                                 Entries = new List<CompetitionEntryEntity> {
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=17 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 19},
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=22 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 18},
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearNiksic2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20},
-                                                    },
-                                                    },
+                                                    <Image>Niksic2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                                                    <Image>Niksic2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 19},
+                                                    <Image>Niksic2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                                    <Image>Niksic2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=22</Image>
+                                                    <Image>Niksic2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 18},
+                                                    <Image>Niksic2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                    <Image>Niksic2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20},
+                                                   </Image>
+                                                   </Image>
                                                     });
 
                                                     var lSalonKolasin = new SalonEntity { Name = "Zeta - Kolasin", Website = "http://www.photoclubmontenegro.com", Country = lCountryMontenegro };
@@ -179,8 +179,8 @@
                                                     lContext.SalonYears.Add(lSalonYearKolasin2019);
 
                                                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                                        new AccreditationEntity() { SalonNumber = "2019/304", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKolasin2019 },
-                                                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearKolasin2019 },
+                                                        new AccreditationEntity() { SalonNumber = "2019/304", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearKolasin2019</Image>
+                                                        new AccreditationEntity() { SalonNumber = "2019-244", PhotoOrganisation = lPsa, SalonYear = lSalonYearKolasin2019</Image>
                                                         });
 
                                                         var lSalonYearKolasin2019Colour = new SectionEntity() { SalonYear = lSalonYearKolasin2019, SectionType = lSectionTypeColourPdi };
@@ -202,20 +202,20 @@
                                                                 EntryDate = new DateTime(2019, 6, 8),
                                                                 Person = lTim,
                                                                 Entries = new List<CompetitionEntryEntity> {
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 21},
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 21},
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearKolasin2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=21},
-                                                                    },
-                                                                    },
+                                                                    <Image>Kolasin2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 21},
+                                                                    <Image>Kolasin2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 21},
+                                                                    <Image>Kolasin2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                                    <Image>Kolasin2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                                                    <Image>Kolasin2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=21</Image>
+                                                                    <Image>Kolasin2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=21},
+                                                                   </Image>
+                                                                   </Image>
                                                                     });
 
                                                                     var lSalonKotor = new SalonEntity { Name = "Zeta - Kotor", Website = "http://www.photoclubmontenegro.com", Country = lCountryMontenegro };
@@ -248,18 +248,18 @@
                                                                                 EntryDate = new DateTime(2019, 6, 8),
                                                                                 Person = lTim,
                                                                                 Entries = new List<CompetitionEntryEntity> {
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 20},
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=18 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=16 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 17},
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=18 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = true, Score=23 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=21 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20 },
-                                                                                    new CompetitionEntryEntity { Section = lSalonYearKotor2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=21},
+                                                                                    <Image>Kotor2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=16 },
+                                                                                    <Image>Kotor2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 20},
+                                                                                    <Image>Kotor2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=18 },
+                                                                                    <Image>Kotor2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=19 },
+                                                                                    <Image>Kotor2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=16 },
+                                                                                    <Image>Kotor2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score= 17},
+                                                                                    <Image>Kotor2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19 },
+                                                                                    <Image>Kotor2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=18 },
+                                                                                    <Image>Kotor2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = true, Score=23 },
+                                                                                    <Image>Kotor2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=21 },
+                                                                                    <Image>Kotor2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20 },
+                                                                                    <Image>Kotor2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=21},
                                                                                     },
                                                                                     },
                                                                                     });

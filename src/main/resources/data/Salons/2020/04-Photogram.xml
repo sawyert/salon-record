@@ -1,44 +1,17 @@
 <Salon>
     <Name>Fotogram</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web>http://fotogram.in.rs/</Web>
+    <Country>Serbia</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2020-148</Accreditation>
+        <Accreditation type="FIAPLevels">2020/132</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>20.17</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>By Lamplight</Image>
+        <Image>Three Leaves Mono</Image>
     </AcceptedImages>
 </Salon>
-
-        // Fotogram 2020
-        var lSalonFotogram = new SalonEntity { Name = "Fotogram", Website = "http://fotogram.in.rs/", Country = lCountrySerbia };
-        var lSalonYearFotogram2020 = new SalonYearEntity { Name = "Fotogram", Salon = lSalonFotogram, Year = 2020, ClosingDate = new DateTime(2020, 5, 8), JudgeDate = new DateTime(2020, 05, 23), NotificationDate = new DateTime(2020, 05, 30), CataloguesPostedDate = new DateTime(2020, 7, 1) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/132", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearFotogram2020</Image>
-    new AccreditationEntity() { SalonNumber = "2020-148", PhotoOrganisation = lPsa, SalonYear = lSalonYearFotogram2020</Image>
-    });
-
-    var lSalonYearFotogram2020Colour = new SectionEntity() { SalonYear = lSalonYearFotogram2020, SectionType = lSectionTypeColourPdi };
-    var lSalonYearFotogram2020Mono = new SectionEntity() { SalonYear = lSalonYearFotogram2020, SectionType = lSectionTypeMonoPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 20.17M,
-        SalonYear = lSalonYearFotogram2020,
-        EntryDate = new DateTime(2020, 6, 1),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            <Image>YearFotogram2020Colour, Image = By Lamplight</Image>
-            <Image>YearFotogram2020Mono, Image = lThreeLeavesMono, IsAwarded = false, IsAccepted = true, Score= 0</Image>
-           </Image>
-           </Image>
-            });

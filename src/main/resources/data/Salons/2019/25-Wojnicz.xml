@@ -1,57 +1,19 @@
 <Salon>
     <Name>Wojnicz</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://salon.fotum.org</Web>
+    <Country>Poland</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-370</Accreditation>
+        <Accreditation type="FIAPLevels">2019/293</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>14</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>By Lamplight</Image>
+        <Image>Comfort In A Harsh World</Image>
     </AcceptedImages>
 </Salon>
 
-        // Wojnicz 2019
-        var lSalonYearWojnicz2019 = new SalonYearEntity { Name = "Wojnicz", Salon = lSalonWojnicz, Year = 2019, ClosingDate = new DateTime(2019, 9, 30), JudgeDate = new DateTime(2019, 10, 19), NotificationDate = new DateTime(2019, 10, 25), CataloguesPostedDate = new DateTime(2019, 10, 25) };
 
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/293", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearWojnicz2019 },
-    new AccreditationEntity() { SalonNumber = "2019-370", PhotoOrganisation = lPsa, SalonYear = lSalonYearWojnicz2019 },
-    });
-
-    var lSalonYearPhotoWojnicz2019Colour = new SectionEntity() { SalonYear = lSalonYearWojnicz2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearPhotoWojnicz2019Mono = new SectionEntity() { SalonYear = lSalonYearWojnicz2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearPhotoWojnicz2019Portrait = new SectionEntity() { SalonYear = lSalonYearWojnicz2019, SectionType = lSectionTypePortraitPdi };
-
-
-    var lTwoPoppyheads = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Two Poppyheads" };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 14.00M,
-        SalonYear = lSalonYearWojnicz2019,
-        EntryDate = new DateTime(2019, 9, 11),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Colour, Image = lTheStuffOfNightmares, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Colour, Image = lAKissByMoonlight, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Colour, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = lTwoPoppyheads, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = By Lamplight, IsAwarded = false, IsAccepted = true, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = Queen Of The Castle, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoWojnicz2019Portrait, Image = lComfortInAHarshWorld },
-
-            },
-            },
-            });

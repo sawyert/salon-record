@@ -6,97 +6,25 @@
     <JudgeDate>19-01-2018</JudgeDate>
     <NotificationDate>31-01-2018</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAP">2018/</Accreditation>
+        <Accreditation type="PSA">2018-009</Accreditation>
+        <Accreditation type="FIAP">2018/164</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>14.50</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Pointed Reflection</Image>
+        <Image>The Question</Image>
+        <Image>Rainbow Mosaic</Image>
+        <Image>Flooding In Leeds</Image>
+        <Image>Great Grey Owl</Image>
+        <Image>Little Owl</Image>
+        <Image>Young Red Kite</Image>
+        <Image>Through The Arch</Image>
+        <Image>Tree Grove In The Mist</Image>
+        <Image>The Watcher</Image>
+        <Image>Olivers Castle</Image>
+        <Image>Snowdrop</Image>
     </AcceptedImages>
 </Salon>
 
-        // Manhattan 2018
-        var lSalonManhattan = new SalonEntity { Name = "Manhattan", Website = "http://www.nycexhibition.com/manhattan/", Country = lCountryUsa };
-        lContext.Salons.Add(lSalonManhattan);
-
-        var lSalonYearManhattan2018 = new SalonYearEntity { Name = "Manhattan", Salon = lSalonManhattan, Year = 2018, ClosingDate = new DateTime(2018, 4, 15), JudgeDate = new DateTime(2018, 4, 25), NotificationDate = new DateTime(2018, 5, 10), CataloguesPostedDate = new DateTime(2018, 5, 10) };
-        lContext.SalonYears.Add(lSalonYearManhattan2018);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2018/164", PhotoOrganisation = lFiap, SalonYear = lSalonYearManhattan2018 },
-    new AccreditationEntity() { SalonNumber = "2018-009", PhotoOrganisation = lPsa, SalonYear = lSalonYearManhattan2018 },
-    });
-
-    var lTheQuestion = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Question" };
-    var lMetalGearRising = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Metal Gear Rising" };
-    var lRainbowMosaic = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Rainbow Mosaic" };
-    var lFeedMe = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Feed Me" };
-    var lThreeBridges = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Bridges" };
-    var lStreetArt = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Street Art" };
-    var lLeedsTownHall = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Leeds Town Hall" };
-
-    lContext.Images.AddRange(new List<ImageEntity>
-        {
-        lTheQuestion,
-        lMetalGearRising,
-        lRainbowMosaic,
-        lFeedMe,
-        lThreeBridges,
-        lStreetArt,
-        lLeedsTownHall,
-        });
 
 
-        var lSalonYearManhattan2018MMyPlace = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypeMyPlacePdi };
-        var lSalonYearManhattan2018Street = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypeStreetPdi };
-        var lSalonYearManhattan2018Photojournalism = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypePhotojournalismPdi };
-        var lSalonYearManhattan2018Nature = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypeNaturePdi };
-        var lSalonYearManhattan201OpenColour = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypeColourPdi };
-        var lSalonYearManhattan201OpenMono = new SectionEntity() { SalonYear = lSalonYearManhattan2018, SectionType = lSectionTypeMonoPdi };
-
-        lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearManhattan2018MMyPlace,
-        lSalonYearManhattan2018Street,
-        lSalonYearManhattan2018Photojournalism,
-        lSalonYearManhattan2018Nature,
-        lSalonYearManhattan201OpenColour,
-        lSalonYearManhattan201OpenMono,
-        });
-
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 14.50M,
-            SalonYear = lSalonYearManhattan2018,
-            EntryDate = new DateTime(2018, 4, 14),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018MMyPlace, Image = lPointedReflection, IsAwarded = false, IsAccepted = true, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018MMyPlace, Image = lTheQuestion, IsAwarded = false, IsAccepted = true, Score= 16},
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018MMyPlace, Image = lMetalGearRising, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018MMyPlace, Image = lRainbowMosaic, IsAwarded = false, IsAccepted = true, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Street, Image = lFeedMe, IsAwarded = false, IsAccepted = false, Score= 11},
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Street, Image = lThreeBridges, IsAwarded = false, IsAccepted = false, Score=12 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Street, Image = lStreetArt, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Street, Image = lLeedsTownHall, IsAwarded = false, IsAccepted = false, Score=11},
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lTerrierRacing, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lTheresSomethingBehindYou, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lFloodingInLeeds, IsAwarded = false, IsAccepted = true, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Photojournalism, Image = lZombieAttack, IsAwarded = false, IsAccepted = false, Score=13 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lRimlitKingfisher, IsAwarded = false, IsAccepted = false, Score=13 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lLittleOwl, IsAwarded = false, IsAccepted = true, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan2018Nature, Image = lYoungRedKite, IsAwarded = false, IsAccepted = true, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenColour, Image = lThroughTheArch, IsAwarded = false, IsAccepted = true, Score=21 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenColour, Image = lTreeGroveInTheMist, IsAwarded = false, IsAccepted = true, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenColour, Image = lTheWatcher, IsAwarded = false, IsAccepted = true, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenColour, Image = lTulipInTheRound, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenMono, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearManhattan201OpenMono, Image = lSnowdrop, IsAwarded = false, IsAccepted = true, Score=19 },
-
-                },
-                },
-                });

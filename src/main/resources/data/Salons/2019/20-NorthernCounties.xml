@@ -1,58 +1,15 @@
 <Salon>
     <Name>Northern Counties</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://www.northerncountiessalon.org.uk/index.php</Web>
+    <Country>England </Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-309</Accreditation>
+        <Accreditation type="FIAPLevels">2019/298</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
-    <AcceptedImages>
-        <Image></Image>
-    </AcceptedImages>
+    <Cost>18</Cost>
+    <AcceptedImages></AcceptedImages>
 </Salon>
 
-        // Northern counties 2019
-        var lSalonPacificNorthernCounties = new SalonEntity { Name = "Northern Counties", Website = "http://www.northerncountiessalon.org.uk/index.php", Country = lCountryEngland };
-
-        var lSalonYearNorthernCounties2019 = new SalonYearEntity { Name = "Northern Counties", Salon = lSalonPacificNorthernCounties, Year = 2019, ClosingDate = new DateTime(2019, 8, 25), JudgeDate = new DateTime(2019, 9, 14), NotificationDate = new DateTime(2019, 9, 28), CataloguesPostedDate = new DateTime(2019, 11, 28) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/298", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearNorthernCounties2019 },
-    new AccreditationEntity() { SalonNumber = "2019-309", PhotoOrganisation = lPsa, SalonYear = lSalonYearNorthernCounties2019 },
-    new AccreditationEntity() { SalonNumber = "L190094", PhotoOrganisation = lGpu, SalonYear = lSalonYearNorthernCounties2019 },
-    });
-
-    var lSalonYearNorthernCounties2019Mono = new SectionEntity() { SalonYear = lSalonYearNorthernCounties2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearNorthernCounties2019Colour = new SectionEntity() { SalonYear = lSalonYearNorthernCounties2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearNorthernCounties2019Nature = new SectionEntity() { SalonYear = lSalonYearNorthernCounties2019, SectionType = lSectionTypeNaturePdi };
-
-
-    var lAKissByMoonlight = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "A Kiss By Moonlight" };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 18M,
-        SalonYear = lSalonYearNorthernCounties2019,
-        EntryDate = new DateTime(2019, 8, 17),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Colour, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Colour, Image = lAKissByMoonlight, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=7 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=9 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=9 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Nature, Image = lGargoyleGecko, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearNorthernCounties2019Nature, Image = lCrestedGeckoLook, IsAwarded = false, IsAccepted = false, Score=0 },
-            },
-            },
-            });

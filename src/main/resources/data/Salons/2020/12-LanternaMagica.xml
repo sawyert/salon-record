@@ -1,47 +1,19 @@
 <Salon>
     <Name>Lanterna Magica</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web>https://www.lanternamagica.dk</Web>
+    <Country>Denmark</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2020-266</Accreditation>
+        <Accreditation type="FIAPLevels">2020/229</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>25.95</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Monk Portal</Image>
+        <Image>Towers In The Sky</Image>
+        <Image>The Summoning</Image>
+        <Image>Baron Bone</Image>
     </AcceptedImages>
 </Salon>
-
-        // lanterna magica
-        var lBaronBone = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Baron Bone" };
-
-        var lSalonYearLanternaMagica2020 = new SalonYearEntity { Name = "Lanterna Magica", Salon = lSalonLanternaMagica, Year = 2020, ClosingDate = new DateTime(2020, 9, 7), JudgeDate = new DateTime(2020, 9, 20), NotificationDate = new DateTime(2020, 10, 04), CataloguesPostedDate = new DateTime(2020, 11, 29) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearLanternaMagica2020</Image>
-    new AccreditationEntity() { SalonNumber = "2020-266", PhotoOrganisation = lPsa, SalonYear = lSalonYearLanternaMagica2020</Image>
-    });
-
-    var lSalonYearLanternaMagica2020Mono = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2020, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearLanternaMagica2020LanternaMagica = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2020, SectionType = lSectionTypeColourPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 0M,
-        SalonYear = lSalonYearLanternaMagica2020,
-        EntryDate = new DateTime(2020, 9, 1),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            <Image>YearLanternaMagica2020Mono, Image = lMonkPortal</Image>
-            <Image>YearLanternaMagica2020Mono, Image = lTowersInTheSky</Image>
-            <Image>YearLanternaMagica2020LanternaMagica, Image = lTheSummoning</Image>
-            <Image>YearLanternaMagica2020LanternaMagica, Image = lBaronBone</Image>
-           </Image>
-           </Image>
-            });

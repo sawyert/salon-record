@@ -1,61 +1,19 @@
 <Salon>
     <Name>Lanterna Magica</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>https://www.lanternamagica.dk</Web>
+    <Country>Denmark</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-335</Accreditation>
+        <Accreditation type="FIAPLevels">2019/274</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>27.53</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Betwixt Realities</Image>
+        <Image>The Wishing Tree</Image>
+        <Image award="NFFF HM">Clown Of Fear</Image>
+        <Image>Zombie Lunch</Image>
     </AcceptedImages>
 </Salon>
-
-        // Lanterna Magica 2019
-        var lSalonLanternaMagica = new SalonEntity { Name = "Lanterna Magica", Website = "https://www.lanternamagica.dk", Country = lCountryDenmark };
-
-        var lSalonYearLanternaMagica2019 = new SalonYearEntity { Name = "Lanterna Magica", Salon = lSalonLanternaMagica, Year = 2019, ClosingDate = new DateTime(2019, 9, 7), JudgeDate = new DateTime(2019, 9, 22), NotificationDate = new DateTime(2019, 10, 6), CataloguesPostedDate = new DateTime(2019, 12, 1) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/274", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearLanternaMagica2019 },
-    new AccreditationEntity() { SalonNumber = "2019-335", PhotoOrganisation = lPsa, SalonYear = lSalonYearLanternaMagica2019 },
-    });
-
-    var lSalonYearLanternaMagica2019Colour = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2019, SectionType = lSectionTypeColourPrint };
-    var lSalonYearLanternaMagica2019Mono = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2019, SectionType = lSectionTypeMonoPrint };
-    var lSalonYearLanternaMagica2019Horror = new SectionEntity() { SalonYear = lSalonYearLanternaMagica2019, SectionType = lSectionTypeColourPrint };
-
-
-    var lClownOfFear = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Clown  of Fear" };
-    var lMistressOfPain = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Mistress of Pain" };
-    var lZombieLunch = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Zombie Lunch" };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 27.53M + 4.60M,
-        SalonYear = lSalonYearLanternaMagica2019,
-        EntryDate = new DateTime(2019, 9, 5),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Colour, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Colour, Image = lEnteringTheMaelstrom, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Mono, Image = The Wishing Tree },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lClownOfFear, IsAwarded = true, AwardDetails="NFFF HM", IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lMistressOfPain, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lTheStuffOfNightmares, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearLanternaMagica2019Horror, Image = lZombieLunch },
-
-            },
-            },
-            });

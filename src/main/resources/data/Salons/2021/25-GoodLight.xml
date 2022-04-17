@@ -1,0 +1,19 @@
+<Salon>
+    <Name>Good Light</Name>
+    <Web></Web>
+    <Country>Serbia</Country>
+    <Year>2021</Year>
+    <JudgeDate>31-01-2021</JudgeDate>
+    <NotificationDate>31-02-2021</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2021-1103</Accreditation>
+        <Accreditation type="FIAPLevels">2021/050</Accreditation>
+    </Accreditations>
+    <Cost>18.13</Cost>
+    <AcceptedImages>
+        <Image>Contented Owl</Image>
+        <Image>Edible Frog</Image>
+        <Image award="DIPA Ribbon">ForestGlow, IsAwarded = true, AwardDetails="DIPA Ribbon", IsAccepted = true, Score=0</Image>
+        <Image>Deep Forest Funk</Image>
+    </AcceptedImages>
+</Salon>

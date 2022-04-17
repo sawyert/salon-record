@@ -1,61 +1,18 @@
 <Salon>
     <Name>Yorkshire</Name>
-    <Web>http</Web>
+    <Web></Web>
     <Country>England</Country>
     <Year>2018</Year>
     <JudgeDate>19-01-2018</JudgeDate>
     <NotificationDate>31-01-2018</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAP">2018/</Accreditation>
+        <Accreditation type="PSA">2018-476</Accreditation>
+        <Accreditation type="FIAP">2018/441</Accreditation>
     </Accreditations>
     <Cost>15</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Symmetree Fire</Image>
+        <Image>Lone Tree</Image>
     </AcceptedImages>
 </Salon>
 
-        // Yorkshire 2018  A18-685-516
-        var lSalonYearYorkshire2018 = new SalonYearEntity { Name = "Yorkshire", Salon = lSalonYorkshire, Year = 2018, ClosingDate = new DateTime(2018, 12, 3), JudgeDate = new DateTime(2018, 12, 9), NotificationDate = new DateTime(2018, 12, 7), CataloguesPostedDate = new DateTime(2018, 9, 2) };
-        lContext.SalonYears.Add(lSalonYearYorkshire2018);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2018/441", PhotoOrganisation = lFiap, SalonYear = lSalonYearYorkshire2018 },
-    new AccreditationEntity() { SalonNumber = "2018-476", PhotoOrganisation = lPsa, SalonYear = lSalonYearYorkshire2018 },
-    });
-
-    var lSalonYearYorkshire2018ColourPrint = new SectionEntity() { SalonYear = lSalonYearYorkshire2018, SectionType = lSectionTypeColourPrint };
-    var lSalonYearYorkshire2018PdiOpen = new SectionEntity() { SalonYear = lSalonYearYorkshire2018, SectionType = lSectionTypeOpenPdi };
-    var lSalonYearYorkshire2018Nature = new SectionEntity() { SalonYear = lSalonYearYorkshire2018, SectionType = lSectionTypeNaturePdi };
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearYorkshire2018ColourPrint,
-        lSalonYearYorkshire2018PdiOpen,
-        lSalonYearYorkshire2018Nature,
-        });
-
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 15M,
-            SalonYear = lSalonYearYorkshire2018,
-            EntryDate = new DateTime(2018, 11, 7),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018ColourPrint, Image = lTheWatcher, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018ColourPrint, Image = lSymmetreeFire, IsAwarded = false, IsAccepted = true, Score= 13},
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018ColourPrint, Image = lLoneTree, IsAwarded = false, IsAccepted = true, Score=13 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018ColourPrint, Image = lTulipInTheRound, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018PdiOpen, Image = lBoatingInTheHail, IsAwarded = false, IsAccepted = false, Score=11},
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018PdiOpen, Image = lZombieGirl, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018PdiOpen, Image = lAWorldBeyond, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018PdiOpen, Image = lRainbowMosaic, IsAwarded = false, IsAccepted = false, Score=10},
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018Nature, Image = lWaterVoleInPipe, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018Nature, Image = lKingfisherWithFish, IsAwarded = false, IsAccepted = false, Score=9 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018Nature, Image = lLongEaredOwl, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearYorkshire2018Nature, Image = lLittleOwl, IsAwarded = false, IsAccepted = false, Score=11 },
-
-                },
-                },
-                });

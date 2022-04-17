@@ -1,63 +1,19 @@
 <Salon>
     <Name>Good Light</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web></Web>
+    <Country>Serbia</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2020-162</Accreditation>
+        <Accreditation type="FIAPLevels">2020/119</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>18.35</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Solent Sunset</Image>
+        <Image>Chilean Rose Tarantula On Tree</Image>
+        <Image>The Summoning</Image>
+        <Image>Towers In The Sky</Image>
     </AcceptedImages>
 </Salon>
-
-        // Good Light 2020
-
-        var lGlowingRose = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Glowing Rose" };
-        var lPyramidSwirl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Pyramind Swirl" };
-        var lIncomingRain = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Incoming Rain" };
-        var lZigZagShadow = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Zig Zag Shadow" };
-        var Uninteresting View = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Uninteresting View" };
-        var lHogOnCar = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Hog On Car" };
-        var lPurpleBloom = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Purple Bloom" };
-        var lAMeetingOfMinds = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "A Meeting of Minds" };
-        var lTheSummoning = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Summoning" };
-        var lMaskedRed = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Masked Red" };
-        var lThreeLeavesMono = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Leaves Mono" };
-        var lNighttimeExcursions = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Nighttime Excursions" };
-
-        var lSalonYearGoodLight2020 = new SalonYearEntity { Name = "Good Light", Salon = lSalonGoodLight, Year = 2020, ClosingDate = new DateTime(2020, 5, 8), JudgeDate = new DateTime(2020, 05, 23), NotificationDate = new DateTime(2020, 05, 30), CataloguesPostedDate = new DateTime(2020, 7, 1) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/119", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGoodLight2020</Image>
-    new AccreditationEntity() { SalonNumber = "2020-162", PhotoOrganisation = lPsa, SalonYear = lSalonYearGoodLight2020</Image>
-    });
-
-    var lSalonYearGoodLight2020GoodLight = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeGoodLightPdi };
-    var lSalonYearGoodLight2020Life = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypePhotojournalismPdi };
-    var lSalonYearGoodLight2020Nature = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeNaturePdi };
-    var lSalonYearGoodLight2020Colour = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeColourPdi };
-    var lSalonYearGoodLight2020Mono = new SectionEntity() { SalonYear = lSalonYearGoodLight2020, SectionType = lSectionTypeMonoPdi };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 18.35M,
-        SalonYear = lSalonYearGoodLight2020,
-        EntryDate = new DateTime(2020, 5, 1),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            <Image>YearGoodLight2020Life , Image = lSolentSunset</Image>
-            <Image>YearGoodLight2020Nature , Image = lChileanRoseTarantulaOnTree</Image>
-            <Image>YearGoodLight2020Colour, Image = lTheSummoning</Image>
-            <Image>YearGoodLight2020Mono, Image = lTowersInTheSky</Image>
-
-
-           </Image>
-           </Image>
-            });

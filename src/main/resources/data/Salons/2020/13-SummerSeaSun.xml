@@ -1,64 +1,29 @@
 <Salon>
     <Name>Summer, Sea, Sun</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
+    <Web>https://summerseasun.fotoklubkrk.hr/</Web>
+    <Country>Croatia</Country>
     <Year>2020</Year>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2020-310</Accreditation>
+        <Accreditation type="FIAPLevels">2020/287</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>24.06</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Comfort In A Harsh World</Image>
+        <Image>Railway Children</Image>
+        <Image>Engine Drivers Son</Image>
+        <Image>Domi</Image>
+        <Image>Majesty</Image>
+        <Image>Domi At The Ball</Image>
+        <Image>Gargoyle Gecko</Image>
+        <Image>Peacock Tree Frog Trio</Image>
+        <Image>MossyFrogOnBranch</Image>
+        <Image>Crested Gecko Tongue</Image>
+        <Image>Windswept</Image>
+        <Image award="Silver">Twin Isolation</Image>
     </AcceptedImages>
 </Salon>
 
-        // Summer, Sea, Sun 2020
-        var lRailwayChildren = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Railway Children" };
-        var lEngineDriversSon = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Engine Driver's Son" };
-        var lDomi = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Domi" };
-        var lMajesty = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Majesty" };
-        var Domi At The Ball = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Domi At The Ball" };
-        var lWindswept = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Windswept" };
 
-        var lSalonSummerSeaSun = new SalonEntity { Name = "Summer, Sea, Sun", Website = "https://summerseasun.fotoklubkrk.hr/", Country = lCountryCroatia};
-        var lSalonSummerSeaSun2020 = new SalonYearEntity { Name = "Summer, Sea, Sun", Salon = lSalonSummerSeaSun, Year = 2020, ClosingDate = new DateTime(2020, 9, 20), JudgeDate = new DateTime(2020, 9, 27), NotificationDate = new DateTime(2020, 10, 5), CataloguesPostedDate = new DateTime(2020, 10, 27) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2020/287", PhotoOrganisation = lFiapLevels, SalonYear = lSalonSummerSeaSun2020</Image>
-    new AccreditationEntity() { SalonNumber = "2020-310", PhotoOrganisation = lPsa, SalonYear = lSalonSummerSeaSun2020</Image>
-    });
-
-    var lSalonSummerSeaSun2020Child = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeChildPdi };
-    var lSalonSummerSeaSun2020Portrait = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypePortraitPdi };
-    var lSalonSummerSeaSun2020Nature = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeNaturePdi };
-    var lSalonSummerSeaSun2020Colour = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeColourPdi };
-    var lSalonSummerSeaSun2020Mono = new SectionEntity() { SalonYear = lSalonSummerSeaSun2020, SectionType = lSectionTypeMonoPdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 24.06M,
-        SalonYear = lSalonSummerSeaSun2020,
-        EntryDate = new DateTime(2020, 9, 19),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            <Image>SummerSeaSun2020Child, Image = lComfortInAHarshWorld</Image>
-            <Image>SummerSeaSun2020Child, Image = lRailwayChildren</Image>
-            <Image>SummerSeaSun2020Child, Image = lEngineDriversSon</Image>
-            <Image>SummerSeaSun2020Portrait, Image = lDomi</Image>
-            <Image>SummerSeaSun2020Portrait, Image = lMajesty</Image>
-            <Image>SummerSeaSun2020Portrait, Image = Domi At The Ball</Image>
-            <Image>SummerSeaSun2020Nature, Image = lGargoyleGecko</Image>
-            <Image>SummerSeaSun2020Nature, Image = Peacock Tree Frog Trio</Image>
-            <Image>SummerSeaSun2020Nature, Image = lMossyFrogOnBranch</Image>
-            <Image>SummerSeaSun2020Nature, Image = Crested Gecko Tongue</Image>
-            <Image>SummerSeaSun2020Colour, Image = lWindswept</Image>
-            <Image>SummerSeaSun2020Mono, Image = lTwinIsolation, IsAwarded = true, AwardDetails="Silver", IsAccepted = true, Score=0</Image>
-           </Image>
-           </Image>
-            });

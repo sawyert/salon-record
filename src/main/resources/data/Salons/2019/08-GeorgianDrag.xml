@@ -1,88 +1,20 @@
 <Salon>
     <Name>Georgian Drag</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://photo-forum.eu/menu_id/18/lang/1/rules?project=1</Web>
+    <Country>Georgia</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="FIAPLevels">2019/243</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>15.85</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Waiting To Travel</Image>
+        <Image>Comfort In A Harsh World</Image>
+        <Image>Jilted</Image>
     </AcceptedImages>
 </Salon>
 
-        // Georgian Drag 2019
-        var lSalonGeorgianDrag = new SalonEntity { Name = "Georgian Drag", Website = "http://photo-forum.eu/menu_id/18/lang/1/rules?project=1", Country = lCountryGeorgia };
-        lContext.Salons.Add(lSalonGeorgianDrag);
-
-        var lSalonYearGeorgianDrag2019 = new SalonYearEntity { Name = "Georgian Drag", Salon = lSalonGeorgianDrag, Year = 2019, ClosingDate = new DateTime(2019, 6, 27), JudgeDate = new DateTime(2019, 7, 13), NotificationDate = new DateTime(2019, 7, 23), CataloguesPostedDate = new DateTime(2019, 9, 1) };
-        lContext.SalonYears.Add(lSalonYearGeorgianDrag2019);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/243", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearGeorgianDrag2019 },
-    new AccreditationEntity() { SalonNumber = "L190101", PhotoOrganisation = lGpu, SalonYear = lSalonYearGeorgianDrag2019 },
-    });
 
 
-    var lSalonYearGeorgianDrag2019Colour = new SectionEntity() { SalonYear = lSalonYearGeorgianDrag2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearGeorgianDrag2019People = new SectionEntity() { SalonYear = lSalonYearGeorgianDrag2019, SectionType = lSectionTypePeoplePdi };
-    var lSalonYearGeorgianDrag2019Mono = new SectionEntity() { SalonYear = lSalonYearGeorgianDrag2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearGeorgianDrag2019Landscapes = new SectionEntity() { SalonYear = lSalonYearGeorgianDrag2019, SectionType = lSectionTypeScapesPdi };
-
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearGeorgianDrag2019Colour,
-        lSalonYearGeorgianDrag2019People,
-        lSalonYearGeorgianDrag2019Mono,
-        lSalonYearGeorgianDrag2019Landscapes,
-        });
-
-        var lWartimeLettersHome = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Wartime Letters Home" };
-        var lComfortInAHarshWorld = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Comfort in a Harsh World" };
-        var lPagoda = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Pagoda" };
-        var lDerwentwaterBoatHouse = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Derwentwater Boat House" };
-        var lGrasmereRocks = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Grasmere Rocks" };
-
-
-
-        lContext.Images.AddRange(new List<ImageEntity>
-            {
-            lWartimeLettersHome,
-            lComfortInAHarshWorld,
-            lPagoda,
-            lDerwentwaterBoatHouse,
-            lGrasmereRocks
-            });
-
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 15.85M,
-            SalonYear = lSalonYearGeorgianDrag2019,
-            EntryDate = new DateTime(2019, 6, 24),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=7 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score= 4},
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Colour, Image = lWartimeLettersHome, IsAwarded = false, IsAccepted = false, Score=7 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=7 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019People, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=8 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019People, Image = lWaitingToTravel, IsAwarded = false, IsAccepted = true, Score=9 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019People, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = true, Score=9 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019People, Image = lJilted, IsAwarded = false, IsAccepted = true, Score=9},
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Mono, Image = lPagoda, IsAwarded = false, IsAccepted = false, Score=4 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=5 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=7 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=6 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Landscapes, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=6},
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Landscapes, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=5 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Landscapes, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=6 },
-                new CompetitionEntryEntity { Section = lSalonYearGeorgianDrag2019Landscapes, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=7 },
-                },
-                },
-                });

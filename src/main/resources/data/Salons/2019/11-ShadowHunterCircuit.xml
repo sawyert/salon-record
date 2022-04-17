@@ -9,8 +9,8 @@
             <Name>Carlisle</Name>
             <Country>England</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2019</Accreditation>
+                <Accreditation type="FIAPLevels">2019</Accreditation>
             </Accreditations>
             <AcceptedImages>
 
@@ -38,8 +38,8 @@
     var lSalonYearShadowHunterSerbia2019 = new SalonYearEntity { Name = "Shadowhunter - Serbia", Salon = lSalonShadowHunterSerbia, Year = 2019, ClosingDate = new DateTime(2019, 7, 12), JudgeDate = new DateTime(2019, 7, 30), NotificationDate = new DateTime(2019, 8, 10), CataloguesPostedDate = new DateTime(2019, 8, 10), Circuit = lShadowhunterCircuit2019 };
 
     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/211", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterSerbia2019 },
-        new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterSerbia2019 },
+        new AccreditationEntity() { SalonNumber = "2019/211", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterSerbia2019</Image>
+        new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterSerbia2019</Image>
         });
 
         var lSalonYearShadowHunterSerbia2019Mono = new SectionEntity() { SalonYear = lSalonYearShadowHunterSerbia2019, SectionType = lSectionTypeMonoPdi };
@@ -56,24 +56,24 @@
             EntryDate = new DateTime(2019, 7, 6),
             Person = lTim,
             Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=16 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = true, Score= 19},
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 14},
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=14 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = true, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = true, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=21},
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearShadowHunterSerbia2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=18},
-                },
-                },
+                <Image>ShadowHunterSerbia2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                <Image>ShadowHunterSerbia2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = true, Score= 19},
+                <Image>ShadowHunterSerbia2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                <Image>ShadowHunterSerbia2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                <Image>ShadowHunterSerbia2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                <Image>ShadowHunterSerbia2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 14},
+                <Image>ShadowHunterSerbia2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=19</Image>
+                <Image>ShadowHunterSerbia2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=14</Image>
+                <Image>ShadowHunterSerbia2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                <Image>ShadowHunterSerbia2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                <Image>ShadowHunterSerbia2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                <Image>ShadowHunterSerbia2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=21},
+                <Image>ShadowHunterSerbia2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=15</Image>
+                <Image>ShadowHunterSerbia2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=17</Image>
+                <Image>ShadowHunterSerbia2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                <Image>ShadowHunterSerbia2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=18},
+               </Image>
+               </Image>
                 });
 
                 var lSalonShadowHunterMontenegro = new SalonEntity { Name = "Shadowhunter - Montenegro", Website = "https://shadowhunter.lumiere.at/", Country = lCountryMontenegro };
@@ -81,8 +81,8 @@
                 var lSalonYearShadowHunterMontenegro2019 = new SalonYearEntity { Name = "Shadowhunter - Montenegro", Salon = lSalonShadowHunterMontenegro, Year = 2019, ClosingDate = new DateTime(2019, 7, 12), JudgeDate = new DateTime(2019, 7, 30), NotificationDate = new DateTime(2019, 8, 10), CataloguesPostedDate = new DateTime(2019, 8, 10), Circuit = lShadowhunterCircuit2019 };
 
                 lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2019/213", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterMontenegro2019 },
-                    new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterMontenegro2019 },
+                    new AccreditationEntity() { SalonNumber = "2019/213", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterMontenegro2019</Image>
+                    new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterMontenegro2019</Image>
                     });
 
                     var lSalonYearShadowHunterMontenegro2019Mono = new SectionEntity() { SalonYear = lSalonYearShadowHunterMontenegro2019, SectionType = lSectionTypeMonoPdi };
@@ -99,24 +99,24 @@
                         EntryDate = new DateTime(2019, 7, 6),
                         Person = lTim,
                         Entries = new List<CompetitionEntryEntity> {
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=20 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = false, Score= 20},
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=19 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 17},
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=19 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=19 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=16 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=17},
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=18 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=19 },
-                            new CompetitionEntryEntity { Section = lSalonYearShadowHunterMontenegro2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=22},
-                            },
-                            },
+                            <Image>ShadowHunterMontenegro2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                            <Image>ShadowHunterMontenegro2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = false, Score= 20},
+                            <Image>ShadowHunterMontenegro2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                            <Image>ShadowHunterMontenegro2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>ShadowHunterMontenegro2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                            <Image>ShadowHunterMontenegro2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 17},
+                            <Image>ShadowHunterMontenegro2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                            <Image>ShadowHunterMontenegro2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                            <Image>ShadowHunterMontenegro2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>ShadowHunterMontenegro2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                            <Image>ShadowHunterMontenegro2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                            <Image>ShadowHunterMontenegro2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=17},
+                            <Image>ShadowHunterMontenegro2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>ShadowHunterMontenegro2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                            <Image>ShadowHunterMontenegro2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                            <Image>ShadowHunterMontenegro2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=22},
+                           </Image>
+                           </Image>
                             });
 
                             var lSalonShadowHunterCroatia = new SalonEntity { Name = "Shadowhunter - Croatia", Website = "https://shadowhunter.lumiere.at/", Country = lCountryCroatia };
@@ -124,8 +124,8 @@
                             var lSalonYearShadowHunterCroatia2019 = new SalonYearEntity { Name = "Shadowhunter - Croatia", Salon = lSalonShadowHunterCroatia, Year = 2019, ClosingDate = new DateTime(2019, 7, 12), JudgeDate = new DateTime(2019, 7, 30), NotificationDate = new DateTime(2019, 8, 10), CataloguesPostedDate = new DateTime(2019, 8, 10), Circuit = lShadowhunterCircuit2019 };
 
                             lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                new AccreditationEntity() { SalonNumber = "2019/212", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterCroatia2019 },
-                                new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterCroatia2019 },
+                                new AccreditationEntity() { SalonNumber = "2019/212", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearShadowHunterCroatia2019</Image>
+                                new AccreditationEntity() { SalonNumber = "2019-290", PhotoOrganisation = lPsa, SalonYear = lSalonYearShadowHunterCroatia2019</Image>
                                 });
 
                                 var lSalonYearShadowHunterCroatia2019Mono = new SectionEntity() { SalonYear = lSalonYearShadowHunterCroatia2019, SectionType = lSectionTypeMonoPdi };
@@ -142,22 +142,22 @@
                                     EntryDate = new DateTime(2019, 7, 6),
                                     Person = lTim,
                                     Entries = new List<CompetitionEntryEntity> {
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = false, Score= 18},
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 18},
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=19 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=20 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=20 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=20},
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = true, Score=20 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Mono, Image = lTheFinalGateway, IsAwarded = true, AwardDetails="PSA HM", IsAccepted = true, Score=22 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = true, Score=20 },
-                                        new CompetitionEntryEntity { Section = lSalonYearShadowHunterCroatia2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=19},
-                                        },
-                                        },
+                                        <Image>ShadowHunterCroatia2019ShadowHunter, Image = lPortal, IsAwarded = false, IsAccepted = false, Score=16</Image>
+                                        <Image>ShadowHunterCroatia2019ShadowHunter, Image = lBagLady, IsAwarded = false, IsAccepted = false, Score= 18},
+                                        <Image>ShadowHunterCroatia2019ShadowHunter, Image = lItsAllAboutTheHair, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                        <Image>ShadowHunterCroatia2019ShadowHunter, Image = lShadowLight, IsAwarded = false, IsAccepted = false, Score=18</Image>
+                                        <Image>ShadowHunterCroatia2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                        <Image>ShadowHunterCroatia2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score= 18},
+                                        <Image>ShadowHunterCroatia2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=19</Image>
+                                        <Image>ShadowHunterCroatia2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                        <Image>ShadowHunterCroatia2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score=21</Image>
+                                        <Image>ShadowHunterCroatia2019Colour, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                        <Image>ShadowHunterCroatia2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=20</Image>
+                                        <Image>ShadowHunterCroatia2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=20},
+                                        <Image>ShadowHunterCroatia2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                                        <Image>ShadowHunterCroatia2019Mono, Image = lTheFinalGateway, IsAwarded = true, AwardDetails="PSA HM", IsAccepted = true, Score=22</Image>
+                                        <Image>ShadowHunterCroatia2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = true, Score=20</Image>
+                                        <Image>ShadowHunterCroatia2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=19},
+                                       </Image>
+                                       </Image>
                                         });

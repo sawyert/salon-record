@@ -17,9 +17,9 @@
 
 
 <Image>Into The Mist</Image>
-                new CompetitionEntryEntity { Section = lSalonYearCanvasColour, Image = lAWorldBeyond, IsAwarded = false, IsAccepted = true, Score=20 },
+                <Image>CanvasColour, Image = lAWorldBeyond, IsAwarded = false, IsAccepted = true, Score=20</Image>
 <Image>The Watcher In The Waves</Image>
-                new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score= 19},
-                new CompetitionEntryEntity { Section = lSalonYearCanvasMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearCanvasNature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=24 },
-                new CompetitionEntryEntity { Section = lSalonYearCanvasTravel, Image = Afternoon Gun, IsAwarded = false, IsAccepted = true, Score=21 },
+                <Image>CanvasMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score= 19},
+                <Image>CanvasMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=19</Image>
+                <Image>CanvasNature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=24</Image>
+                <Image>CanvasTravel, Image = Afternoon Gun, IsAwarded = false, IsAccepted = true, Score=21</Image>

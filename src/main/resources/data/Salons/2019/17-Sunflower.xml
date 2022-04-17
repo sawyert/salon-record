@@ -1,64 +1,21 @@
 <Salon>
     <Name>Sunflower</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://sunflower.photosalon.cz/</Web>
+    <Country>Czech Republic</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-307</Accreditation>
+        <Accreditation type="FIAPLevels">2019/262</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>32.68M</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Daisy In Wooden Vase</Image>
+        <Image>Betwixt Realities</Image>
+        <Image>Rough Frilled Tree Frog On Flower</Image>
+        <Image>Crested Gecko Tongue</Image>
+        <Image>Gargoyle Gecko</Image>
+        <Image>Engine Driver</Image>
     </AcceptedImages>
 </Salon>
-
-        // Sunflower 2019
-        var lSalonSunflower = new SalonEntity { Name = "Sunflower", Website = "http://sunflower.photosalon.cz/", Country = lCountryCzechRep };
-
-        var lSalonYearSunflower2019 = new SalonYearEntity { Name = "Sunflower", Salon = lSalonSunflower, Year = 2019, ClosingDate = new DateTime(2019, 7, 31), JudgeDate = new DateTime(2019, 8, 11), NotificationDate = new DateTime(2019, 8, 25), CataloguesPostedDate = new DateTime(2019, 10, 31) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/262", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearSunflower2019 },
-    new AccreditationEntity() { SalonNumber = "2019-307", PhotoOrganisation = lPsa, SalonYear = lSalonYearSunflower2019 },
-    });
-
-    var lDaisyInWoodenVase = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Daisy In Wooden Vase" };
-    var lAbstractFirebird = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Abstract Firebird" };
-    var lEngineDriver = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Engine Driver" };
-
-
-    var lSalonYearSunflower2019Mono = new SectionEntity() { SalonYear = lSalonYearSunflower2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearSunflower2019Colour = new SectionEntity() { SalonYear = lSalonYearSunflower2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearSunflower2019Nature = new SectionEntity() { SalonYear = lSalonYearSunflower2019, SectionType = lSectionTypeNaturePdi };
-    var lSalonYearSunflower2019Portrait = new SectionEntity() { SalonYear = lSalonYearSunflower2019, SectionType = lSectionTypePortraitPdi };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 32.68M,
-        SalonYear = lSalonYearSunflower2019,
-        EntryDate = new DateTime(2019, 7, 27),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Colour, Image = lDaisyInWoodenVase },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Colour, Image = Betwixt Realities },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Colour, Image = lAbstractFirebird, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Nature, Image = lRoughFrilledTreeFrogOnFlower },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Nature, Image = lGargoyleGecko },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Portrait, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Portrait, Image = lComfortInAHarshWorld, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Portrait, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearSunflower2019Portrait, Image = lEngineDriver },
-            },
-            },
-            });

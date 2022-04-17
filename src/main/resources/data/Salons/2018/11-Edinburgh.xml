@@ -6,54 +6,12 @@
     <JudgeDate>19-01-2018</JudgeDate>
     <NotificationDate>31-01-2018</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAP">2018/</Accreditation>
+        <Accreditation type="FIAP">2018/118</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>12</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>The Watcher</Image>
     </AcceptedImages>
 </Salon>
 
-        // Edinburgh Salon 2018
-        var lSalonEdinburgh = new SalonEntity { Name = "Edinburgh", Website = "https://www.edinburghphotosalon.org/", Country = lCountryScotland };
-        lContext.Salons.Add(lSalonEdinburgh);
 
-
-        var lSalonYearEdinburgh2018 = new SalonYearEntity { Name = "Edinburgh", Salon = lSalonEdinburgh, Year = 2018, ClosingDate = new DateTime(2018, 6, 20), JudgeDate = new DateTime(2018, 6, 30), NotificationDate = new DateTime(2018, 7, 6), CataloguesPostedDate = new DateTime(2018, 9, 8) };
-        lContext.SalonYears.Add(lSalonYearEdinburgh2018);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2018/118", PhotoOrganisation = lFiap, SalonYear = lSalonYearEdinburgh2018 },
-    });
-
-
-    var lSalonYearEdinburgh2018MonoPrint = new SectionEntity() { SalonYear = lSalonYearEdinburgh2018, SectionType = lSectionTypeMonoPrint };
-    var lSalonYearEdinburgh2018ColourPrint = new SectionEntity() { SalonYear = lSalonYearEdinburgh2018, SectionType = lSectionTypeColourPrint };
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearEdinburgh2018MonoPrint,
-        lSalonYearEdinburgh2018ColourPrint,
-        });
-
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 12M,
-            SalonYear = lSalonYearEdinburgh2018,
-            EntryDate = new DateTime(2018, 4, 9),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018MonoPrint, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018MonoPrint, Image = lCathedralCeiling, IsAwarded = false, IsAccepted = false, Score= null},
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018MonoPrint, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018MonoPrint, Image = lSnowdrop, IsAwarded = false, IsAccepted = false, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018ColourPrint, Image = lTulipInTheRound, IsAwarded = false, IsAccepted = false, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018ColourPrint, Image = lTheWatcher, IsAwarded = false, IsAccepted = true, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018ColourPrint, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=null },
-                new CompetitionEntryEntity { Section = lSalonYearEdinburgh2018ColourPrint, Image = lBlueSymmetree, IsAwarded = false, IsAccepted = false, Score=null },
-
-                },
-                },
-                });

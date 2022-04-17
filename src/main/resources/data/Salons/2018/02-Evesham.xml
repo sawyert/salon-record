@@ -6,72 +6,13 @@
     <JudgeDate>19-01-2018</JudgeDate>
     <NotificationDate>31-01-2018</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAP">2018/</Accreditation>
+        <Accreditation type="BPE">2018</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>18.00</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Blue Symmetree</Image>
+        <Image>Into The Mist</Image>
     </AcceptedImages>
 </Salon>
 
-        // Evesham BPE
-        var lSalonEveshamBpe = new SalonEntity { Name = "Evesham", Website = "http://www.photo2018.net", Country = lCountryEngland };
-        lContext.Salons.Add(lSalonEveshamBpe);
 
-
-        var lSalonYearEveshamBpe = new SalonYearEntity { Name = "Evesham", Salon = lSalonEveshamBpe, Year = 2018, ClosingDate = new DateTime(2018, 2, 28), JudgeDate = new DateTime(2018, 3, 11), NotificationDate = new DateTime(2018, 4, 12), CataloguesPostedDate = new DateTime(2018, 4, 12) };
-        lContext.SalonYears.Add(lSalonYearEveshamBpe);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2018 BPE", PhotoOrganisation = lBpe, SalonYear = lSalonYearEveshamBpe },
-    });
-
-    var lSalonYearEveshamColour = new SectionEntity() { SalonYear = lSalonYearEveshamBpe, SectionType = lSectionTypeColourPdi };
-    var lSalonYearEveshamMono = new SectionEntity() { SalonYear = lSalonYearEveshamBpe, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearEveshamCreative = new SectionEntity() { SalonYear = lSalonYearEveshamBpe, SectionType = lSectionTypeCreativePdi };
-
-
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearEveshamColour,
-        lSalonYearEveshamMono,
-        lSalonYearEveshamCreative,
-        });
-
-        var lWoodlandMage = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Woodland Mage" };
-        var lBlueSymmetree = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Blue Symmetree" };
-        var lThreeTulips = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Three Tulips" };
-
-
-        lContext.Images.AddRange(new List<ImageEntity>
-            {
-            lWoodlandMage,
-            lBlueSymmetree,
-            lThreeTulips,
-            });
-
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 18.00M,
-            SalonYear = lSalonYearEveshamBpe,
-            EntryDate = new DateTime(2018, 1, 14),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = Afternoon Gun, IsAwarded = false, IsAccepted = false, Score=9 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score= 10},
-                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lThreeTulips, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamColour, Image = lWraith, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = false, Score= 8},
-                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamMono, Image = lWinterTree, IsAwarded = false, IsAccepted = false, Score=11 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamCreative, Image = lWoodlandMage, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamCreative, Image = lBlueSymmetree, IsAwarded = false, IsAccepted = true, Score=13 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamCreative, Image = lDarkHorizons, IsAwarded = false, IsAccepted = false, Score=10 },
-                new CompetitionEntryEntity { Section = lSalonYearEveshamCreative, Image = lIntoTheMist, IsAwarded = false, IsAccepted = true, Score=12 },
-                },
-                },
-                });

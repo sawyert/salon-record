@@ -1,57 +1,20 @@
 <Salon>
     <Name>NZIS</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web></Web>
+    <Country>New Zealand</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-418</Accreditation>
+        <Accreditation type="FIAPLevels">2019/396</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>16.93</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>The Hall Of Gateways</Image>
+        <Image>Betwixt Realities</Image>
     </AcceptedImages>
 </Salon>
 
-        // New Zealand 2019
-        var lSalonYearNZIS2019 = new SalonYearEntity { Name = "NZIS", Salon = lSalonNzis, Year = 2019, ClosingDate = new DateTime(2019, 10, 7), JudgeDate = new DateTime(2019, 10, 20), NotificationDate = new DateTime(2019, 10, 26), CataloguesPostedDate = new DateTime(2019, 11, 15) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/396", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearNZIS2019 },
-    new AccreditationEntity() { SalonNumber = "2019-418", PhotoOrganisation = lPsa, SalonYear = lSalonYearNZIS2019 },
-    new AccreditationEntity() { SalonNumber = "L190118", PhotoOrganisation = lGpu, SalonYear = lSalonYearNZIS2019 },
-    });
-
-    var lSalonYearPhotoNzis2019Colour = new SectionEntity() { SalonYear = lSalonYearNZIS2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearPhotoNzis2019Mono = new SectionEntity() { SalonYear = lSalonYearNZIS2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearPhotoNzis2019Creative = new SectionEntity() { SalonYear = lSalonYearNZIS2019, SectionType = lSectionTypeCreativePdi };
 
 
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 16.93M,
-        SalonYear = lSalonYearNZIS2019,
-        EntryDate = new DateTime(2019, 10, 6),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=10},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Colour, Image = lWorkersBreak, IsAwarded = false, IsAccepted = false, Score= 10},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Colour, Image = lTheSeamstressTakesHerFee, IsAwarded = false, IsAccepted = false, Score=9 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Colour, Image = lTarantulaWarning, IsAwarded = false, IsAccepted = false, Score=10 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=9 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 9},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=8 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=7 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = Party At The Apocalypse, IsAwarded = false, IsAccepted = false, Score=90 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = true, Score= 11},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = Betwixt Realities, IsAwarded = false, IsAccepted = true, Score=12 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNzis2019Creative, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=10 },
-
-            },
-            },
-            });

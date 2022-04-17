@@ -1,59 +1,22 @@
 <Salon>
     <Name>Bulgaria</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://photocontestbg.org</Web>
+    <Country>Bulgaria</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-508</Accreditation>
+        <Accreditation type="FIAPLevels">2019/520</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>19.79</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Leek Flower</Image>
+        <Image award="Salon Gold">Mossy Frog On Branch</Image>
+        <Image>Crested Gecko On Stump</Image>
+        <Image>Red Eyed Green Tree Frog</Image>
+        <Image>Peacock Tree Frog Trio</Image>
+        </Image>
     </AcceptedImages>
 </Salon>
 
-        // Bulgaria 2019
-
-        var lSalonBulgaria = new SalonEntity { Name = "Bulgaria", Website = "http://photocontestbg.org", Country = lCountryBulgaria };
-
-        var lSalonYearBulgaria2019 = new SalonYearEntity { Name = "Bulgaria", Salon = lSalonBulgaria, Year = 2019, ClosingDate = new DateTime(2019, 12, 1), JudgeDate = new DateTime(2019, 12, 11), NotificationDate = new DateTime(2019, 12, 19), CataloguesPostedDate = new DateTime(2019, 12, 19) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/520", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBulgaria2019 },
-    new AccreditationEntity() { SalonNumber = "2019-508", PhotoOrganisation = lPsa, SalonYear = lSalonYearBulgaria2019 },
-    new AccreditationEntity() { SalonNumber = "L190150", PhotoOrganisation = lGpu, SalonYear = lSalonYearBulgaria2019 },
-    });
-
-    var lSalonYearPhotoBulgaria2019Colour = new SectionEntity() { SalonYear = lSalonYearBulgaria2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearPhotoBulgaria2019Mono = new SectionEntity() { SalonYear = lSalonYearBulgaria2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearPhotoBulgaria2019Nature = new SectionEntity() { SalonYear = lSalonYearBulgaria2019, SectionType = lSectionTypeNaturePdi };
-
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 19.79M,
-        SalonYear = lSalonYearBulgaria2019,
-        EntryDate = new DateTime(2019, 11, 9),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Colour, Image = lLoveLetters, IsAwarded = false, IsAccepted = false, Score=21 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score= 21},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Colour, Image = lLeekFlower, IsAwarded = false, IsAccepted = true, Score=23 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = false, Score=21 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=20 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score= 21},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = false, Score=21},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Nature, Image = lMossyFrogOnBranch, IsAwarded=true, AwardDetails="Salon Gold",  IsAccepted = true, Score=27 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = true, Score= 23},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = true, Score=23 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoBulgaria2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=25 },
-
-            },
-            },
-            });

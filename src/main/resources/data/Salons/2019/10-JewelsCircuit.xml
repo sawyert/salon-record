@@ -9,8 +9,8 @@
             <Name>Carlisle</Name>
             <Country>England</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2019</Accreditation>
+                <Accreditation type="FIAPLevels">2019</Accreditation>
             </Accreditations>
             <AcceptedImages>
 
@@ -40,8 +40,8 @@
         lContext.SalonYears.Add(lSalonYearDiamanti2019);
 
         lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/227", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDiamanti2019 },
-        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearDiamanti2019 },
+        new AccreditationEntity() { SalonNumber = "2019/227", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearDiamanti2019</Image>
+        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearDiamanti2019</Image>
         });
 
         var lSalonYearDiamanti2019Mono = new SectionEntity() { SalonYear = lSalonYearDiamanti2019, SectionType = lSectionTypeMonoPdi };
@@ -65,24 +65,24 @@
                 EntryDate = new DateTime(2019, 6, 29),
                 Person = lTim,
                 Entries = new List<CompetitionEntryEntity> {
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = true, Score= 0},
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Colour, Image = Peacock Tree Frog Trio },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Landscape, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Landscape, Image = lTheRedHut },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Photojournalism, Image = lAnimatronicTRex },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Photojournalism, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = false, Score=0 },
-                    new CompetitionEntryEntity { Section = lSalonYearDiamanti2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
-                    },
-                    },
+                    <Image>Diamanti2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Mono, Image = lPeriodDramaLeeds</Image>
+                    <Image>Diamanti2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
+                    <Image>Diamanti2019Colour, Image = Peacock Tree Frog Trio</Image>
+                    <Image>Diamanti2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Landscape, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Landscape, Image = lTheRedHut</Image>
+                    <Image>Diamanti2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
+                    <Image>Diamanti2019Photojournalism, Image = lAnimatronicTRex</Image>
+                    <Image>Diamanti2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Photojournalism, Image = Tour De Yorkshire 2019, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                    <Image>Diamanti2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
+                   </Image>
+                   </Image>
                     });
 
 
@@ -93,8 +93,8 @@
                     lContext.SalonYears.Add(lSalonYearRubini2019);
 
                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                        new AccreditationEntity() { SalonNumber = "2019/228", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearRubini2019 },
-                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearRubini2019 },
+                        new AccreditationEntity() { SalonNumber = "2019/228", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearRubini2019</Image>
+                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearRubini2019</Image>
                         });
 
                         var lSalonYearRubini2019Mono = new SectionEntity() { SalonYear = lSalonYearRubini2019, SectionType = lSectionTypeMonoPdi };
@@ -118,24 +118,24 @@
                                 EntryDate = new DateTime(2019, 6, 29),
                                 Person = lTim,
                                 Entries = new List<CompetitionEntryEntity> {
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Mono, Image = Mirror Of Reminiscence },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Colour, Image = Peacock Tree Frog Trio },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Landscape, Image = lGrassIceland },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Landscape, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Photojournalism, Image = lTourDeYorkshire2019 },
-                                    new CompetitionEntryEntity { Section = lSalonYearRubini2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
-                                    },
-                                    },
+                                    <Image>Rubini2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
+                                    <Image>Rubini2019Mono, Image = Mirror Of Reminiscence</Image>
+                                    <Image>Rubini2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
+                                    <Image>Rubini2019Colour, Image = Peacock Tree Frog Trio</Image>
+                                    <Image>Rubini2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Landscape, Image = lGrassIceland</Image>
+                                    <Image>Rubini2019Landscape, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
+                                    <Image>Rubini2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                    <Image>Rubini2019Photojournalism, Image = Tour De Yorkshire 2019</Image>
+                                    <Image>Rubini2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
+                                   </Image>
+                                   </Image>
                                     });
 
                                     var lSalonSmeraldi = new SalonEntity { Name = "Jewels - Smeraldi", Website = "http://www.photocontestclub.org/en/jewels-circ/", Country = lCountryItaly };
@@ -145,8 +145,8 @@
                                     lContext.SalonYears.Add(lSalonYearSmeraldi2019);
 
                                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                        new AccreditationEntity() { SalonNumber = "2019/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearSmeraldi2019 },
-                                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearSmeraldi2019 },
+                                        new AccreditationEntity() { SalonNumber = "2019/229", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearSmeraldi2019</Image>
+                                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearSmeraldi2019</Image>
                                         });
 
                                         var lSalonYearSmeraldi2019Mono = new SectionEntity() { SalonYear = lSalonYearSmeraldi2019, SectionType = lSectionTypeMonoPdi };
@@ -170,24 +170,24 @@
                                                 EntryDate = new DateTime(2019, 6, 29),
                                                 Person = lTim,
                                                 Entries = new List<CompetitionEntryEntity> {
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Mono, Image = Mirror Of Reminiscence },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Colour, Image = Peacock Tree Frog Trio },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Landscape, Image = lGrassIceland },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Landscape, Image = lTheRedHut },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Photojournalism, Image = lTourDeYorkshire2019, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    new CompetitionEntryEntity { Section = lSalonYearSmeraldi2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
-                                                    },
-                                                    },
+                                                    <Image>Smeraldi2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
+                                                    <Image>Smeraldi2019Mono, Image = Mirror Of Reminiscence</Image>
+                                                    <Image>Smeraldi2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
+                                                    <Image>Smeraldi2019Colour, Image = Peacock Tree Frog Trio</Image>
+                                                    <Image>Smeraldi2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Landscape, Image = lGrassIceland</Image>
+                                                    <Image>Smeraldi2019Landscape, Image = lTheRedHut</Image>
+                                                    <Image>Smeraldi2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
+                                                    <Image>Smeraldi2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Photojournalism, Image = Tour De Yorkshire 2019, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                    <Image>Smeraldi2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
+                                                   </Image>
+                                                   </Image>
                                                     });
 
                                                     var lSalonZaffiri = new SalonEntity { Name = "Jewels - Zaffiri", Website = "http://www.photocontestclub.org/en/jewels-circ/", Country = lCountryItaly };
@@ -197,8 +197,8 @@
                                                     lContext.SalonYears.Add(lSalonYearZaffiri2019);
 
                                                     lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                                        new AccreditationEntity() { SalonNumber = "2019/230", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearZaffiri2019 },
-                                                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearZaffiri2019 },
+                                                        new AccreditationEntity() { SalonNumber = "2019/230", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearZaffiri2019</Image>
+                                                        new AccreditationEntity() { SalonNumber = "L190073", PhotoOrganisation = lGpu, SalonYear = lSalonYearZaffiri2019</Image>
                                                         });
 
                                                         var lSalonYearZaffiri2019Mono = new SectionEntity() { SalonYear = lSalonYearZaffiri2019, SectionType = lSectionTypeMonoPdi };
@@ -222,22 +222,22 @@
                                                                 EntryDate = new DateTime(2019, 6, 29),
                                                                 Person = lTim,
                                                                 Entries = new List<CompetitionEntryEntity> {
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Mono, Image = Contemplation By Starlight },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Colour, Image = Peacock Tree Frog Trio },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Colour, Image = Betwixt Realities },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Landscape, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Landscape, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Photojournalism, Image = lTourDeYorkshire2019 },
-                                                                    new CompetitionEntryEntity { Section = lSalonYearZaffiri2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
+                                                                    <Image>Zaffiri2019Mono, Image = Contemplation By Starlight</Image>
+                                                                    <Image>Zaffiri2019Mono, Image = lPeriodDramaLeeds, IsAwarded = false, IsAccepted = false, Score= 0},
+                                                                    <Image>Zaffiri2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score= 0},
+                                                                    <Image>Zaffiri2019Colour, Image = Peacock Tree Frog Trio</Image>
+                                                                    <Image>Zaffiri2019Colour, Image = Betwixt Realities</Image>
+                                                                    <Image>Zaffiri2019Landscape, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Landscape, Image = lTheRedHut, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Landscape, Image = lDerwentwaterBoatHouse, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Landscape, Image = lGrasmereRocks, IsAwarded = false, IsAccepted = false, Score=0},
+                                                                    <Image>Zaffiri2019Photojournalism, Image = lAnimatronicTRex, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Photojournalism, Image = lLightNightInflatableMen, IsAwarded = false, IsAccepted = false, Score=0</Image>
+                                                                    <Image>Zaffiri2019Photojournalism, Image = Tour De Yorkshire 2019</Image>
+                                                                    <Image>Zaffiri2019Photojournalism, Image = lTourDeYorkshireArt, IsAwarded = false, IsAccepted = false, Score=0},
                                                                     },
                                                                     },
                                                                     });

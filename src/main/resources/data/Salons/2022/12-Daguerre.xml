@@ -1,0 +1,16 @@
+<Salon>
+    <Name>Daguerre</Name>
+    <Web>http://www.salondaguerre.paris/en/entry-rules-2022/</Web>
+    <Country>France</Country>
+    <Year>2022</Year>
+    <JudgeDate>08-05-2022</JudgeDate>
+    <NotificationDate>22-05-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-218</Accreditation>
+        <Accreditation type="FIAPLevels">2022/219</Accreditation>
+    </Accreditations>
+    <Cost>24.25</Cost>
+    <AcceptedImages>
+        <Image></Image>
+    </AcceptedImages>
+</Salon>

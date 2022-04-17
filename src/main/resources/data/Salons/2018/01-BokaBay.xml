@@ -11,13 +11,13 @@
     </Accreditations>
     <Cost>18.49</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>Birds Silhouette</Image>
+        <Image award="PC Persasto HM">Great Grey Owl</Image>
+        <Image>Icelandic Refuge</Image>
+        <Image>Afternoon Gun</Image>
     </AcceptedImages>
 </Salon>
 
 
 
-                new CompetitionEntryEntity { Section = lSalonYearBokaBayMono, Image = Birds Silhouette, IsAwarded = false, IsAccepted = true, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearBokaBayNature, Image = Great Grey Owl, IsAwarded = true, AwardDetails = "PC Perasto Honorable Mention", IsAccepted = true, Score=24 },
-                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = Icelandic Refuge, IsAwarded = false, IsAccepted = true, Score= 20},
-                new CompetitionEntryEntity { Section = lSalonYearBokaBayTravel, Image = Afternoon Gun, IsAwarded = false, IsAccepted = true, Score=20 },
+

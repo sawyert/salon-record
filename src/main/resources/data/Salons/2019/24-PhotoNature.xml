@@ -1,59 +1,18 @@
 <Salon>
     <Name>Photo Nature</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://photonature.ajac.org.br/</Web>
+    <Country>Brazil</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-381</Accreditation>
+        <Accreditation type="FIAPLevels">2019/307</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>14.03</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>I Used To Dream I'd Marry A Prince</Image>
+        <Image award="Club Diploma">Mossy Frog On Branch</Image>
+        <Image>Gargoyle Gecko</Image>
     </AcceptedImages>
 </Salon>
-
-        // Photo Nature Brazil 2019
-        var lSalonPhotoNature = new SalonEntity { Name = "Photo Nature", Website = "http://photonature.ajac.org.br/", Country = lCountryBrazil };
-
-        var lSalonYearPhotoNature2019 = new SalonYearEntity { Name = "Photo Nature", Salon = lSalonPhotoNature, Year = 2019, ClosingDate = new DateTime(2019, 9, 15), JudgeDate = new DateTime(2019, 9, 30), NotificationDate = new DateTime(2019, 10, 14), CataloguesPostedDate = new DateTime(2019, 11, 30) };
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/307", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearPhotoNature2019 },
-    new AccreditationEntity() { SalonNumber = "2019-381", PhotoOrganisation = lPsa, SalonYear = lSalonYearPhotoNature2019 },
-    });
-
-    var lSalonYearPhotoNature2019Colour = new SectionEntity() { SalonYear = lSalonYearPhotoNature2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearPhotoNature2019Mono = new SectionEntity() { SalonYear = lSalonYearPhotoNature2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearPhotoNature2019Nature = new SectionEntity() { SalonYear = lSalonYearPhotoNature2019, SectionType = lSectionTypeNaturePdi };
-
-
-    var lSymmetricalFlowerInMono = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Symmetrical Flower In Mono" };
-
-    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-        new SubmissionEntity(){
-        IsJudged = true,
-        EntryCost = 14.03M,
-        SalonYear = lSalonYearPhotoNature2019,
-        EntryDate = new DateTime(2019, 9, 9),
-        Person = lTim,
-        Entries = new List<CompetitionEntryEntity> {
-
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Colour, Image = lJilted, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Colour, Image = lSingleYellowRose, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Mono, Image = lSymmetricalFlowerInMono, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score= 0},
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lMossyFrogOnBranch, IsAwarded = true, AwardDetails = "Club Diploma", IsAccepted = true, Score=0 },
-            new CompetitionEntryEntity { Section = lSalonYearPhotoNature2019Nature, Image = lGargoyleGecko },
-
-            },
-            },
-            });

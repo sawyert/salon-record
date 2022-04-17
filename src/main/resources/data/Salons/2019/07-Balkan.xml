@@ -1,95 +1,16 @@
 <Salon>
     <Name>Balkan Wonder</Name>
-    <Web>http</Web>
-    <Country>Czech</Country>
-    <Year>2018</Year>
+    <Web>http://photobalkan.com/list-of-authors</Web>
+    <Country>Serbia</Country>
+    <Year>2019</Year>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Accreditations>
-        <Accreditation type="PSA">2018-</Accreditation>
-        <Accreditation type="FIAPLevels">2018/</Accreditation>
+        <Accreditation type="PSA">2019-269</Accreditation>
+        <Accreditation type="FIAPLevels">2019/237"</Accreditation>
     </Accreditations>
-    <Cost>15</Cost>
+    <Cost>18.60</Cost>
     <AcceptedImages>
-        <Image></Image>
+        <Image>BPeacock Tree Frog Trio</Image>
     </AcceptedImages>
 </Salon>
-
-        // Balkan International Wonder 2019
-        var lSalonBalkanWonder = new SalonEntity { Name = "Balkan Wonder", Website = "http://photobalkan.com/list-of-authors", Country = lCountrySerbia };
-        lContext.Salons.Add(lSalonBalkanWonder);
-
-        var lSalonYearBalkanWonder2019 = new SalonYearEntity { Name = "Balkan Wonder", Salon = lSalonBalkanWonder, Year = 2019, ClosingDate = new DateTime(2019, 6, 20), JudgeDate = new DateTime(2019, 7, 4), NotificationDate = new DateTime(2019, 7, 14), CataloguesPostedDate = new DateTime(2019, 9, 19) };
-        lContext.SalonYears.Add(lSalonYearBalkanWonder2019);
-
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-    new AccreditationEntity() { SalonNumber = "2019/237", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearBalkanWonder2019 },
-    new AccreditationEntity() { SalonNumber = "2019-269", PhotoOrganisation = lPsa, SalonYear = lSalonYearBalkanWonder2019 },
-    new AccreditationEntity() { SalonNumber = "L190069", PhotoOrganisation = lGpu, SalonYear = lSalonYearBalkanWonder2019 },
-    });
-
-
-    var lSalonYearBalkanWonder2019Colour = new SectionEntity() { SalonYear = lSalonYearBalkanWonder2019, SectionType = lSectionTypeColourPdi };
-    var lSalonYearBalkanWonder2019Street = new SectionEntity() { SalonYear = lSalonYearBalkanWonder2019, SectionType = lSectionTypeStreetPdi };
-    var lSalonYearBalkanWonder2019Mono = new SectionEntity() { SalonYear = lSalonYearBalkanWonder2019, SectionType = lSectionTypeMonoPdi };
-    var lSalonYearBalkanWonder2019Nature = new SectionEntity() { SalonYear = lSalonYearBalkanWonder2019, SectionType = lSectionTypeNaturePdi };
-    var lSalonYearBalkanWonder2019Birds = new SectionEntity() { SalonYear = lSalonYearBalkanWonder2019, SectionType = lSectionTypeNaturePdi };
-
-
-    lContext.SalonSections.AddRange(new List<SectionEntity> {
-        lSalonYearBalkanWonder2019Colour,
-        lSalonYearBalkanWonder2019Street,
-        lSalonYearBalkanWonder2019Mono,
-        lSalonYearBalkanWonder2019Nature,
-        lSalonYearBalkanWonder2019Birds,
-        });
-
-        var lTrendyCoupleOnSteps = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Trendy Couple on Steps" };
-        var lWindsweptLittleOwl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Windswept Little Owl" };
-        var lRedKiteCall = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Red Kite Call" };
-        var lNorthernWhiteFacedOwl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Northern White Faced Owl" };
-        var Contented Owl = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Contented Owl" };
-
-
-        lContext.Images.AddRange(new List<ImageEntity>
-            {
-            lTrendyCoupleOnSteps,
-            lWindsweptLittleOwl,
-            lRedKiteCall,
-            lNorthernWhiteFacedOwl,
-            Contented Owl,
-
-            });
-
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 18.60M,
-            SalonYear = lSalonYearBalkanWonder2019,
-            EntryDate = new DateTime(2019, 6, 16),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Colour, Image = lMonsterPhotoBooth, IsAwarded = false, IsAccepted = false, Score=21 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Colour, Image = lTimeFlies, IsAwarded = false, IsAccepted = false, Score= 18},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Colour, Image = Chrysanthemum Close Up, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Street, Image = lTrendyCoupleOnSteps, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Street, Image = lLoversInAndalucia, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Street, Image = lEmergency, IsAwarded = false, IsAccepted = false, Score=17 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Street, Image = lTourDeYorkshireLeaders2019, IsAwarded = false, IsAccepted = false, Score=18},
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Mono, Image = lToweringSky, IsAwarded = false, IsAccepted = false, Score=16 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=18 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Nature, Image = Amazon Milk Frog, IsAwarded = false, IsAccepted = false, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Nature, Image = lRoughFrilledTreeFrogOnFlower, IsAwarded = false, IsAccepted = false, Score=21 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=22 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lWindsweptLittleOwl, IsAwarded = false, IsAccepted = false, Score=15 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lRedKiteCall, IsAwarded = false, IsAccepted = false, Score=20 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = false, Score=19 },
-                new CompetitionEntryEntity { Section = lSalonYearBalkanWonder2019Birds, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=19 },
-                },
-                },
-                });

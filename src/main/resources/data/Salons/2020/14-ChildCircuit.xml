@@ -1,86 +1,39 @@
 <Circuit>
     <Name>Child</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Web></Web>
+    <Cost>33.68</Cost>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Zajecar</Name>
+            <Country>Serbia</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="PSA">2020-347</Accreditation>
+                <Accreditation type="FIAPLevels">2020/376</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Majesty</Image>
+                <Image>Domi At The Ball</Image>
+                <Image>Towers In The Sky</Image>
+
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Penza</Name>
+            <Country>Russia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2020-347</Accreditation>
+                <Accreditation type="FIAPLevels">2020/376</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Railway Children</Image>
+                <Image>Twin Isolation</Image>
+                <Image>Towers In The Sky</Image>
+                <Image>Sword In The Stone</Image>
+                <Image>Tranquil</Image>
 
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
-
-        // child circuit
-        var lChildCircuit2020 = new CircuitEntity() { Name = "Child Circuit" };
-
-        lContext.Circuits.AddRange(new List<CircuitEntity> {
-    lChildCircuit2020,
-    });
-
-    var lSwordInTheStone = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Sword In The Stone" };
-    var lTranquil = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Tranquil" };
-
-    var lSalonChildSerbia = new SalonEntity { Name = "Child - Zajecar", Website = "http://photoclub-danube.com/", Country = lCountrySerbia};
-    var lSalonChildRussia = new SalonEntity { Name = "Child - Penza", Website = "http://photoclub-danube.com/", Country = lCountryRussia};
-
-    var lSalonYearChildSerbia2020 = new SalonYearEntity { Name = "Child - Zajecar", Salon = lSalonChildSerbia, Year = 2020, ClosingDate = new DateTime(2020, 9, 16), JudgeDate = new DateTime(2020, 10, 1), NotificationDate = new DateTime(2020, 10, 11), CataloguesPostedDate = new DateTime(2020, 10, 11), Circuit = lChildCircuit2020 };
-    var lSalonYearChildRussia2020 = new SalonYearEntity { Name = "Child - Penza", Salon = lSalonChildRussia, Year = 2020, ClosingDate = new DateTime(2020, 9, 16), JudgeDate = new DateTime(2020, 10, 1), NotificationDate = new DateTime(2020, 10, 11), CataloguesPostedDate = new DateTime(2020, 10, 11), Circuit = lChildCircuit2020 };
-
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/374", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearChildSerbia2020</Image>
-        new AccreditationEntity() { SalonNumber = "2020-347", PhotoOrganisation = lPsa, SalonYear = lSalonYearChildSerbia2020</Image>
-        });
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/376", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearChildRussia2020</Image>
-            new AccreditationEntity() { SalonNumber = "2020-347", PhotoOrganisation = lPsa, SalonYear = lSalonYearChildRussia2020</Image>
-            });
-
-            var lSalonYearChildSerbia2020People = new SectionEntity() { SalonYear = lSalonYearChildSerbia2020, SectionType = lSectionTypePeoplePdi };
-            var lSalonYearChildSerbia2020Mono = new SectionEntity() { SalonYear = lSalonYearChildSerbia2020, SectionType = lSectionTypeMonoPdi };
-            var lSalonYearChildRussia2020Child = new SectionEntity() { SalonYear = lSalonYearChildRussia2020, SectionType = lSectionTypeChildPdi };
-            var lSalonYearChildRussia2020Mono = new SectionEntity() { SalonYear = lSalonYearChildRussia2020, SectionType = lSectionTypeMonoPdi };
-            var lSalonYearChildRussia2020Colour = new SectionEntity() { SalonYear = lSalonYearChildRussia2020, SectionType = lSectionTypeColourPdi };
-
-            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                new SubmissionEntity(){
-                IsJudged = true,
-                EntryCost = 16.84M,
-                SalonYear = lSalonYearChildSerbia2020,
-                EntryDate = new DateTime(2020, 10, 16),
-                Person = lTim,
-                Entries = new List<CompetitionEntryEntity> {
-
-                    <Image>YearChildSerbia2020People, Image = lMajesty, IsAwarded = false, IsAccepted = true, Score=24</Image>
-                    <Image>YearChildSerbia2020People, Image = Domi At The Ball, IsAwarded = false, IsAccepted = true, Score= 24},
-                    <Image>YearChildSerbia2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score= 23},
-                   </Image>
-                   </Image>
-                    });
-
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 16.84M,
-                        SalonYear = lSalonYearChildRussia2020,
-                        EntryDate = new DateTime(2020, 10, 16),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            <Image>YearChildRussia2020Child, Image = lRailwayChildren, IsAwarded = false, IsAccepted = true, Score=18</Image>
-                            <Image>YearChildRussia2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=20</Image>
-                            <Image>YearChildRussia2020Mono, Image = lTowersInTheSky, IsAwarded = false, IsAccepted = true, Score=17</Image>
-                            <Image>YearChildRussia2020Mono, Image = lSwordInTheStone, IsAwarded = false, IsAccepted = true, Score=17</Image>
-                            <Image>YearChildRussia2020Colour, Image = lTranquil, IsAwarded = false, IsAccepted = true, Score=18</Image>
-
-                           </Image>
-                           </Image>
-                            });

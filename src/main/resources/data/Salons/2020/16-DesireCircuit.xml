@@ -1,132 +1,60 @@
 <Circuit>
     <Name>Desire</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Web>http:/photobalkan.com</Web>
+    <Cost>33.12</Cost>
     <JudgeDate>31-01-2020</JudgeDate>
     <NotificationDate>31-02-2020</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Bor</Name>
+            <Country>Serbia</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019-<Accreditation>
-                <Accreditation type="FIAPLevels">2019/</Accreditation>
+                <Accreditation type="FIAPLevels">2020/394</Accreditation>
             </Accreditations>
             <AcceptedImages>
-
+                <Image>Red Kite Call</Image>
+                <Image>Red Fox</Image>
+                <Image>Northern White Faced Owl</Image>
+                <Image>Cave Of The Yeti</Image>
+                <Image>Treeline</Image>
+                <Image>Summit</Image>>
+                <Image>Snow Peak</Image>>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Limassol</Name>
+            <Country>Cyprus</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2020/395</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Twin Isolation</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Oradea</Name>
+            <Country>Romania</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2020/396</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Northern White Faced Owl</Image>
+                <Image>Cave Of The Yeti</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Resita</Name>
+            <Country>Romania</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2020/397</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Windswept Little Owl,</Image>
+                <Image>Red Kite Call</Image>
+                <Image>Northern White Faced Owl</Image>
+                <Image>Cave Of The Yeti</Image>
+                <Image>Summit</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
-
-        // desire circuit
-        var lDesireCircuit2020 = new CircuitEntity() { Name = "Desire Circuit" };
-        lContext.Circuits.AddRange(new List<CircuitEntity> {
-    lDesireCircuit2020,
-    });
-
-    var lSalonBorDesire = new SalonEntity { Name = "Desire - Bor", Website = "http://photobalkan.com", Country = lCountrySerbia };
-    var lSalonLiassolDesire = new SalonEntity { Name = "Desire - Limassol", Website = "http:/photobalkan.com", Country = lCountryCyprus};
-    var lSalonOradeaDesire = new SalonEntity { Name = "Desire - Oradea", Website = "http://photobalkan.com", Country = lCountryRomania };
-    var lSalonResiteDesire = new SalonEntity { Name = "Desire - Resita", Website = "http://photobalkan.com", Country = lCountryRomania};
-
-
-    var lSalonBorDesire2020 = new SalonYearEntity { Name = "Desire - Bor", Salon = lSalonBorDesire, Year = 2020, ClosingDate = new DateTime(2020, 10, 18), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 11, 11), CataloguesPostedDate = new DateTime(2020, 11, 11), Circuit = lDesireCircuit2020 };
-    var lSalonLiassolDesire2020 = new SalonYearEntity { Name = "Desire - Limassol", Salon = lSalonLiassolDesire, Year = 2020, ClosingDate = new DateTime(2020, 10, 18), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 11, 11), CataloguesPostedDate = new DateTime(2020, 11, 11), Circuit = lDesireCircuit2020 };
-    var lSalonOradeaDesire2020 = new SalonYearEntity { Name = "Desire - Oradea", Salon = lSalonOradeaDesire, Year = 2020, ClosingDate = new DateTime(2020, 10, 18), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 11, 11), CataloguesPostedDate = new DateTime(2020, 11, 11), Circuit = lDesireCircuit2020 };
-    var lSalonResiteDesire2020 = new SalonYearEntity { Name = "Desire - Resita", Salon = lSalonResiteDesire, Year = 2020, ClosingDate = new DateTime(2020, 10, 18), JudgeDate = new DateTime(2020, 11, 1), NotificationDate = new DateTime(2020, 11, 11), CataloguesPostedDate = new DateTime(2020, 11, 11), Circuit = lDesireCircuit2020 };
-
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2020/394", PhotoOrganisation = lFiapLevels, SalonYear = lSalonBorDesire2020</Image>
-        });
-        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-            new AccreditationEntity() { SalonNumber = "2020/395", PhotoOrganisation = lFiapLevels, SalonYear = lSalonLiassolDesire2020</Image>
-            });
-            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                new AccreditationEntity() { SalonNumber = "2020/396", PhotoOrganisation = lFiapLevels, SalonYear = lSalonOradeaDesire2020</Image>
-                });
-                lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2020/397", PhotoOrganisation = lFiapLevels, SalonYear = lSalonResiteDesire2020</Image>
-                    });
-
-                    var lCaveOfTheYeti = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Cave Of The Yeti" };
-                    var lTreeline = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Treeline" };
-                    var lSummit = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Summit" };
-                    var lSnowPeak = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Snow Peak" };
-
-                    var lSalonBorDesire2020Nature = new SectionEntity() { SalonYear = lSalonBorDesire2020, SectionType = lSectionTypeNaturePdi };
-                    var lSalonBorDesire2020Mountain = new SectionEntity() { SalonYear = lSalonBorDesire2020, SectionType = lSectionTypeColourPdi };
-                    var lSalonLiassolDesire2020Mono = new SectionEntity() { SalonYear = lSalonLiassolDesire2020, SectionType = lSectionTypeMonoPdi };
-                    var lSalonOradeaDesire2020Nature = new SectionEntity() { SalonYear = lSalonOradeaDesire2020, SectionType = lSectionTypeNaturePdi };
-                    var lSalonOradeaDesire2020Mountain = new SectionEntity() { SalonYear = lSalonOradeaDesire2020, SectionType = lSectionTypeColourPdi };
-                    var lSalonResiteDesire2020Nature = new SectionEntity() { SalonYear = lSalonResiteDesire2020, SectionType = lSectionTypeNaturePdi };
-                    var lSalonResiteDesire2020Mountain = new SectionEntity() { SalonYear = lSalonResiteDesire2020, SectionType = lSectionTypeColourPdi };
-
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 8.28M,
-                        SalonYear = lSalonBorDesire2020,
-                        EntryDate = new DateTime(2020, 10, 17),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            <Image>BorDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=23</Image>
-                            <Image>BorDesire2020Nature, Image = lRedFox, IsAwarded = false, IsAccepted = true, Score= 23},
-                            <Image>BorDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score= 24},
-                            <Image>BorDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score=23</Image>
-                            <Image>BorDesire2020Mountain, Image = lTreeline, IsAwarded = false, IsAccepted = true, Score= 23},
-                            <Image>BorDesire2020Mountain, Image = lSummit, IsAwarded = false, IsAccepted = true, Score= 25},
-                            <Image>BorDesire2020Mountain, Image = lSnowPeak, IsAwarded = false, IsAccepted = true, Score=23</Image>
-
-                           </Image>
-                           </Image>
-                            });
-
-                            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                new SubmissionEntity(){
-                                IsJudged = true,
-                                EntryCost = 8.28M,
-                                SalonYear = lSalonLiassolDesire2020,
-                                EntryDate = new DateTime(2020, 10, 17),
-                                Person = lTim,
-                                Entries = new List<CompetitionEntryEntity> {
-
-                                    <Image>LiassolDesire2020Mono, Image = lTwinIsolation, IsAwarded = false, IsAccepted = true, Score=21</Image>
-
-                                   </Image>
-                                   </Image>
-                                    });
-
-                                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                        new SubmissionEntity(){
-                                        IsJudged = true,
-                                        EntryCost = 8.28M,
-                                        SalonYear = lSalonOradeaDesire2020,
-                                        EntryDate = new DateTime(2020, 10, 17),
-                                        Person = lTim,
-                                        Entries = new List<CompetitionEntryEntity> {
-
-                                            <Image>OradeaDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=23</Image>
-                                            <Image>OradeaDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false,IsAccepted = true, Score= 22},
-                                           </Image>
-                                           </Image>
-                                            });
-
-                                            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                                new SubmissionEntity(){
-                                                IsJudged = true,
-                                                EntryCost = 8.28M,
-                                                SalonYear = lSalonResiteDesire2020,
-                                                EntryDate = new DateTime(2020, 10, 17),
-                                                Person = lTim,
-                                                Entries = new List<CompetitionEntryEntity> {
-
-                                                    <Image>ResiteDesire2020Nature, Image = lWindsweptLittleOwl, IsAwarded = false, IsAccepted = true, Score=21</Image>
-                                                    <Image>ResiteDesire2020Nature, Image = lRedKiteCall, IsAwarded = false, IsAccepted = true, Score=21</Image>
-                                                    <Image>ResiteDesire2020Nature, Image = lNorthernWhiteFacedOwl, IsAwarded = false, IsAccepted = true, Score=22</Image>
-                                                    <Image>ResiteDesire2020Mountain, Image = lCaveOfTheYeti, IsAwarded = false, IsAccepted = true, Score= 20},
-                                                    <Image>ResiteDesire2020Mountain, Image = lSummit, IsAwarded = true, AwardDetails="Gold", IsAccepted = true, Score= 23},
-                                                   </Image>
-                                                   </Image>
-                                                    });
