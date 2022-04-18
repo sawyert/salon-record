@@ -15,7 +15,7 @@
                 <th>Salons</th>
                 <th>Cost</th>
             </tr>
-            <tr th:each="award : ${organisation.awards}" th:class="${award.isAchieved()} ? 'table-success' : ''">
+            <tr th:each="award : ${organisation.awards}" th:class="${award.isAchieved()} ? 'table-success' : 'table-warning'">
                 <td><span th:text="${award.name}">Award Name</span></td>
                 <td><span th:text="${award.acceptancesString}">Acceptances</span></td>
                 <td><span th:text="${award.countriesString}">Countries</span></td>

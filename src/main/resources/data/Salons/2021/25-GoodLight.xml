@@ -13,7 +13,7 @@
     <AcceptedImages>
         <Image>Contented Owl</Image>
         <Image>Edible Frog</Image>
-        <Image award="DIPA Ribbon">ForestGlow, IsAwarded = true, AwardDetails="DIPA Ribbon", IsAccepted = true, Score=0</Image>
+        <Image award="DIPA Ribbon">Forest Glow</Image>
         <Image>Deep Forest Funk</Image>
     </AcceptedImages>
 </Salon>

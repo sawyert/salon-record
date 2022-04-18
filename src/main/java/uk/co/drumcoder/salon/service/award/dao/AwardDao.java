@@ -12,9 +12,13 @@ import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
@@ -30,7 +34,7 @@ public class AwardDao extends AbstractDao {
     private int achievedAcceptances = 0;
     private Set<CountryDao> achievedCountries = new HashSet<>();
     private Set<SalonPrizeDao> achievedAwards = new HashSet<>();
-    private Set<ImageDao> achievedImages = new HashSet<>();
+    private Map<String, ImageDao> achievedImages = new HashMap<>();
     private int achievedSalons = 0;
     private BigDecimal totalCost = new BigDecimal("0");
 
@@ -54,9 +58,7 @@ public class AwardDao extends AbstractDao {
         return this.achievedSalons + " of " + this.requiredSalons;
     }
 
-    public String getCostString() {
-        return this.totalCost.toPlainString();
-    }
+    public String getCostString() { return "£" + this.totalCost.toPlainString(); }
 
     public boolean isAchieved() {
         boolean achieved = true;
@@ -67,6 +69,11 @@ public class AwardDao extends AbstractDao {
         achieved = achieved && this.getAchievedImages().size() >= this.requiredImages;
         achieved = achieved && this.getAchievedSalons() >= this.requiredSalons;
 
+        System.out.println(this.name);
+        for (String eachImage : this.getAchievedImages().keySet().stream().sorted().collect(Collectors.toList())) {
+            System.out.println("  " + eachImage);
+        }
+
         return achieved;
     }
 
@@ -74,14 +81,16 @@ public class AwardDao extends AbstractDao {
         this.achievedAcceptances += salon.getAcceptedImageCount();
         this.achievedCountries.add(salon.getCountry());
         this.achievedAwards.addAll(salon.getAwardedImages());
-        this.achievedImages.addAll(salon.getAcceptedImages().list());
+        for (ImageDao eachImage : salon.getAcceptedImages().list()) {
+            this.achievedImages.put(eachImage.getTitle(), eachImage);
+        }
         this.achievedSalons += 1;
         this.totalCost = this.totalCost.add(salon.getCost());
     }
 
     public List<SubmissionListItemDao> getSubmissionList(String organisationName) {
         List<SubmissionListItemDao> submissionList = new ArrayList<>();
-        for (ImageDao eachImage : this.getAchievedImages()) {
+        for (ImageDao eachImage : this.getAchievedImages().values()) {
             SubmissionListItemDao submissionItem = new SubmissionListItemDao(eachImage, organisationName);
             submissionList.add(submissionItem);
         }
