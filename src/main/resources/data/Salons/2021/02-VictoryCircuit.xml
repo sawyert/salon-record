@@ -13,9 +13,7 @@
                 <Accreditation type="FIAPLevels">2021/131</Accreditation>
             </Accreditations>
             <AcceptedImages>
-                <Image>Edible Frog</Image>
-                <Image>Peacock Tree Frog Trio</Image>>
-                <Image>A Tower By The Sea</Image>
+                <Image award="HM">Glacier Walkers</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -26,7 +24,9 @@
                 <Accreditation type="FIAPLevels">2021/132</Accreditation>
             </Accreditations>
             <AcceptedImages>
-                <Image>Uninteresting View</Image>
+                <Image>Edible Frog</Image>
+                <Image>Peacock Tree Frog Trio</Image>>
+                <Image>A Tower By The Sea</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -37,7 +37,7 @@
                 <Accreditation type="FIAPLevels">2021/133</Accreditation>
             </Accreditations>
             <AcceptedImages>
-                <Image award="HM">Glacier Walkers</Image>
+                <Image>Uninteresting View</Image>
             </AcceptedImages>
         </Salon>
     </Salons>

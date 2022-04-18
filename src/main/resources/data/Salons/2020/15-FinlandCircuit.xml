@@ -38,10 +38,10 @@
             </Accreditations>
             <AcceptedImages>
                 <Image>Majesty</Image>
-                <Image>Towers In The Sky</Image>
+                <Image award="HM">Towers In The Sky</Image>
                 <Image>Twin Isolation</Image>
                 <Image>Northern White Faced Owl</Image>
-                <Image>Peacock Tree Frog Trio</Image>
+                <Image award="HM">Peacock Tree Frog Trio</Image>
                 <Image>Mossy Frog On Branch</Image>
             </AcceptedImages>
         </Salon>

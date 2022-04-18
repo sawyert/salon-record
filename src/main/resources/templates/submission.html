@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layout}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<body>
+<div layout:fragment="content">
+    <h2>Application for <span th:text="${AwardName}">Award</span></h2>
+    <table class="table">
+        <tr>
+            <th>Index</th>
+            <th>Title No</th>
+            <th>Image Name</th>
+            <th>Salon</th>
+            <th>Country</th>
+            <th>Code</th>
+            <th>Award</th>
+        </tr>
+        <tr th:each="image, imageStat : ${SubmissionList}">
+            <td><span th:text="${imageStat.count}">Index</span></td>
+            <td><span th:text="${image.getTitleNumber()}">Image No</span></td>
+            <td><span th:text="${image.getTitle()}">Image Name</span></td>
+            <td><span th:text="${image.getSalonName}">Salon</span></td>
+            <td><span th:text="${image.getCountry()}">Country</span></td>
+            <td><span th:text="${image.getSalonCode()}">Code</span></td>
+            <td><span th:text="${image.getAward()}">Award</span></td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>

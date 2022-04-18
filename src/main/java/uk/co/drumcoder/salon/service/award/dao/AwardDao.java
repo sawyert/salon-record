@@ -35,6 +35,7 @@ public class AwardDao extends AbstractDao {
     private Set<CountryDao> achievedCountries = new HashSet<>();
     private Set<SalonPrizeDao> achievedAwards = new HashSet<>();
     private Map<String, ImageDao> achievedImages = new HashMap<>();
+    private List<ImageDao> allAcceptances = new ArrayList<>();
     private int achievedSalons = 0;
     private BigDecimal totalCost = new BigDecimal("0");
 
@@ -69,11 +70,6 @@ public class AwardDao extends AbstractDao {
         achieved = achieved && this.getAchievedImages().size() >= this.requiredImages;
         achieved = achieved && this.getAchievedSalons() >= this.requiredSalons;
 
-        System.out.println(this.name);
-        for (String eachImage : this.getAchievedImages().keySet().stream().sorted().collect(Collectors.toList())) {
-            System.out.println("  " + eachImage);
-        }
-
         return achieved;
     }
 
@@ -84,13 +80,14 @@ public class AwardDao extends AbstractDao {
         for (ImageDao eachImage : salon.getAcceptedImages().list()) {
             this.achievedImages.put(eachImage.getTitle(), eachImage);
         }
+        this.allAcceptances.addAll(salon.getAcceptedImages().list());
         this.achievedSalons += 1;
         this.totalCost = this.totalCost.add(salon.getCost());
     }
 
     public List<SubmissionListItemDao> getSubmissionList(String organisationName) {
         List<SubmissionListItemDao> submissionList = new ArrayList<>();
-        for (ImageDao eachImage : this.getAchievedImages().values()) {
+        for (ImageDao eachImage : this.allAcceptances) {
             SubmissionListItemDao submissionItem = new SubmissionListItemDao(eachImage, organisationName);
             submissionList.add(submissionItem);
         }
