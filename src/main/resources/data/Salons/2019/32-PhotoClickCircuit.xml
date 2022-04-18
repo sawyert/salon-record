@@ -1,189 +1,73 @@
 <Circuit>
     <Name>Photo Click</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Web>https://click.photofenix.com/</Web>
+    <Cost>35.92</Cost>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Tirna</Name>
+            <Country>Albania</Country>
             <Accreditations>
-                <Accreditation type="PSA">2019</Accreditation>
-                <Accreditation type="FIAPLevels">2019</Accreditation>
+                <Accreditation type="PSA">2019-344</Accreditation>
+                <Accreditation type="FIAPLevels">2019/284</Accreditation>
             </Accreditations>
             <AcceptedImages>
-
+                <Image>A Walk With The Moon</Image>
+                <Image>The Wishing Tree</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Korce</Name>
+            <Country>Albania</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-344</Accreditation>
+                <Accreditation type="FIAPLevels">2019/285</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>A Walk With The Moon</Image>
+                <Image award="PSA HM">CTranquility</Image>
+                <Image>Skyward</Image>
+                <Image award="PSA HM">Crested Gecko Tongue</Image>
+                <Image>Crested Gecko On Stump</Image>
+                <Image>Mossy Frog On Branch</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Ulcinj</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-344</Accreditation>
+                <Accreditation type="FIAPLevels">2019/286</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Crested Gecko Tongue</Image>
+                <Image>Mossy Frog On Branch</Image>
+                <Image>Peacock Tree Frog Trio</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Bar</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-344</Accreditation>
+                <Accreditation type="FIAPLevels">2019/287</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>I Used To Dream I'd Marry A Prince</Image>
+                <Image>Peacock Tree Frog Trio</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
 
-        // Photo Click Circuit
-        var lPhotoClickCircuit2019 = new CircuitEntity() { Name = "Photo Click" };
+              
+                
+                        
 
-        lContext.Circuits.AddRange(new List<CircuitEntity> {
-    lOlympicCircuit2019,
-    });
+                                      
 
-    var lAWalkWithTheMoon = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "A Walk With The Moon" };
-    var lTranquility = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Tranquility" };
-    var lSkyward = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Skyward" };
-    var Towers In The Sky = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Towers in the Sky" };
+                                                    
 
-    var lSalonClickTirna = new SalonEntity { Name = "Click - Tirna", Website = "https://click.photofenix.com/", Country = lCountryAlbania };
-
-    var lSalonYearClickTirna2019 = new SalonYearEntity { Name = "Click - Tirna", Salon = lSalonClickTirna, Year = 2019, ClosingDate = new DateTime(2019, 11, 10), JudgeDate = new DateTime(2019, 11, 30), NotificationDate = new DateTime(2019, 12, 5), CataloguesPostedDate = new DateTime(2020, 1, 20), Circuit = lPhotoClickCircuit2019 };
-
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/284", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearClickTirna2019</Image>
-        new AccreditationEntity() { SalonNumber = "2019-344", PhotoOrganisation = lPsa, SalonYear = lSalonYearClickTirna2019 },
-        });
-
-        var lSalonYearClickTirna2019Colour = new SectionEntity() { SalonYear = lSalonYearClickTirna2019, SectionType = lSectionTypeColourPdi };
-        var lSalonYearClickTirna2019Mono = new SectionEntity() { SalonYear = lSalonYearClickTirna2019, SectionType = lSectionTypeMonoPdi };
-        var lSalonYearClickTirna2019Nature = new SectionEntity() { SalonYear = lSalonYearClickTirna2019, SectionType = lSectionTypeNaturePdi };
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 8.98M,
-            SalonYear = lSalonYearClickTirna2019,
-            EntryDate = new DateTime(2019, 11, 3),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-
-                <Image>ClickTirna2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = true, Score=21 },
-                <Image>ClickTirna2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score= 18},
-                <Image>ClickTirna2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=18 },
-                <Image>ClickTirna2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18 },
-                <Image>ClickTirna2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=16 },
-                <Image>ClickTirna2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score= 17},
-                <Image>ClickTirna2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score=16 },
-                <Image>ClickTirna2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = true, Score=21 },
-                <Image>ClickTirna2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=18 },
-                <Image>ClickTirna2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score= 16},
-                <Image>ClickTirna2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = false, Score=18 },
-                <Image>ClickTirna2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=19 },
-
-                },
-                },
-                });
-
-
-                var lSalonClickKorce = new SalonEntity { Name = "Click - Korce", Website = "https://click.photofenix.com/", Country = lCountryAlbania };
-
-                var lSalonYearClickKorce2019 = new SalonYearEntity { Name = "Click - Korce", Salon = lSalonClickTirna, Year = 2019, ClosingDate = new DateTime(2019, 11, 10), JudgeDate = new DateTime(2019, 11, 30), NotificationDate = new DateTime(2019, 12, 5), CataloguesPostedDate = new DateTime(2020, 1, 20), Circuit = lPhotoClickCircuit2019 };
-
-                lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2019/285", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearClickKorce2019 },
-                    new AccreditationEntity() { SalonNumber = "2019-344", PhotoOrganisation = lPsa, SalonYear = lSalonYearClickKorce2019 },
-                    });
-
-                    var lSalonYearClickKorce2019Colour = new SectionEntity() { SalonYear = lSalonYearClickKorce2019, SectionType = lSectionTypeColourPdi };
-                    var lSalonYearClickKorce2019Mono = new SectionEntity() { SalonYear = lSalonYearClickKorce2019, SectionType = lSectionTypeMonoPdi };
-                    var lSalonYearClickKorce2019Nature = new SectionEntity() { SalonYear = lSalonYearClickKorce2019, SectionType = lSectionTypeNaturePdi };
-
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 8.98M,
-                        SalonYear = lSalonYearClickKorce2019,
-                        EntryDate = new DateTime(2019, 11, 3),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            <Image>ClickKorce2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = true, Score=22 },
-                            <Image>ClickKorce2019Colour, Image = lTranquility, IsAwarded = true, AwardDetails="PSA HM", IsAccepted = true, Score=23},
-                            <Image>ClickKorce2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=19 },
-                            <Image>ClickKorce2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=20 },
-                            <Image>ClickKorce2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=18 },
-                            <Image>ClickKorce2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = true, Score= 21},
-                            <Image>ClickKorce2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score=19 },
-                            <Image>ClickKorce2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=20 },
-                            <Image>ClickKorce2019Nature, Image = Crested Gecko Tongue, IsAwarded = true, AwardDetails="PSA HM", IsAccepted = true, Score=23 },
-                            <Image>ClickKorce2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = true, Score= 21},
-                            <Image>ClickKorce2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = true, Score=21 },
-                            <Image>ClickKorce2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=22 },
-
-                            },
-                            },
-                            });
-
-                            var lSalonClickUlcinj = new SalonEntity { Name = "Click - Ulcinj", Website = "https://click.photofenix.com/", Country = lCountryMontenegro };
-
-                            var lSalonYearClickUlcinj2019 = new SalonYearEntity { Name = "Click - Ulcinj", Salon = lSalonClickUlcinj, Year = 2019, ClosingDate = new DateTime(2019, 11, 10), JudgeDate = new DateTime(2019, 11, 30), NotificationDate = new DateTime(2019, 12, 5), CataloguesPostedDate = new DateTime(2020, 1, 20), Circuit = lPhotoClickCircuit2019 };
-
-                            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                new AccreditationEntity() { SalonNumber = "2019/286", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearClickUlcinj2019 },
-                                new AccreditationEntity() { SalonNumber = "2019-344", PhotoOrganisation = lPsa, SalonYear = lSalonYearClickUlcinj2019 },
-                                });
-
-                                var lSalonYearClickUlcinj2019Colour = new SectionEntity() { SalonYear = lSalonYearClickUlcinj2019, SectionType = lSectionTypeColourPdi };
-                                var lSalonYearClickUlcinj2019Mono = new SectionEntity() { SalonYear = lSalonYearClickUlcinj2019, SectionType = lSectionTypeMonoPdi };
-                                var lSalonYearClickUlcinj2019Nature = new SectionEntity() { SalonYear = lSalonYearClickUlcinj2019, SectionType = lSectionTypeNaturePdi };
-
-                                lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                    new SubmissionEntity(){
-                                    IsJudged = true,
-                                    EntryCost = 8.98M,
-                                    SalonYear = lSalonYearClickUlcinj2019,
-                                    EntryDate = new DateTime(2019, 11, 3),
-                                    Person = lTim,
-                                    Entries = new List<CompetitionEntryEntity> {
-
-                                        <Image>ClickUlcinj2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        <Image>ClickUlcinj2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score= 18},
-                                        <Image>ClickUlcinj2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        <Image>ClickUlcinj2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        <Image>ClickUlcinj2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        <Image>ClickUlcinj2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score= 13},
-                                        <Image>ClickUlcinj2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        <Image>ClickUlcinj2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        <Image>ClickUlcinj2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = true, Score=20 },
-                                        <Image>ClickUlcinj2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score= 16},
-                                        <Image>ClickUlcinj2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = true, Score=19 },
-                                        <Image>ClickUlcinj2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=19 },
-
-                                        },
-                                        },
-                                        });
-
-                                        var lSalonClickBar = new SalonEntity { Name = "Click - Bar", Website = "https://click.photofenix.com/", Country = lCountryMontenegro };
-
-                                        var lSalonYearClickBar2019 = new SalonYearEntity { Name = "Click - Bar", Salon = lSalonClickBar, Year = 2019, ClosingDate = new DateTime(2019, 11, 10), JudgeDate = new DateTime(2019, 11, 30), NotificationDate = new DateTime(2019, 12, 5), CataloguesPostedDate = new DateTime(2020, 1, 20), Circuit = lPhotoClickCircuit2019 };
-
-                                        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                            new AccreditationEntity() { SalonNumber = "2019/287", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearClickBar2019 },
-                                            new AccreditationEntity() { SalonNumber = "2019-344", PhotoOrganisation = lPsa, SalonYear = lSalonYearClickBar2019 },
-                                            });
-
-                                            var lSalonYearClickBar2019Colour = new SectionEntity() { SalonYear = lSalonYearClickBar2019, SectionType = lSectionTypeColourPdi };
-                                            var lSalonYearClickBar2019Mono = new SectionEntity() { SalonYear = lSalonYearClickBar2019, SectionType = lSectionTypeMonoPdi };
-                                            var lSalonYearClickBar2019Nature = new SectionEntity() { SalonYear = lSalonYearClickBar2019, SectionType = lSectionTypeNaturePdi };
-
-                                            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                                new SubmissionEntity(){
-                                                IsJudged = true,
-                                                EntryCost = 8.98M,
-                                                SalonYear = lSalonYearClickBar2019,
-                                                EntryDate = new DateTime(2019, 11, 3),
-                                                Person = lTim,
-                                                Entries = new List<CompetitionEntryEntity> {
-
-                                                    <Image>ClickBar2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = false, Score=16 },
-                                                    <Image>ClickBar2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score= 18},
-                                                    <Image>ClickBar2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score=17 },
-                                                    <Image>ClickBar2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = true, Score=19 },
-                                                    <Image>ClickBar2019Mono, Image = lTheFinalGateway, IsAwarded = false, IsAccepted = false, Score=15 },
-                                                    <Image>ClickBar2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score= 13},
-                                                    <Image>ClickBar2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score=13 },
-                                                    <Image>ClickBar2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=17 },
-                                                    <Image>ClickBar2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score=18 },
-                                                    <Image>ClickBar2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score= 18},
-                                                    <Image>ClickBar2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = false, Score=18 },
-                                                    <Image>ClickBar2019Nature, Image = Peacock Tree Frog Trio, IsAwarded = false, IsAccepted = true, Score=20 },
-
-                                                    },
-                                                    },
-                                                    });

@@ -11,15 +11,15 @@
     </Accreditations>
     <Cost>17.56</Cost>
     <AcceptedImages>
+        <Image>Into The Mist</Image>
+        <Image>A World Beyond</Image>
+        <Image>The Watcher In The Waves</Image>
         <Image>Olivers Castle</Image>
+        <Image>Ruins By Night</Image>
+        <Image>Great Grey Owl</Image>
+        <Image>Afternoon Gun</Image>
     </AcceptedImages>
 </Salon>
 
 
-<Image>Into The Mist</Image>
-                <Image>CanvasColour, Image = lAWorldBeyond, IsAwarded = false, IsAccepted = true, Score=20</Image>
-<Image>The Watcher In The Waves</Image>
-                <Image>CanvasMono, Image = lOliversCastle, IsAwarded = false, IsAccepted = true, Score= 19},
-                <Image>CanvasMono, Image = lRuinsByNight, IsAwarded = false, IsAccepted = true, Score=19</Image>
-                <Image>CanvasNature, Image = Great Grey Owl, IsAwarded = false, IsAccepted = true, Score=24</Image>
-                <Image>CanvasTravel, Image = Afternoon Gun, IsAwarded = false, IsAccepted = true, Score=21</Image>
+

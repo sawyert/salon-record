@@ -7,7 +7,7 @@
     <Salons>
         <Salon>
             <Name>Gold Coast</Name>
-            <Country>Autralia</Country>
+            <Country>Australia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2020-181</Accreditation>
                 <Accreditation type="FIAPLevels">2020/145</Accreditation>
@@ -19,7 +19,7 @@
         </Salon>
         <Salon>
             <Name>Maryborough</Name>
-            <Country>Autralia</Country>
+            <Country>Australia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2020-181</Accreditation>
                 <Accreditation type="FIAPLevels">2020/146</Accreditation>
@@ -31,7 +31,7 @@
         </Salon>
         <Salon>
             <Name>Mt Gravatt</Name>
-            <Country>Autralia</Country>
+            <Country>Australia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2020-181</Accreditation>
                 <Accreditation type="FIAPLevels">2020/147</Accreditation>
@@ -48,7 +48,7 @@
         </Salon>
         <Salon>
             <Name>Townsville</Name>
-            <Country>Autralia</Country>
+            <Country>Australia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2020-181</Accreditation>
                 <Accreditation type="FIAPLevels">2020/148</Accreditation>

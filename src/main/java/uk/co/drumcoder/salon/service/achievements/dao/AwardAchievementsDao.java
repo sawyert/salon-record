@@ -8,6 +8,8 @@ import uk.co.drumcoder.salon.service.award.dao.OrganisationDao;
 import uk.co.drumcoder.salon.service.award.dao.OrganisationListDao;
 import uk.co.drumcoder.salon.service.salon.dao.SalonDao;
 
+import java.util.List;
+
 @Getter
 @Setter
 public class AwardAchievementsDao extends AbstractDao {
@@ -39,5 +41,9 @@ public class AwardAchievementsDao extends AbstractDao {
                 }
             }
         }
+    }
+
+    public List<OrganisationDao> list() {
+        return this.organisationList.list();
     }
 }

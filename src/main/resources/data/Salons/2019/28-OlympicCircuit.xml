@@ -1,199 +1,73 @@
 <Circuit>
     <Name>Olympic</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Web>https://olympicphotocircuit.com/</Web>
+    <Cost>35.56</Cost>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
-            <Country>England</Country>
+            <Name>Zeus</Name>
+            <Country>Greece</Country>
             <Accreditations>
                 <Accreditation type="PSA">2019-439</Accreditation>
                 <Accreditation type="FIAPLevels">2019/476</Accreditation>
             </Accreditations>
             <AcceptedImages>
-
+                <Image>Betwixt Realities</Image>
+                <Image>The Hall Of Gateways</Image>
+                <Image>Contemplation By Starlight</Image>
+                <Image>The Wishing Tree</Image>
+                <Image award="Judges Choice">Contented Owl</Image>
+                <Image>Panther Chameleon Lunch</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Aphrodite</Name>
+            <Country>Greece</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-439</Accreditation>
+                <Accreditation type="FIAPLevels">2019/477</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image award="GPU HM">Mirror Of Reminiscence</Image>
+                <Image>Contemplation By Starlight</Image>
+                <Image>The Wishing Tree</Image>
+                <Image award="GPU Bronze">Contented Owl</Image>
+                <Image>Panther Chameleon Lunch</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Hermes</Name>
+            <Country>Greece</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-439</Accreditation>
+                <Accreditation type="FIAPLevels">2019/478</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Contemplation By Starlight</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Apollo</Name>
+            <Country>Greece</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-439</Accreditation>
+                <Accreditation type="FIAPLevels">2019/479</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>The Hall Of Gateways</Image>
+                <Image>Mirror Of Reminiscence</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
 
-        // Olympic Circuit
-        var lOlympicCircuit2019 = new CircuitEntity() { Name = "Olympic" };
-
-        lContext.Circuits.AddRange(new List<CircuitEntity> {
-    lOlympicCircuit2019,
-    });
-
-    var The Hall Of Gateways = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "The Hall of Gateways" };
-    var lCityRechargingTower = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "City Recharging Tower" };
-    var lCrestedGeckoOnStump = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Crested Gecko on Stump" };
-
-    var lSalonOlympicZeus = new SalonEntity { Name = "Olympic - Zeus", Website = "https://olympicphotocircuit.com/", Country = lCountryGreece };
-
-    var lSalonYearZeus2019 = new SalonYearEntity { Name = "Olympic - Zeus", Salon = lSalonOlympicZeus, Year = 2019, ClosingDate = new DateTime(2019, 10, 6), JudgeDate = new DateTime(2019, 10, 20), NotificationDate = new DateTime(2019, 11, 3), CataloguesPostedDate = new DateTime(2020, 1, 5), Circuit = lOlympicCircuit2019 };
-
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/476", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearZeus2019</Image>
-        new AccreditationEntity() { SalonNumber = "2019-439", PhotoOrganisation = lPsa, SalonYear = lSalonYearZeus2019</Image>
-        new AccreditationEntity() { SalonNumber = "L190153", PhotoOrganisation = lGpu, SalonYear = lSalonYearZeus2019</Image>
-        });
-
-        var lSalonYearZeus2019Colour = new SectionEntity() { SalonYear = lSalonYearZeus2019, SectionType = lSectionTypeColourPdi };
-        var lSalonYearZeus2019Mono = new SectionEntity() { SalonYear = lSalonYearZeus2019, SectionType = lSectionTypeMonoPdi };
-        var lSalonYearZeus2019Nature = new SectionEntity() { SalonYear = lSalonYearZeus2019, SectionType = lSectionTypeNaturePdi };
 
 
 
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 8.89M,
-            SalonYear = lSalonYearZeus2019,
-            EntryDate = new DateTime(2019, 10, 5),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-
-                <Image>Zeus2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>Zeus2019Colour, Image = Betwixt Realities</Image>
-                <Image>Zeus2019Colour, Image = The Hall Of Gateways</Image>
-                <Image>Zeus2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>Zeus2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>Zeus2019Mono, Image = Contemplation By Starlight</Image>
-                <Image>Zeus2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>Zeus2019Mono, Image = The Wishing Tree</Image>
-                <Image>Zeus2019Nature, Image = Contented Owl, IsAwarded = true, AwardDetails="Judges Choice", IsAccepted = true, Score=0</Image>
-                <Image>Zeus2019Nature, Image = lPantherChameleonLunch</Image>
-                <Image>Zeus2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>Zeus2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0</Image>
-
-               </Image>
-               </Image>
-                });
-
-                var lSalonOlympicAphrodite = new SalonEntity { Name = "Olympic - Aphrodite", Website = "https://olympicphotocircuit.com/", Country = lCountryGreece };
-
-                var lSalonYearAphrodite2019 = new SalonYearEntity { Name = "Olympic - Aphrodite", Salon = lSalonOlympicAphrodite, Year = 2019, ClosingDate = new DateTime(2019, 10, 6), JudgeDate = new DateTime(2019, 10, 20), NotificationDate = new DateTime(2019, 11, 3), CataloguesPostedDate = new DateTime(2020, 1, 5), Circuit = lOlympicCircuit2019 };
-
-                lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2019/477", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearAphrodite2019</Image>
-                    new AccreditationEntity() { SalonNumber = "2019-439", PhotoOrganisation = lPsa, SalonYear = lSalonYearAphrodite2019</Image>
-                    new AccreditationEntity() { SalonNumber = "L190153", PhotoOrganisation = lGpu, SalonYear = lSalonYearAphrodite2019</Image>
-                    });
-
-                    var lSalonYearAphrodite2019Colour = new SectionEntity() { SalonYear = lSalonYearAphrodite2019, SectionType = lSectionTypeColourPdi };
-                    var lSalonYearAphrodite2019Mono = new SectionEntity() { SalonYear = lSalonYearAphrodite2019, SectionType = lSectionTypeMonoPdi };
-                    var lSalonYearAphrodite2019Nature = new SectionEntity() { SalonYear = lSalonYearAphrodite2019, SectionType = lSectionTypeNaturePdi };
 
 
 
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 8.89M,
-                        SalonYear = lSalonYearAphrodite2019,
-                        EntryDate = new DateTime(2019, 10, 5),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            <Image>Aphrodite2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                            <Image>Aphrodite2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                            <Image>Aphrodite2019Colour, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                            <Image>Aphrodite2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                            <Image>Aphrodite2019Mono, Image = Mirror Of Reminiscence, IsAwarded = true, AwardDetails = "GPU HM", IsAccepted = true, Score=0</Image>
-                            <Image>Aphrodite2019Mono, Image = Contemplation By Starlight</Image>
-                            <Image>Aphrodite2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                            <Image>Aphrodite2019Mono, Image = The Wishing Tree</Image>
-                            <Image>Aphrodite2019Nature, Image = Contented Owl, IsAwarded = true, AwardDetails="GPU Bronze", IsAccepted = true, Score=0</Image>
-                            <Image>Aphrodite2019Nature, Image = lPantherChameleonLunch</Image>
-                            <Image>Aphrodite2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                            <Image>Aphrodite2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0</Image>
-
-                           </Image>
-                           </Image>
-                            });
-
-                            var lSalonOlympicHermes = new SalonEntity { Name = "Olympic - Hermes", Website = "https://olympicphotocircuit.com/", Country = lCountryGreece };
-
-                            var lSalonYearHermes2019 = new SalonYearEntity { Name = "Olympic - Hermes", Salon = lSalonOlympicHermes, Year = 2019, ClosingDate = new DateTime(2019, 10, 6), JudgeDate = new DateTime(2019, 10, 20), NotificationDate = new DateTime(2019, 11, 3), CataloguesPostedDate = new DateTime(2020, 1, 5), Circuit = lOlympicCircuit2019 };
-
-                            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                new AccreditationEntity() { SalonNumber = "2019/478", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearHermes2019</Image>
-                                new AccreditationEntity() { SalonNumber = "2019-439", PhotoOrganisation = lPsa, SalonYear = lSalonYearHermes2019</Image>
-                                new AccreditationEntity() { SalonNumber = "L190153", PhotoOrganisation = lGpu, SalonYear = lSalonYearHermes2019</Image>
-                                });
-
-                                var lSalonYearHermes2019Colour = new SectionEntity() { SalonYear = lSalonYearHermes2019, SectionType = lSectionTypeColourPdi };
-                                var lSalonYearHermes2019Mono = new SectionEntity() { SalonYear = lSalonYearHermes2019, SectionType = lSectionTypeMonoPdi };
-                                var lSalonYearHermes2019Nature = new SectionEntity() { SalonYear = lSalonYearHermes2019, SectionType = lSectionTypeNaturePdi };
 
 
 
-                                lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                    new SubmissionEntity(){
-                                    IsJudged = true,
-                                    EntryCost = 8.89M,
-                                    SalonYear = lSalonYearHermes2019,
-                                    EntryDate = new DateTime(2019, 10, 5),
-                                    Person = lTim,
-                                    Entries = new List<CompetitionEntryEntity> {
-
-                                        <Image>Hermes2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                                        <Image>Hermes2019Colour, Image = The Hall Of Gateways, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Mono, Image = Mirror Of Reminiscence, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Mono, Image = Contemplation By Starlight</Image>
-                                        <Image>Hermes2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score= 0},
-                                        <Image>Hermes2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                                        <Image>Hermes2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0</Image>
-
-                                       </Image>
-                                       </Image>
-                                        });
-
-                                        var lSalonOlympicApollo = new SalonEntity { Name = "Olympic - Apollo", Website = "https://olympicphotocircuit.com/", Country = lCountryGreece };
-
-                                        var lSalonYearApollo2019 = new SalonYearEntity { Name = "Olympic - Apollo", Salon = lSalonOlympicApollo, Year = 2019, ClosingDate = new DateTime(2019, 10, 6), JudgeDate = new DateTime(2019, 10, 20), NotificationDate = new DateTime(2019, 11, 3), CataloguesPostedDate = new DateTime(2020, 1, 5), Circuit = lOlympicCircuit2019 };
-
-                                        lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                            new AccreditationEntity() { SalonNumber = "2019/479", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearApollo2019</Image>
-                                            new AccreditationEntity() { SalonNumber = "2019-439", PhotoOrganisation = lPsa, SalonYear = lSalonYearApollo2019</Image>
-                                            new AccreditationEntity() { SalonNumber = "L190153", PhotoOrganisation = lGpu, SalonYear = lSalonYearApollo2019</Image>
-                                            });
-
-                                            var lSalonYearApollo2019Colour = new SectionEntity() { SalonYear = lSalonYearApollo2019, SectionType = lSectionTypeColourPdi };
-                                            var lSalonYearApollo2019Mono = new SectionEntity() { SalonYear = lSalonYearApollo2019, SectionType = lSectionTypeMonoPdi };
-                                            var lSalonYearApollo2019Nature = new SectionEntity() { SalonYear = lSalonYearApollo2019, SectionType = lSectionTypeNaturePdi };
-
-
-
-                                            lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                                new SubmissionEntity(){
-                                                IsJudged = true,
-                                                EntryCost = 8.90M,
-                                                SalonYear = lSalonYearApollo2019,
-                                                EntryDate = new DateTime(2019, 10, 5),
-                                                Person = lTim,
-                                                Entries = new List<CompetitionEntryEntity> {
-
-                                                    <Image>Apollo2019Colour, Image = I Used To Dream I'd Marry A Prince, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Colour, Image = Betwixt Realities, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    <Image>Apollo2019Colour, Image = The Hall Of Gateways },
-                                                    <Image>Apollo2019Colour, Image = lCityRechargingTower, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Mono, Image = Mirror Of Reminiscence },
-                                                    <Image>Apollo2019Mono, Image = Contemplation By Starlight, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    <Image>Apollo2019Mono, Image = lRealityDysfunction, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Mono, Image = The Wishing Tree, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Nature, Image = Contented Owl, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Nature, Image = lPantherChameleonLunch, IsAwarded = false, IsAccepted = false, Score= 0},
-                                                    <Image>Apollo2019Nature, Image = lCrestedGeckoOnStump, IsAwarded = false, IsAccepted = false, Score=0 },
-                                                    <Image>Apollo2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=0 },
-
-                                                    },
-                                                    },
-                                                    });

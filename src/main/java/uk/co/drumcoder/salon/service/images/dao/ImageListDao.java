@@ -48,7 +48,7 @@ public class ImageListDao {
     public List<SalonPrizeDao> getAwardedImages() {
         List<SalonPrizeDao> allSalonPrizes = new ArrayList<>();
         for (ImageDao eachImage : this.images) {
-            if (eachImage.getAward() != null) {
+            if (eachImage.getAward() != null && eachImage.getAward().length() > 0) {
                 allSalonPrizes.add(new SalonPrizeDao(eachImage));
             }
         }

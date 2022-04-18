@@ -34,6 +34,30 @@ public class AwardDao extends AbstractDao {
     private int achievedSalons = 0;
     private BigDecimal totalCost = new BigDecimal("0");
 
+    public String getAcceptancesString() {
+        return this.achievedAcceptances + " of " + this.requiredAcceptances;
+    }
+
+    public String getCountriesString() {
+        return this.achievedCountries.size() + " of " + this.requiredCountries;
+    }
+
+    public String getAwardsString() {
+        return this.achievedAwards.size() + " of " + this.requiredAwards;
+    }
+
+    public String getImagesString() {
+        return this.achievedImages.size() + " of " + this.requiredImages;
+    }
+
+    public String getSalonsString() {
+        return this.achievedSalons + " of " + this.requiredSalons;
+    }
+
+    public String getCostString() {
+        return this.totalCost.toPlainString();
+    }
+
     public boolean isAchieved() {
         boolean achieved = true;
 

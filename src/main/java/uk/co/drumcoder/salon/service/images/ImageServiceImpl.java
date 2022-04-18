@@ -43,9 +43,9 @@ public class ImageServiceImpl implements ImageService {
             ImageDao imageDao = new ImageDao();
             imageDao.setTitle(imageElement.getText());
 
-            if (!allValidImages.contains(imageDao.getTitle())) {
-                throw new UnsupportedOperationException("Image " + imageDao.getTitle() + " not found in Images.xml");
-            }
+            // TODO if (!allValidImages.contains(imageDao.getTitle())) {
+            // TODO   throw new UnsupportedOperationException("Image " + imageDao.getTitle() + " not found in Images.xml");
+            // TODO }
 
             if (imageElement.getAttribute("award") != null) {
                 imageDao.setAward(imageElement.getAttribute("award").getValue());

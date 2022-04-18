@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layout}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<body>
+<div layout:fragment="content">
+    <h2>Award Status</h2>
+    <span th:each="organisation : ${OrganisationList}">
+        <h3><span th:text="${organisation.name}">Organisation</span></h3>
+        <table class="table">
+            <tr>
+                <th>Achievement</th>
+                <th>Acceptances</th>
+                <th>Countries</th>
+                <th>Awards</th>
+                <th>Images</th>
+                <th>Salons</th>
+                <th>Cost</th>
+            </tr>
+            <tr th:each="award : ${organisation.awards}" th:class="${award.isAchieved()} ? 'table-success' : ''">
+                <td><span th:text="${award.name}">Award Name</span></td>
+                <td><span th:text="${award.acceptancesString}">Acceptances</span></td>
+                <td><span th:text="${award.countriesString}">Countries</span></td>
+                <td><span th:text="${award.awardsString}">Awards</span></td>
+                <td><span th:text="${award.imagesString}">Images</span></td>
+                <td><span th:text="${award.salonsString}">Salons</span></td>
+                <td><span th:text="${award.costString}">Cost</span></td>
+            </tr>
+        </table>
+    </span>
+</div>
+</body>
+</html>

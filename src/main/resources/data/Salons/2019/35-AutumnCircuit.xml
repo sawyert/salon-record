@@ -1,183 +1,49 @@
 <Circuit>
-    <Name>Circuit</Name>
-    <Web>http</Web>
-    <Cost>34</Cost>
+    <Name>Autumn</Name>
+    <Web>https://www.exhibitions.photo/</Web>
+    <Cost>40.14</Cost>
     <JudgeDate>31-01-2019</JudgeDate>
     <NotificationDate>31-02-2019</NotificationDate>
     <Salons>
         <Salon>
-            <Name>Carlisle</Name>
+            <Name>Elema</Name>
             <Country>Macedonia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2019-500</Accreditation>
                 <Accreditation type="FIAPLevels">2019/554</Accreditation>
             </Accreditations>
             <AcceptedImages>
-
+                <Image>Grass Iceland</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Cacak</Name>
+            <Country>Serbia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-500</Accreditation>
+                <Accreditation type="FIAPLevels">2019/555</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Red Eyed Green Tree Frog</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Perasto</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2019-500</Accreditation>
+                <Accreditation type="FIAPLevels">2019/556</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>A Walk With The Moon</Image>
+                <Image>Workers Break</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
 </Circuit>
 
-        // Autumn Circuit 2019
-        var lPhotoAutumnCircuit2019 = new CircuitEntity() { Name = "Autumn Circuit" };
-
-        lContext.Circuits.AddRange(new List<CircuitEntity> {
-    lPhotoAutumnCircuit2019,
-    });
-
-    var Marbled Tree Frog = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Marbled Tree Frog" };
-    var lStepsOfTheMoon = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Stesp of the Moon" };
-    var lVictorianTraveller = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Victorian Traveller" };
-    var lRailDelay = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Rail Delay" };
-    var lSolentSunset = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Solent Sunset" };
-    var lAlhambraComplex = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Alhambra Complex" };
-    var lAlienEncounter = new ImageEntity() { ThumbnailLocation = @"C:\SalonImages\NA.jpg", Person = lTim, Name = "Alien Encounter" };
 
 
-    var lSalonAutumnElema = new SalonEntity { Name = "Autumn - Elema", Website = "https://www.exhibitions.photo/", Country = lCountryMacedonia };
 
-    var lSalonYearAutumnElema2019 = new SalonYearEntity { Name = "Autumn - Elema", Salon = lSalonAutumnElema, Year = 2019, ClosingDate = new DateTime(2019, 11, 24), JudgeDate = new DateTime(2019, 12, 5), NotificationDate = new DateTime(2019, 12, 10), CataloguesPostedDate = new DateTime(2020, 2, 18), Circuit = lPhotoAutumnCircuit2019 };
 
-    lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-        new AccreditationEntity() { SalonNumber = "2019/554", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearAutumnElema2019</Image>
-        new AccreditationEntity() { SalonNumber = "2019-500", PhotoOrganisation = lPsa, SalonYear = lSalonYearAutumnElema2019</Image>
-        });
 
-        var lSalonYearAutumnElema2019Colour = new SectionEntity() { SalonYear = lSalonYearAutumnElema2019, SectionType = lSectionTypeColourPdi };
-        var lSalonYearAutumnElema2019Mono = new SectionEntity() { SalonYear = lSalonYearAutumnElema2019, SectionType = lSectionTypeMonoPdi };
-        var lSalonYearAutumnElema2019Nature = new SectionEntity() { SalonYear = lSalonYearAutumnElema2019, SectionType = lSectionTypeNaturePdi };
-        var lSalonYearAutumnElema2019People = new SectionEntity() { SalonYear = lSalonYearAutumnElema2019, SectionType = lSectionTypePeoplePdi };
-        var lSalonYearAutumnElema2019Travel = new SectionEntity() { SalonYear = lSalonYearAutumnElema2019, SectionType = lSectionTypeTravelPdi };
-
-        lContext.Submissions.AddRange(new List<SubmissionEntity> {
-            new SubmissionEntity(){
-            IsJudged = true,
-            EntryCost = 13.38M,
-            SalonYear = lSalonYearAutumnElema2019,
-            EntryDate = new DateTime(2019, 11, 20),
-            Person = lTim,
-            Entries = new List<CompetitionEntryEntity> {
-
-                <Image>AutumnElema2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score=15</Image>
-                <Image>AutumnElema2019Colour, Image = lAlienEncounter, IsAwarded = false, IsAccepted = false, Score= 17},
-                <Image>AutumnElema2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = false, Score=16</Image>
-                <Image>AutumnElema2019Colour, Image = lSunflower, IsAwarded = false, IsAccepted = false, Score=14</Image>
-                <Image>AutumnElema2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=19</Image>
-                <Image>AutumnElema2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score= 18},
-                <Image>AutumnElema2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = false, Score=19</Image>
-                <Image>AutumnElema2019Nature, Image = Marbled Tree Frog, IsAwarded = false, IsAccepted = false, Score=16</Image>
-                <Image>AutumnElema2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score=18},
-                <Image>AutumnElema2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score= 17},
-                <Image>AutumnElema2019Mono, Image = lStepsOfTheMoon, IsAwarded = false, IsAccepted = false, Score=13</Image>
-                <Image>AutumnElema2019Mono, Image = lTwoPoppyheads, IsAwarded = false, IsAccepted = false, Score=14</Image>
-                <Image>AutumnElema2019People, Image = lVictorianTraveller, IsAwarded = false, IsAccepted = false, Score=0</Image>
-                <Image>AutumnElema2019People, Image = lWorkersBreak, IsAwarded = false, IsAccepted = false, Score= 14},
-                <Image>AutumnElema2019People, Image = lAWalkInTheCountryside, IsAwarded = false, IsAccepted = false, Score=18</Image>
-                <Image>AutumnElema2019People, Image = lRailDelay, IsAwarded = false, IsAccepted = false, Score=18</Image>
-                <Image>AutumnElema2019Travel, Image = lSolentSunset, IsAwarded = false, IsAccepted = false, Score=19</Image>
-                <Image>AutumnElema2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 17},
-                <Image>AutumnElema2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = true, Score=21</Image>
-                <Image>AutumnElema2019Travel, Image = lAlhambraComplex, IsAwarded = false, IsAccepted = false, Score=14</Image>
-
-               </Image>
-               </Image>
-                });
-
-                var lSalonAutumnCacak = new SalonEntity { Name = "Autumn - Cacak", Website = "https://www.exhibitions.photo/", Country = lCountrySerbia };
-
-                var lSalonYearAutumnCacak2019 = new SalonYearEntity { Name = "Autumn - Cacak", Salon = lSalonAutumnCacak, Year = 2019, ClosingDate = new DateTime(2019, 11, 24), JudgeDate = new DateTime(2019, 12, 5), NotificationDate = new DateTime(2019, 12, 10), CataloguesPostedDate = new DateTime(2020, 2, 18), Circuit = lPhotoAutumnCircuit2019 };
-
-                lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                    new AccreditationEntity() { SalonNumber = "2019/555", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearAutumnCacak2019</Image>
-                    new AccreditationEntity() { SalonNumber = "2019-500", PhotoOrganisation = lPsa, SalonYear = lSalonYearAutumnCacak2019</Image>
-                    });
-
-                    var lSalonYearAutumnCacak2019Colour = new SectionEntity() { SalonYear = lSalonYearAutumnCacak2019, SectionType = lSectionTypeColourPdi };
-                    var lSalonYearAutumnCacak2019Mono = new SectionEntity() { SalonYear = lSalonYearAutumnCacak2019, SectionType = lSectionTypeMonoPdi };
-                    var lSalonYearAutumnCacak2019Nature = new SectionEntity() { SalonYear = lSalonYearAutumnCacak2019, SectionType = lSectionTypeNaturePdi };
-                    var lSalonYearAutumnCacak2019People = new SectionEntity() { SalonYear = lSalonYearAutumnCacak2019, SectionType = lSectionTypePeoplePdi };
-                    var lSalonYearAutumnCacak2019Travel = new SectionEntity() { SalonYear = lSalonYearAutumnCacak2019, SectionType = lSectionTypeTravelPdi };
-
-                    lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                        new SubmissionEntity(){
-                        IsJudged = true,
-                        EntryCost = 13.38M,
-                        SalonYear = lSalonYearAutumnCacak2019,
-                        EntryDate = new DateTime(2019, 11, 20),
-                        Person = lTim,
-                        Entries = new List<CompetitionEntryEntity> {
-
-                            <Image>AutumnCacak2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score=14</Image>
-                            <Image>AutumnCacak2019Colour, Image = lAlienEncounter, IsAwarded = false, IsAccepted = false, Score= 17},
-                            <Image>AutumnCacak2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = false, Score=18</Image>
-                            <Image>AutumnCacak2019Colour, Image = lSunflower, IsAwarded = false, IsAccepted = false, Score=12</Image>
-                            <Image>AutumnCacak2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = true, Score=21</Image>
-                            <Image>AutumnCacak2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score= 16},
-                            <Image>AutumnCacak2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = false, Score=18</Image>
-                            <Image>AutumnCacak2019Nature, Image = Marbled Tree Frog, IsAwarded = false, IsAccepted = false, Score=17</Image>
-                            <Image>AutumnCacak2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score=18</Image>
-                            <Image>AutumnCacak2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score= 14},
-                            <Image>AutumnCacak2019Mono, Image = lStepsOfTheMoon, IsAwarded = false, IsAccepted = false, Score=12</Image>
-                            <Image>AutumnCacak2019Mono, Image = lTwoPoppyheads, IsAwarded = false, IsAccepted = false, Score=12</Image>
-                            <Image>AutumnCacak2019People, Image = lVictorianTraveller, IsAwarded = false, IsAccepted = false, Score=12</Image>
-                            <Image>AutumnCacak2019People, Image = lWorkersBreak, IsAwarded = false, IsAccepted = false, Score= 15},
-                            <Image>AutumnCacak2019People, Image = lAWalkInTheCountryside, IsAwarded = false, IsAccepted = false, Score=15</Image>
-                            <Image>AutumnCacak2019People, Image = lRailDelay, IsAwarded = false, IsAccepted = false, Score=15</Image>
-                            <Image>AutumnCacak2019Travel, Image = lSolentSunset, IsAwarded = false, IsAccepted = false, Score=17</Image>
-                            <Image>AutumnCacak2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 15},
-                            <Image>AutumnCacak2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=15</Image>
-                            <Image>AutumnCacak2019Travel, Image = lAlhambraComplex, IsAwarded = false, IsAccepted = false, Score=13</Image>
-
-                           </Image>
-                           </Image>
-                            });
-
-                            var lSalonAutumnPerasto = new SalonEntity { Name = "Autumn - Perasto", Website = "https://www.exhibitions.photo/", Country = lCountryMontenegro };
-
-                            var lSalonYearAutumnPerasto2019 = new SalonYearEntity { Name = "Autumn - Perasto", Salon = lSalonAutumnPerasto, Year = 2019, ClosingDate = new DateTime(2019, 11, 24), JudgeDate = new DateTime(2019, 12, 5), NotificationDate = new DateTime(2019, 12, 10), CataloguesPostedDate = new DateTime(2020, 2, 18), Circuit = lPhotoAutumnCircuit2019 };
-
-                            lContext.Accreditations.AddRange(new List<AccreditationEntity> {
-                                new AccreditationEntity() { SalonNumber = "2019/556", PhotoOrganisation = lFiapLevels, SalonYear = lSalonYearAutumnPerasto2019</Image>
-                                new AccreditationEntity() { SalonNumber = "2019-500", PhotoOrganisation = lPsa, SalonYear = lSalonYearAutumnPerasto2019</Image>
-                                });
-
-                                var lSalonYearAutumnPerasto2019Colour = new SectionEntity() { SalonYear = lSalonYearAutumnPerasto2019, SectionType = lSectionTypeColourPdi };
-                                var lSalonYearAutumnPerasto2019Mono = new SectionEntity() { SalonYear = lSalonYearAutumnPerasto2019, SectionType = lSectionTypeMonoPdi };
-                                var lSalonYearAutumnPerasto2019Nature = new SectionEntity() { SalonYear = lSalonYearAutumnPerasto2019, SectionType = lSectionTypeNaturePdi };
-                                var lSalonYearAutumnPerasto2019People = new SectionEntity() { SalonYear = lSalonYearAutumnPerasto2019, SectionType = lSectionTypePeoplePdi };
-                                var lSalonYearAutumnPerasto2019Travel = new SectionEntity() { SalonYear = lSalonYearAutumnPerasto2019, SectionType = lSectionTypeTravelPdi };
-
-                                lContext.Submissions.AddRange(new List<SubmissionEntity> {
-                                    new SubmissionEntity(){
-                                    IsJudged = true,
-                                    EntryCost = 13.38M,
-                                    SalonYear = lSalonYearAutumnPerasto2019,
-                                    EntryDate = new DateTime(2019, 11, 20),
-                                    Person = lTim,
-                                    Entries = new List<CompetitionEntryEntity> {
-
-                                        <Image>AutumnPerasto2019Colour, Image = lTranquility, IsAwarded = false, IsAccepted = false, Score=17</Image>
-                                        <Image>AutumnPerasto2019Colour, Image = lAlienEncounter, IsAwarded = false, IsAccepted = false, Score= 16},
-                                        <Image>AutumnPerasto2019Colour, Image = lAWalkWithTheMoon, IsAwarded = false, IsAccepted = true, Score=21 },
-                                        <Image>AutumnPerasto2019Colour, Image = lSunflower, IsAwarded = false, IsAccepted = false, Score=14 },
-                                        <Image>AutumnPerasto2019Nature, Image = lRedEyedGreenTreeFrog, IsAwarded = false, IsAccepted = false, Score=15 },
-                                        <Image>AutumnPerasto2019Nature, Image = Crested Gecko Tongue, IsAwarded = false, IsAccepted = false, Score= 17},
-                                        <Image>AutumnPerasto2019Nature, Image = Mossy Frog On Branch, IsAwarded = false, IsAccepted = false, Score=15},
-                                        <Image>AutumnPerasto2019Nature, Image = Marbled Tree Frog, IsAwarded = false, IsAccepted = false, Score=17},
-                                        <Image>AutumnPerasto2019Mono, Image = lSkyward, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        <Image>AutumnPerasto2019Mono, Image = Towers In The Sky, IsAwarded = false, IsAccepted = false, Score= 17},
-                                        <Image>AutumnPerasto2019Mono, Image = lStepsOfTheMoon, IsAwarded = false, IsAccepted = false, Score=13 },
-                                        <Image>AutumnPerasto2019Mono, Image = lTwoPoppyheads, IsAwarded = false, IsAccepted = false, Score=12 },
-                                        <Image>AutumnPerasto2019People, Image = lVictorianTraveller, IsAwarded = false, IsAccepted = false, Score=16 },
-                                        <Image>AutumnPerasto2019People, Image = lWorkersBreak, IsAwarded = false, IsAccepted = true, Score= 20},
-                                        <Image>AutumnPerasto2019People, Image = lAWalkInTheCountryside, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        <Image>AutumnPerasto2019People, Image = lRailDelay, IsAwarded = false, IsAccepted = false, Score=18 },
-                                        <Image>AutumnPerasto2019Travel, Image = lSolentSunset, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        <Image>AutumnPerasto2019Travel, Image = lIceBeachWaves, IsAwarded = false, IsAccepted = false, Score= 14},
-                                        <Image>AutumnPerasto2019Travel, Image = lGrassIceland, IsAwarded = false, IsAccepted = false, Score=17 },
-                                        <Image>AutumnPerasto2019Travel, Image = lAlhambraComplex, IsAwarded = false, IsAccepted = false, Score=15 },
-
-                                        },
-                                        },
-                                        });

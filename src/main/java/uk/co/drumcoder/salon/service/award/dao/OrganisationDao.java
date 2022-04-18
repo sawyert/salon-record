@@ -43,4 +43,8 @@ public class OrganisationDao extends AbstractDao {
     public List<SubmissionListItemDao> getSubmissionList(String organisationName, String awardName) {
         return this.awardList.getSubmissionList(organisationName, awardName);
     }
+
+    public List<AwardDao> awards() {
+        return this.awardList.getAwards();
+    }
 }
