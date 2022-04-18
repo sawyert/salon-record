@@ -47,7 +47,7 @@ class AchievementsServiceTests {
         assertEquals(3, awardAchievements.getOrganisation("FIAP").getAward(1).getRequiredImages());
         assertEquals(2, awardAchievements.getOrganisation("FIAP").getAward(1).getRequiredSalons());
         assertTrue(awardAchievements.getOrganisation("FIAP").getAward(1).isAchieved());
-        assertEquals(new BigDecimal("45.07"), awardAchievements.getOrganisation("FIAP").getAward(1).getTotalCost());
+        assertEquals(new BigDecimal("60.14"), awardAchievements.getOrganisation("FIAP").getAward(1).getTotalCost());
 
         assertEquals("AFIAP", awardAchievements.getOrganisation("FIAP").getAward(2).getName());
         assertFalse(awardAchievements.getOrganisation("FIAP").getAward(2).isAchieved());
@@ -63,7 +63,7 @@ class AchievementsServiceTests {
         // act
         SubmissionListDao submissionList = this.achievementsService.fetchSubmissionList("FIAP","FIAP Test 2");
 
-        assertEquals(4, submissionList.count());
+        assertEquals(5, submissionList.count());
 
         assertEquals(1, submissionList.get(0).getTitleNumber());
         assertEquals("Daisy", submissionList.get(0).getTitle());
