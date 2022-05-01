@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Nowruz</Name>
+    <Web>https://www.nowruzsalon.com/</Web>
+    <Country>Tajikistan</Country>
+    <Year>2022</Year>
+    <JudgeDate>10-05-2022</JudgeDate>
+    <NotificationDate>24-05-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-256</Accreditation>
+        <Accreditation type="FIAPLevels">2022/322</Accreditation>
+    </Accreditations>
+    <Cost>23.33</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>
