@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Swiss International</Name>
+    <Web>https://newcameraclub.com/</Web>
+    <Country>Switzerland</Country>
+    <Year>2022</Year>
+    <JudgeDate>30-05-2022</JudgeDate>
+    <NotificationDate>13-06-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-152</Accreditation>
+        <Accreditation type="FIAPLevels">2022/080</Accreditation>
+    </Accreditations>
+    <Cost>21.96</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>

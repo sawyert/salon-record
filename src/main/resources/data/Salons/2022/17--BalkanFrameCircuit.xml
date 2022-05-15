@@ -1,0 +1,37 @@
+
+<Circuit>
+    <Name>Balkan Frame</Name>
+    <Web>https://www.gradacfoto.com/?pg=6#cmain</Web>
+    <Cost>26.65</Cost>
+    <JudgeDate>31-05-2022</JudgeDate>
+    <NotificationDate>07-06-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Perasto</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/357</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Cacak</Name>
+            <Country>Serbia</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/358</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Mladost</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/359</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

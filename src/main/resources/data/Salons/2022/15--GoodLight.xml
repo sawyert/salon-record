@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Good Light</Name>
+    <Web>https://www.goodlight.me/</Web>
+    <Country>Serbia</Country>
+    <Year>2022</Year>
+    <JudgeDate>21-05-2022</JudgeDate>
+    <NotificationDate>29-05-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-181</Accreditation>
+        <Accreditation type="FIAPLevels">2022/101</Accreditation>
+    </Accreditations>
+    <Cost>17.57</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>
