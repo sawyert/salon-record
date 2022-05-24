@@ -1,0 +1,50 @@
+
+<Circuit>
+    <Name>Queensland</Name>
+    <Web>http://www.queensland-photo.com/rules/</Web>
+    <Cost>50.17</Cost>
+    <JudgeDate>19-06-2022</JudgeDate>
+    <NotificationDate>03-07-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Gold Coast</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-170</Accreditation>
+                <Accreditation type="FIAPLevels">2022/180</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Maryborough</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-170</Accreditation>
+                <Accreditation type="FIAPLevels">2022/181</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Mt Gravatt</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-170</Accreditation>
+                <Accreditation type="FIAPLevels">2022/182</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Townsville</Name>
+            <Country>Australia</Country>
+            <Accreditations>
+                <Accreditation type="PSA">2022-170</Accreditation>
+                <Accreditation type="FIAPLevels">2022/183</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
