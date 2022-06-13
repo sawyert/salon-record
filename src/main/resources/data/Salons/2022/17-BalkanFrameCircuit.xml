@@ -13,6 +13,7 @@
                 <Accreditation type="FIAPLevels">2022/357</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Worker's Break</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -22,6 +23,11 @@
                 <Accreditation type="FIAPLevels">2022/358</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image award="Jury Member Diploma">Forest Glow</Image>
+                <Image>Meadow Rabbit</Image>
+                <Image>Waterfall Moon</Image>
+                <Image>Into The Wild</Image>
+                <Image>Silo Step Shadows</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -31,6 +37,7 @@
                 <Accreditation type="FIAPLevels">2022/359</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Worker's Break</Image>
             </AcceptedImages>
         </Salon>
     </Salons>

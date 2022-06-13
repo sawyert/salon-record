@@ -1,0 +1,15 @@
+<Salon>
+    <Name>Aqua</Name>
+    <Web>https://www.aquaphotosalon.com/Page/Rules</Web>
+    <Country>Tajikistan</Country>
+    <Year>2022</Year>
+    <JudgeDate>11-07-2022</JudgeDate>
+    <NotificationDate>25-07-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-359</Accreditation>
+        <Accreditation type="FIAPLevels">2022/466</Accreditation>
+    </Accreditations>
+    <Cost>24.04</Cost>
+    <AcceptedImages>
+    </AcceptedImages>
+</Salon>

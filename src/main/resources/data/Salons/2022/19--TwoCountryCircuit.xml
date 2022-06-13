@@ -1,0 +1,37 @@
+
+<Circuit>
+    <Name>Two Country</Name>
+    <Web>https://www.fkns.rs/main/index.php</Web>
+    <Cost>35.50</Cost>
+    <JudgeDate>21-06-2022</JudgeDate>
+    <NotificationDate>01-07-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Novi Sad</Name>
+            <Country>Serbia</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/252</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Kotor</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/253</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Podgorica</Name>
+            <Country>Montenegro</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/254</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>
