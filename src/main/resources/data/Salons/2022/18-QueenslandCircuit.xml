@@ -14,6 +14,10 @@
                 <Accreditation type="FIAPLevels">2022/180</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>A Tree Of Fire And Water</Image>
+                <Image>Lost In The Darkwood</Image>
+                <Image>The Red Hut</Image>
+                <Image>A Tower By The Sea</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -24,6 +28,11 @@
                 <Accreditation type="FIAPLevels">2022/181</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>The Opening</Image>
+                <Image>The Red Hut</Image>
+                <Image>Cave Of The Yeti</Image>
+                <Image>Grass Iceland</Image>
+                <Image>Desolate Tree</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -34,6 +43,9 @@
                 <Accreditation type="FIAPLevels">2022/182</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>The Opening</Image>
+                <Image>The Red Hut</Image>
+                <Image>The Door To Time</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -44,6 +56,11 @@
                 <Accreditation type="FIAPLevels">2022/183</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>A Tree Of Fire And Water</Image>
+                <Image>The Opening</Image>
+                <Image>Cave Of The Yeti</Image>
+                <Image>Grass Iceland</Image>
+                <Image>Skyward</Image>
             </AcceptedImages>
         </Salon>
     </Salons>

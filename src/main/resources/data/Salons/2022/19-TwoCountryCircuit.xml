@@ -13,6 +13,9 @@
                 <Accreditation type="FIAPLevels">2022/252</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Glacier Walkers</Image>
+                <Image>Three Figures</Image>
+                <Image>Downhill</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -22,6 +25,10 @@
                 <Accreditation type="FIAPLevels">2022/253</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image award="Salon HM">Three Figures</Image>
+                <Image>A Tree Of Fire And Water</Image>
+                <Image>Portal Blue</Image>
+                <Image>Lost In The Darkwood</Image>
             </AcceptedImages>
         </Salon>
         <Salon>
@@ -31,6 +38,8 @@
                 <Accreditation type="FIAPLevels">2022/254</Accreditation>
             </Accreditations>
             <AcceptedImages>
+                <Image>Solent Sunset</Image>
+                <Image award="Salon HM">Glacier Walkers</Image>
             </AcceptedImages>
         </Salon>
     </Salons>
