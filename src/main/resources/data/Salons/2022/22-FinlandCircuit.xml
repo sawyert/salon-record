@@ -1,0 +1,71 @@
+<Circuit>
+    <Name>Finland</Name>
+    <Web>http://www.finlandcircuit.fi/14th-finland-international-digital-circuit-2022/</Web>
+    <Cost>35.22</Cost>
+    <JudgeDate>04-09-2022</JudgeDate>
+    <NotificationDate>14-09-2022</NotificationDate>
+    <Salons>
+        <Salon>
+            <Name>Kouvola</Name>
+            <Country>Finland</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/378</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>A Tree of Fire And Water</Image>
+                <Image>Beneath The Textured Tree</Image>
+                <Image>Desolate Tree</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Kuopio</Name>
+            <Country>Finland</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/379</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image award="GPU Bronze">A Tree of Fire And Water</Image>
+                <Image>Forest Glow</Image>
+                <Image>Desolate Tree</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Tampere</Name>
+            <Country>Finland</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/380</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image award="FIAP HM">A Tree of Fire And Water</Image>
+                <Image>Forest Glow</Image>
+                <Image>Meadow Rabbit</Image>
+                <Image>Beneath The Textured Tree</Image>
+                <Image award="AFCC Silver">Desolate Tree</Image>
+                <Image>Silo Step Shadows</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Helsinki</Name>
+            <Country>Finland</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/381</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image award="NFFF Gold">Beneath The Textured Tree</Image>
+                <Image>Desolate Tree</Image>
+                <Image>Skyward</Image>
+            </AcceptedImages>
+        </Salon>
+        <Salon>
+            <Name>Rauma</Name>
+            <Country>Finland</Country>
+            <Accreditations>
+                <Accreditation type="FIAPLevels">2022/382</Accreditation>
+            </Accreditations>
+            <AcceptedImages>
+                <Image>Beneath The Textured Tree</Image>
+                <Image>Desolate Tree</Image>
+            </AcceptedImages>
+        </Salon>
+    </Salons>
+</Circuit>

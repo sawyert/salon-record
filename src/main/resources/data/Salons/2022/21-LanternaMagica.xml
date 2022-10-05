@@ -1,0 +1,17 @@
+<Salon>
+    <Name>Lanterna Magica</Name>
+    <Web>https://www.lanternamagica.dk</Web>
+    <Country>Denmark</Country>
+    <Year>2022</Year>
+    <JudgeDate>25-09-2022</JudgeDate>
+    <NotificationDate>09-10-2022</NotificationDate>
+    <Accreditations>
+        <Accreditation type="PSA">2022-277</Accreditation>
+        <Accreditation type="FIAPLevels">2022/232</Accreditation>
+    </Accreditations>
+    <Cost>25.69</Cost>
+    <AcceptedImages>
+        <Image>Hilltop Rendezvous</Image>
+        <Image>The Priest</Image>
+    </AcceptedImages>
+</Salon>
