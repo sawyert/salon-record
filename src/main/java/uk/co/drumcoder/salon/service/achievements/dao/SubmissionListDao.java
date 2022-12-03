@@ -27,7 +27,7 @@ public class SubmissionListDao extends AbstractDao {
         int index = 0;
         String previousTitle = null;
         for (SubmissionListItemDao eachItem : submissionList) {
-            if (!eachItem.getTitle().equals(previousTitle)) {
+            if (!eachItem.getTitle().equalsIgnoreCase(previousTitle)) {
                 index++;
             }
             previousTitle = eachItem.getTitle();
