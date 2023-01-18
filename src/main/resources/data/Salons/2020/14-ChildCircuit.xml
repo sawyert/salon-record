@@ -10,7 +10,7 @@
             <Country>Serbia</Country>
             <Accreditations>
                 <Accreditation type="PSA">2020-347</Accreditation>
-                <Accreditation type="FIAPLevels">2020/376</Accreditation>
+                <Accreditation type="FIAPLevels">2020/374</Accreditation>
             </Accreditations>
             <AcceptedImages>
                 <Image>Majesty</Image>
@@ -28,7 +28,7 @@
             </Accreditations>
             <AcceptedImages>
                 <Image>Railway Children</Image>
-                <Image>Twin Isolation</Image>
+                <Image award="Silver">Twin Isolation</Image>
                 <Image>Towers In The Sky</Image>
                 <Image>Sword In The Stone</Image>
                 <Image>Tranquil</Image>
